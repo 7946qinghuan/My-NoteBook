@@ -39,9 +39,7 @@
 
 当通过 VS Code 连接远程服务器时，系统并非单纯建立一个 SSH 交互 Shell，而是形成了如下的树状进程模型：
 
-Plaintext
-
-```
+```plaintext
 [本地 VS Code 客户端] 
         │ (SSH Tunnel)
         ▼
@@ -76,9 +74,7 @@ Plaintext
 - **Mac 端**（打开 Mac VS Code 的 `settings.json`）：
     
 
-JSON
-
-```
+```JSON
 {
   "terminal.integrated.env.linux": {
     "VSCODE_CLIENT_DEV": "mac"
@@ -89,9 +85,7 @@ JSON
 - **Windows 端**（打开 Windows VS Code 的 `settings.json`）：
     
 
-JSON
-
-```
+```JSON
 {
   "terminal.integrated.env.linux": {
     "VSCODE_CLIENT_DEV": "win"
@@ -102,10 +96,8 @@ JSON
 ### 步骤 2：服务端脚本改写（`~/.auto-proxy.zsh`）
 
 在服务器上修改自动代理脚本，**优先校验客户端主动注入的变量**；如果非 VS Code 环境（如终端直连），再回退到依据 `$SSH_CLIENT` 识别。
+```Bash
 
-Bash
-
-```
 # ==========================================
 # 自动化代理切换脚本 (~/.auto-proxy.zsh)
 # ==========================================
