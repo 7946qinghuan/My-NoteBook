@@ -312,3 +312,5 @@ chsh -s /bin/bash
 nano ~/.bash_profile
 source ~/.bash_profile
 ```
+
+12
