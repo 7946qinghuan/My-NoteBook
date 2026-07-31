@@ -6,15 +6,15 @@
 
 提前厘清原生底层逻辑，是熟练使用双软件的核心前提，规避高频误操作：
 
-1. **Obsidian块级格式无默认快捷键**：秉持Markdown语法优先原则，1\-6级标题、代码块、表格、引用块、公式块均无原生快捷键，需手动输入语法符号实现，并非默认支持Ctrl\+1\~6、Ctrl\+Shift\+K等操作。
-
-2. **文件打开快捷键错位**：Typora Ctrl\+P=快速打开文件；Obsidian CMD\+P为核心命令面板，快速打开文件默认快捷键为CMD\+O。
-
-3. **Ctrl\+T逻辑严重冲突**：Typora Ctrl\+T=插入表格；Obsidian CMD\+T=新建标签页，混用极易触发误操作。
-
-4. **Ctrl\+Shift\+K功能归属错误**：该按键并非Obsidian原生快捷键，仅为VS Code或Obsidian第三方插件（Code Editor Shortcuts等）的删除整行功能，原生无此配置。
-
-5. **任务清单快捷键偏差**：Obsidian原生切换复选框/任务状态快捷键为Ctrl\+L，而非Ctrl\+Shift\+C。
+1. **Obsidian块级格式无默认快捷键**：秉持Markdown语法优先原则，1-6级标题、代码块、表格、引用块、公式块均无原生快捷键，需手动输入语法符号实现，并非默认支持Win端 Ctrl+1~6、Ctrl+Shift+K 等操作。
+    
+2. **文件打开快捷键错位**：Typora Win端 Ctrl+P / Mac端 Cmd+P=快速打开文件；Obsidian Mac端 Cmd+P / Win端 Ctrl+P 为核心命令面板，Obsidian 快速打开文件默认快捷键为 Mac端 Cmd+O / Win端 Ctrl+O。
+    
+3. **表格快捷键逻辑严重冲突**：Typora Win端 Ctrl+T=插入表格、Mac端 Cmd+Option+T=插入表格；Obsidian Win端 Ctrl+T / Mac端 Cmd+T=新建标签页，混用极易触发误操作。
+    
+4. **Ctrl+Shift+K功能归属错误**：Win端 Ctrl+Shift+K、Mac端 Cmd+Shift+K 并非Obsidian原生快捷键，仅为VS Code或Obsidian第三方插件（Code Editor Shortcuts等）的删除整行功能，软件原生无此配置。
+    
+5. **任务清单快捷键偏差**：Obsidian原生切换复选框/任务状态快捷键为 Win端 Ctrl+L / Mac端 Cmd+L，而非 Ctrl+Shift+C，彻底纠正按键记忆偏差。
 
 ## 二、跨平台快捷键总规则（Windows / Mac 核心差异）
 
