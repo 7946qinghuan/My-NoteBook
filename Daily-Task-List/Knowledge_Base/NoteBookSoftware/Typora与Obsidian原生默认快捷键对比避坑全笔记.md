@@ -8,7 +8,7 @@
 
 1. **Obsidian块级格式无默认快捷键**：秉持Markdown语法优先原则，1\-6级标题、代码块、表格、引用块、公式块均无原生快捷键，需手动输入语法符号实现，并非默认支持Ctrl\+1\~6、Ctrl\+Shift\+K等操作。
 
-2. **文件打开快捷键错位**：Typora Ctrl\+P=快速打开文件；Obsidian Ctrl\+P为核心命令面板，快速打开文件默认快捷键为Ctrl\+O。
+2. **文件打开快捷键错位**：Typora Ctrl\+P=快速打开文件；Obsidian CMD\+P为核心命令面板，快速打开文件默认快捷键为Ctrl\+O。
 
 3. **Ctrl\+T逻辑严重冲突**：Typora Ctrl\+T=插入表格；Obsidian Ctrl\+T=新建标签页，混用极易触发误操作。
 
