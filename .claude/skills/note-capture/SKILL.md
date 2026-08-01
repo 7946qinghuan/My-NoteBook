@@ -11,7 +11,7 @@ description: 把一段草稿文字或一个新文件归档进这个 Obsidian vau
 
 1. **判断归类**，按 `CLAUDE.md` 里的规则：
    - 可复用的技术/领域参考知识 → `Knowledge_Base/<主题>/`
-   - 当月要做的事 → `Daily-Task-List/YYYY/Month/N月任务清单.md`
+   - 今天要做的事/日志 → `Daily-Task-List/YYYY/Month/YYYY-MM-DD.md`（不存在就用 `_templates/Daily-Note-Template.md` 新建）
    - 跨月的个人成长/学习计划 → `Plans/`
    - 还没想清楚归类、先放着的速记 → `Inbox/`
    如果内容横跨多个既有主题，选内容主体最相关的一个；如果没有合适的现有主题目录，直接新建，不要硬塞。

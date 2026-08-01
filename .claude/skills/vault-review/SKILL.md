@@ -12,8 +12,8 @@ description: 生成某个时间范围（默认最近一周）的复盘草稿—�
 1. **确定时间范围**：用户没指定就默认最近 7 天（自然周）。
 
 2. **收集素材**：
-   - `git log --since=<start> --until=<end> --name-status` 看这段时间新增/修改/重命名了哪些文件，重点关注 `Knowledge_Base/` 下的新增笔记和 `Daily-Task-List/` 下当月任务清单的改动。
-   - 读一下本期覆盖的 `N月任务清单.md`，摘出标记完成或明显进展的条目。
+   - `git log --since=<start> --until=<end> --name-status` 看这段时间新增/修改/重命名了哪些文件，重点关注 `Knowledge_Base/` 下的新增笔记和 `Daily-Task-List/YYYY/Month/` 下本期日期范围内的每日文件（`YYYY-MM-DD.md`）。
+   - 读一下本期覆盖的每日文件，摘出标记完成或明显进展的条目。2026-08-01 之前的历史记录在 `Daily-Task-List/Archive/YYYY/N月任务清单.md`（旧版月度大文件），只在复盘范围跨到那之前时才需要看。
    - 如果 `Inbox/` 里有本期新增但还没归档的草稿，在复盘里提醒用户处理掉。
 
 3. **按 `_templates/Review-Template.md` 的结构生成内容**：

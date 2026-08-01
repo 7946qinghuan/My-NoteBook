@@ -5,12 +5,13 @@
 ## 目录结构与归类规则
 
 - **`Knowledge_Base/`** — 可复用的主题参考笔记，按技术/领域分子目录（如 `RAG/`、`Linux/`、`Github/`、`WTO-IOTC/` 等）。判断标准：这篇笔记以后还会被检索、引用、复制粘贴用，内容与写作时间无关。新主题不存在时可以直接新建子目录，不要硬塞进不相关的现有主题。
-- **`Daily-Task-List/YYYY/Month/`** — 纯粹的月度任务清单（`N月任务清单.md`），记录"这个月要做的事"，时间线性质，不要把可复用的技术笔记放在这里。
+- **`Daily-Task-List/YYYY/Month/YYYY-MM-DD.md`** — 每日笔记，一天一个文件（2026-08-01 起生效），记录"今天做了什么/要做什么"，时间线性质，不要把可复用的技术笔记堆在这里面。新建时用 `_templates/Daily-Note-Template.md`。
+- **`Daily-Task-List/Archive/YYYY/`** — 2026-08-01 之前的旧版月度任务清单（`N月任务清单.md`，一个文件包含全月每天的内容），只读历史存档，不再新增内容。
 - **`Plans/`** — 个人成长/学习类计划（例如英语学习计划、前端学习计划），跟当月任务清单不同，这类内容跨月甚至跨年有效。
 - **`Inbox/`** — 还没想好归类、临时速记/草稿的笔记。定期应该被清空：内容成熟后用 `note-capture` skill 归档到 `Knowledge_Base/` 或 `Plans/`。
 - **`Daily-Task-List/Reviews/YYYY/`** — 由 `vault-review` skill 生成的周期性复盘草稿。
 - **`images/`** — 所有笔记的图片附件，全部平铺在一个目录里，靠 Obsidian 的全局文件名解析被引用，不要按笔记建子目录。
-- **`_templates/`** — 笔记模板（目前只有复盘模板）。
+- **`_templates/`** — 笔记模板：`Daily-Note-Template.md`（每日笔记）、`Review-Template.md`（复盘）。
 
 ## 笔记约定
 
