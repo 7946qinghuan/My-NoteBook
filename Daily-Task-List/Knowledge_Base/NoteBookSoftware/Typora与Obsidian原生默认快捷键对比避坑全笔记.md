@@ -64,16 +64,16 @@
 
 ### 2\. 文本排版与块级元素（排版操作核心差异）
 
-|功能场景|Typora（Win）|Typora（Mac）|Obsidian（Win原生）|Obsidian（Mac原生）|避坑核心解析|
-|---|---|---|---|---|---|
-|1\-6级标题|Ctrl\+1\~6|Cmd\+1\~6|无|无|Typora全平台支持标题快捷键，Obsidian原生全平台均无|
-|插入代码块|Ctrl\+Shift\+K|Cmd\+Option\+C|无|无|Mac/Win Typora代码块快捷键不统一，Obsidian全平台原生无快捷键|
-|插入引用块|Ctrl\+Shift\+Q|Cmd\+Option\+Q|无|无|Typora双平台按键不同，Obsidian需手动输入语法|
-|插入公式块|Ctrl\+Shift\+M|Cmd\+Option\+B|无|无|公式块快捷键为Typora专属，且Mac/Win组合完全不同|
-|切换任务复选框|Ctrl\+Shift\+X|Cmd\+Shift\+X|Ctrl\+L|Cmd\+L|Obsidian全平台统一用L键切换任务，与Typora形成冲突|
-|选中整行|Ctrl\+L|Cmd\+L|无|无|跨平台核心冲突：L键在两款软件功能完全互换|
-|删除整行（原生）|Ctrl\+Shift\+D|Cmd\+Shift\+D|Ctrl\+Shift\+K|Cmd\+Shift\+K|Obsidian全平台原生自带删行快捷键，并非插件专属，修正前期误区|
-|视图模式切换|Ctrl\+/|Cmd\+/|Ctrl\+E|Cmd\+E|双软件视图快捷键不互通，全平台逻辑一致|
+| 功能场景     | Typora（Win）    | Typora（Mac）    | Obsidian（Win原生） | Obsidian（Mac原生） | 避坑核心解析                                    |
+| -------- | -------------- | -------------- | --------------- | --------------- | ----------------------------------------- |
+| 1\-6级标题  | Ctrl\+1\~6     | Cmd\+1\~6      | 无               | 无               | Typora全平台支持标题快捷键，Obsidian原生全平台均无          |
+| 插入代码块    | Ctrl\+Shift\+K | Cmd\+Option\+C | 无               | 无               | Mac/Win Typora代码块快捷键不统一，Obsidian全平台原生无快捷键 |
+| 插入引用块    | Ctrl\+Shift\+Q | Cmd\+Option\+Q | 无               | 无               | Typora双平台按键不同，Obsidian需手动输入语法             |
+| 插入公式块    | Ctrl\+Shift\+M | Cmd\+Option\+B | 无               | 无               | 公式块快捷键为Typora专属，且Mac/Win组合完全不同            |
+| 切换任务复选框  | Ctrl\+Shift\+X | Cmd\+Shift\+X  | Ctrl\+L         | Cmd\+L          | Obsidian全平台统一用L键切换任务，与Typora形成冲突          |
+| 选中整行     | Ctrl\+L        | Cmd\+L         | 无               | 无               | 跨平台核心冲突：L键在两款软件功能完全互换                     |
+| 删除整行（原生） | Ctrl\+Shift\+D | Cmd\+Shift\+D  | Ctrl\+Shift\+K  | Cmd\+Shift\+K   | Obsidian全平台原生自带删行快捷键，并非插件专属，修正前期误区        |
+| 视图模式切换   | Ctrl\+/        | Cmd\+/         | Ctrl\+E         | Cmd\+E          | 双软件视图快捷键不互通，全平台逻辑一致                       |
 
 ### 3\. 行操作与视图切换（细节易错点）
 
@@ -89,29 +89,30 @@
 
 所有功能均为Typora原生独占，适配单文档沉浸式编辑排版场景：
 
-- 复制为原生Markdown格式：Ctrl\+Shift\+C
-
-- 光标快速跳转定位：Ctrl\+J
-
-- 专注阅读模式：F8
-
-- 打字机沉浸式模式：F9
-
-- 全屏显示模式：F11
+- 复制为原生Markdown格式：Win **Ctrl+Shift+C** / Mac **Cmd+Shift+C**
+    
+- 光标快速跳转定位：Win **Ctrl+J** / Mac **Cmd+J**
+    
+- 专注阅读模式（官方原生）：Win **F8（直接生效）**；Mac **F8 被系统抢占，原生无法直接使用**，无稳定原生触发方案，不推荐依赖
+    
+- 打字机沉浸式模式（官方原生）：Win **F9（直接生效）**；Mac **F9 被系统抢占，原生无法直接使用**，无稳定原生触发方案，不推荐依赖
+    
+- 全屏显示模式（双平台完全不同）：Win **F11**；Mac **Cmd+Option+F**（Mac 原生无 F11 全屏功能）
+    
 
 ### 📙 Obsidian 专属（聚焦知识库双链管理）
 
 适配Obsidian知识库、多笔记关联、全局管理核心场景，原生独占功能：
 
-- 全库全局关键词搜索：Ctrl\+Shift\+F
-
-- 打开笔记关系图谱：Ctrl\+G
-
-- 快速开关左侧侧边栏：Ctrl\+Shift\+L
-
-- 双链笔记快速引用：输入\[\[ 自动触发笔记补全
-
-- 后台新标签页打开笔记：按住Ctrl\+点击笔记链接
+- 全库全局关键词搜索：Win **Ctrl+Shift+F** / Mac **Cmd+Shift+F**
+    
+- 打开笔记关系图谱：Win **Ctrl+G** / Mac **Cmd+G**
+    
+- 快速开关左侧侧边栏：Win **Ctrl+Shift+L** / Mac **Cmd+Shift+L**
+    
+- 双链笔记快速引用：输入[[ 自动触发笔记补全（全平台一致）
+    
+- 后台新标签页打开笔记：Win **按住 Ctrl+点击链接** / Mac **按住 Cmd+点击链接**
 
 ## 五、跨平台防混终极口诀（Win/Mac 通用）
 
