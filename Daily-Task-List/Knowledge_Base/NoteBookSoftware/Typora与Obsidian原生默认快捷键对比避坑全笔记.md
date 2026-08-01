@@ -27,24 +27,27 @@
 ### 2\.2 双平台完全一致按键（无系统差异）
 
 纯功能单键、基础编辑操作全平台通用：`Tab / Shift+Tab`（缩进）、`Home / End`（行首尾）、`F8/F9`（专注/打字机模式）、`Enter/Backspace/Delete`（基础编辑）。
+> 1. Typora F8（专注模式）、F9（打字机模式）仅 Windows 原生直接可用；Mac 系统默认占用 F8/F9 功能键，直接按下无响应，需手动调整。
+
 
 以下为双软件**Windows/Mac 跨平台适配版**通用操作，仅主控键随系统切换，功能逻辑完全统一，可直接复用。
 
-|功能场景|Windows（原生）|Mac（原生）|
-|---|---|---|
-|文本加粗|Ctrl\+B|Cmd\+B|
-|文本斜体|Ctrl\+I|Cmd\+I|
-|插入超链接|Ctrl\+K|Cmd\+K|
-|查找 / 替换|Ctrl\+F / Ctrl\+H|Cmd\+F / Cmd\+H|
-|撤销 / 重做|Ctrl\+Z / Ctrl\+Y|Cmd\+Z / Cmd\+Shift\+Z|
-|复制 / 剪切 / 粘贴|Ctrl\+C / Ctrl\+X / Ctrl\+V|Cmd\+C / Cmd\+X / Cmd\+V|
-|粘贴纯文本|Ctrl\+Shift\+V|Cmd\+Shift\+V|
-|列表缩进/减少缩进|Tab / Shift\+Tab（Ctrl\+\] / Ctrl\+\[）|Tab / Shift\+Tab（Cmd\+\] / Cmd\+\[）|
-|文档顶部 / 底部|Ctrl\+Home / Ctrl\+End|Cmd\+↑ / Cmd\+↓|
-|系统偏好/设置|Ctrl\+,|Cmd\+,|
-|新建文档 / 笔记|Ctrl\+N|Cmd\+N|
-|关闭当前标签/文件|Ctrl\+W|Cmd\+W|
-|插入行内代码|Ctrl\+\`|Cmd\+\`|
+| 功能场景         | Windows（原生）                           | Mac（原生）                             |
+| ------------ | ------------------------------------- | ----------------------------------- |
+| 文本加粗         | Ctrl\+B                               | Cmd\+B                              |
+| 文本斜体         | Ctrl\+I                               | Cmd\+I                              |
+| 插入超链接        | Ctrl\+K                               | Cmd\+K                              |
+| 查找 / 替换      | Ctrl\+F / Ctrl\+H                     | Cmd\+F / Cmd\+H                     |
+| 撤销 / 重做      | Ctrl\+Z / Ctrl\+Y                     | Cmd\+Z / Cmd\+Shift\+Z              |
+| 复制 / 剪切 / 粘贴 | Ctrl\+C / Ctrl\+X / Ctrl\+V           | Cmd\+C / Cmd\+X / Cmd\+V            |
+| 粘贴纯文本        | Ctrl\+Shift\+V                        | Cmd\+Shift\+V                       |
+| 列表缩进/减少缩进    | Tab / Shift\+Tab（Ctrl\+\] / Ctrl\+\[） | Tab / Shift\+Tab（Cmd\+\] / Cmd\+\[） |
+| 文档顶部 / 底部    | Ctrl\+Home / Ctrl\+End                | Cmd\+↑ / Cmd\+↓                     |
+| 系统偏好/设置      | Ctrl\+,                               | Cmd\+,                              |
+| 新建文档 / 笔记    | Ctrl\+N                               | Cmd\+N                              |
+| 关闭当前标签/文件    | Ctrl\+W                               | Cmd\+W                              |
+| 插入行内代码       | Ctrl\+\`                              | Cmd\+\`                             |
+|              |                                       |                                     |
 
 ## 三、高危易混淆\&逻辑冲突清单（Win/Mac 双平台完整版）
 
