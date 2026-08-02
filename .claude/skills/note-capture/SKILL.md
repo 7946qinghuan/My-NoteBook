@@ -10,7 +10,7 @@ description: 把一段草稿文字或一个新文件归档进这个 Obsidian vau
 ## 步骤
 
 1. **判断归类**，按 `CLAUDE.md` 里的规则：
-   - 可复用的技术/领域参考知识 → `Knowledge_Base/<主题>/`
+   - 可复用的技术/领域参考知识 → `Knowledge_Base/<域>/<主题>/`，域固定为 AI-Engineering / Dev / Toolchain / Embedded-System / Projects / Workplace / Productivity 七选一，不要新开顶层域
    - 今天要做的事/日志 → `Daily-Task-List/YYYY/Month/YYYY-MM-DD.md`（不存在就用 `_templates/Daily-Note-Template.md` 新建）
    - 跨月的个人成长/学习计划 → `Plans/`
    - 还没想清楚归类、先放着的速记 → `Inbox/`
@@ -33,7 +33,11 @@ description: 把一段草稿文字或一个新文件归档进这个 Obsidian vau
      ```
    - 正文保留用户原始内容的信息完整性，可以重新组织结构（加标题层级），但不要替用户改写观点或删减内容。
 
-4. **回报结果**：告诉用户最终存到了哪个路径、加了哪些标签、是否合并/关联了已有笔记，让用户能一眼确认归类是否合理。
+4. **接入 Graph**（别漏这步，否则新笔记在 Graph 里是孤点）：
+   - 把新笔记加进所属域的 MOC 页（`Knowledge_Base/<域>/<域>-MOC.md`）对应的分组下。
+   - 如果它和已有笔记属于同一类问题，在双方的 `## 相关笔记` 小节里**互相**加 `[[链接]]`，不要只加单向。
+
+5. **回报结果**：告诉用户最终存到了哪个路径、加了哪些标签、挂到了哪个 MOC、和哪些笔记建了双链，让用户能一眼确认归类是否合理。
 
 ## 不要做的事
 
