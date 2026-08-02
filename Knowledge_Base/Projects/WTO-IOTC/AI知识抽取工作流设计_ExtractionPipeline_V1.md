@@ -557,7 +557,7 @@ red_line_tendency / tradeable / stance_stability
 
 # 七、IOTC 场景适配（框架）
 
-> IOTC 具体议题尚未确定（《总体设计V3》附录 C #4），本章给出适配框架，语料范围待议题确定后补全。
+> IOTC 具体议题尚未确定（《总体设计V3》附录 C ），本章给出适配框架，语料范围待议题确定后补全。
 
 ## 7.1 与 WTO 场景的差异
 
