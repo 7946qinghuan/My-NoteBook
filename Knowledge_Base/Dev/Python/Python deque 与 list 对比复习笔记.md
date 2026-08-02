@@ -1,5 +1,5 @@
 ---
-title: "Python deque vs list [] 复习笔记"
+title: Python deque 与 list 对比复习笔记
 date: 2026-04-16
 tags: [Dev, Python]
 aliases: []
