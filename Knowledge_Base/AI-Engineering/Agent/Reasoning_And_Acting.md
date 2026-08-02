@@ -94,3 +94,15 @@ while True:
 - **Observation** 是**客观**的（我看到了什么，拿到了什么）。
 如果工具返回的结果太杂乱（比如整个网页的 HTML），直接丢进 Observation 会浪费 Token。
 **精通级做法：** 编写一个专门的 **Output Parser（输出解析器）**。这个解析器不属于 LLM 的逻辑，而是属于代码逻辑。它负责把 HTML 转换成简洁的 Markdown 或 JSON。 这样既保证了信息的**真实性（Observation）**，又保证了 **Thought** 阶段能看懂。
+
+---
+
+## 相关笔记
+
+**Agent 设计与 Prompt 工程**
+
+- [[agent_lifecycle_management]]
+- [[Knowledge_Agent_Prompt]]
+- [[Knowledge_Agent_Prompt_Claude]]
+- [[观韬RAG助手提示词]]
+

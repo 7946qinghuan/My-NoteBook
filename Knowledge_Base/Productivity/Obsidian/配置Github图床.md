@@ -69,3 +69,12 @@ aliases: []
 - 选择上传服务为PicGo（app）
 - 选择PicGo路径为本地的安装路径
 ![image.png](https://cdn.statically.io/gh/comet-7x/My-NoteBook/main/images/202604191602929.png)
+
+---
+
+## 相关笔记
+
+**Obsidian 笔记工作流**
+
+- [[Typora与Obsidian原生默认快捷键对比避坑全笔记]]
+

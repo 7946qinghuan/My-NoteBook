@@ -298,3 +298,17 @@ data: {"message_id": "msg_67890", "time_cost": 0, "node_type": "content", "node_
 event: SEND_CHAT_END
 data: {"message_id": "msg_67890", "time_cost": 19176, "data": "the message of msg_67890 has ended"}
 ```
+
+---
+
+## 相关笔记
+
+**RAG 处理链路：文档解析 → 切分 → 分词 → 向量检索**
+
+- [[docx_parser_internals]]
+- [[recursive_character_text_splitter]]
+- [[Tokenization]]
+- [[ANN与KNN详解]]
+- [[Schema与Function详解]]
+- [[知识库QA测试优化]]
+

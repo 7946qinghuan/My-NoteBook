@@ -111,3 +111,15 @@ git config --global --unset core.pager
 ```
 
 这会删除该配置，让 Git 回归初始状态。
+
+---
+
+## 相关笔记
+
+**Git / GitHub 协作规范**
+
+- [[GitHub仓库分支命名规范]]
+- [[GitHub代码PR提交规范]]
+- [[企业内部PR描述规范]]
+- [[Git权限困局与子模块或下游协作规范]]
+

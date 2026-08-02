@@ -285,3 +285,16 @@ auto_proxy_switch
 1. **网络层与应用层分离**：网络层的 IP 地址容易受代理中转、会话复用等因素干扰，在复杂的远程开发工具链中，通过**应用层显式传递环境变量（Terminal Env Injection）** 是处理多端差异最稳妥的方式。
     
 2. **理解守护进程生命周期**：Remote-SSH 工具（如 VS Code、Cursor、JetBrains Remote）普遍存在服务端守护进程常驻机制，排查这类问题时，重点关注父子进程的环境变量继承，而非单纯关注网络连接本身。
+
+---
+
+## 相关笔记
+
+**代理与远程访问：不同平台上的同一类问题**
+
+- [[Linux服务器挂靠Windows V2Ray代理 完整配置笔记（适配ZSH）]]
+- [[Mac_Terminal_配置_Clash_Verge_代理完整笔记]]
+- [[macOS_Headscale_Tailscale_接入与避坑指南]]
+- [[Windows _ Mac 双端免密连接 Linux 远程服务器完整指南]]
+- [[服务器指纹失效]]
+

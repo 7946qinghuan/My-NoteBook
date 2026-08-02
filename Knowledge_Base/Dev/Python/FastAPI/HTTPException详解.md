@@ -36,3 +36,14 @@ aliases: []
 | **503 Service Unavailable**   | **服务器暂时不可用（过载或维护）**        | 1. 服务器正在部署新版本；<br>2. 依赖的核心服务（如数据库）正在维护或已达最大连接数；<br>3. 服务器负载过高，无法处理新请求。                                           | `if not is_database_connected():`<br>&nbsp;&nbsp;`raise HTTPException(`<br>&nbsp;&nbsp;&nbsp;&nbsp;`status_code=503,`<br>&nbsp;&nbsp;&nbsp;&nbsp;`detail="服务暂时不可用",`<br>&nbsp;&nbsp;&nbsp;&nbsp;`headers={"Retry-After": "60"} # 提示客户端 60 秒后重试`<br>&nbsp;&nbsp;`)`                                                                                                                                                                               |
 | **4xx/5xx (Auto)**            | **其他自动处理**                 | - **405 Method Not Allowed**: 路由仅支持 `POST` 却用 `GET` 请求。<br>- **406 Not Acceptable**: 客户端请求头 `Accept` 的格式服务器无法返回。 | FastAPI 会在匹配路由时**自动抛出**（无需手动处理）。                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
+---
+
+## 相关笔记
+
+**FastAPI 分层架构与异常处理**
+
+- [[依赖注入]]
+- [[分层架构与异常转换]]
+- [[fastapi_lifespan_notes]]
+- [[异常处理]]
+

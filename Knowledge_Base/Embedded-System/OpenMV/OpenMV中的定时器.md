@@ -308,3 +308,15 @@ while(True):
     1/tim.freq(), tim.counter())
     print(string)
 ```
+
+---
+
+## 相关笔记
+
+**OpenMV 基础**
+
+- [[OpenMV基础知识]]
+- [[OpenMV IDE界面介绍]]
+- [[OpenMV中的LED灯操作详解]]
+- [[卡尔曼滤波算法]]
+

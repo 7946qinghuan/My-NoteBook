@@ -791,3 +791,22 @@ void LED_Init(void);
 
 ```
 
+---
+
+## 相关笔记
+
+**STM32 HAL 库学习路径**
+
+- [[STM32先导]]
+- [[STM32最小系统]]
+- [[STM32文件讲解与使用方法]]
+- [[STM32-GPIO_1]]
+- [[STM32-GPIO_2]]
+- [[STM32-TIMER]]
+- [[STM32-USART]]
+- [[STM32-IIC]]
+- [[TB6612]]
+- [[STM32标准库学习记录]]
+- [[PID算法学习记录]]
+- [[stm32与openmv串口通信]]
+

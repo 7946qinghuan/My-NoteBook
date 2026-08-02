@@ -24,3 +24,23 @@ PID:
 > D微分控制：基本作用就是减弱超调，加大惯性响应速度
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/6c37443ab4cd4620a52c9c171803641c.png)
+
+---
+
+## 相关笔记
+
+**STM32 HAL 库学习路径**
+
+- [[STM32先导]]
+- [[STM32最小系统]]
+- [[STM32文件讲解与使用方法]]
+- [[STM32-GPIO_1]]
+- [[STM32-GPIO_2]]
+- [[STM32-EXTI]]
+- [[STM32-TIMER]]
+- [[STM32-USART]]
+- [[STM32-IIC]]
+- [[TB6612]]
+- [[STM32标准库学习记录]]
+- [[stm32与openmv串口通信]]
+

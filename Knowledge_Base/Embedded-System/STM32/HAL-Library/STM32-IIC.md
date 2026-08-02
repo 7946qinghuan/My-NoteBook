@@ -376,3 +376,22 @@ uint8_t IIC_Read_Byte(uint8_t ack)
 
 [[玩转传感器——DHT11温湿度传感器（STM32版）_温湿度传感器接线图-CSDN博客](https://blog.csdn.net/weixin_43002939/article/details/124487920?ops_request_misc=%7B%22request%5Fid%22%3A%22170943440116800188525006%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=170943440116800188525006&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-124487920-null-null.142^v99^pc_search_result_base4&utm_term=DHT11&spm=1018.2226.3001.4187)]:直接观看此篇博客
 
+---
+
+## 相关笔记
+
+**STM32 HAL 库学习路径**
+
+- [[STM32先导]]
+- [[STM32最小系统]]
+- [[STM32文件讲解与使用方法]]
+- [[STM32-GPIO_1]]
+- [[STM32-GPIO_2]]
+- [[STM32-EXTI]]
+- [[STM32-TIMER]]
+- [[STM32-USART]]
+- [[TB6612]]
+- [[STM32标准库学习记录]]
+- [[PID算法学习记录]]
+- [[stm32与openmv串口通信]]
+

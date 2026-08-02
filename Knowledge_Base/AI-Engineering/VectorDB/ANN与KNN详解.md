@@ -63,3 +63,17 @@ aliases: []
 
    - **JACCARD 距离：** 适用于衡量两个集合的相似性。在二进制向量中，它关注两个向量中 **1** 的 **共同出现** 情况。
    - **HAMMING 距离：** 衡量两个向量的不同之处，即 **异或 (XOR)** 运算后结果中 **1** 的个数（不匹配的位数）。它常用于校验和纠错。
+
+---
+
+## 相关笔记
+
+**RAG 处理链路：文档解析 → 切分 → 分词 → 向量检索**
+
+- [[docx_parser_internals]]
+- [[recursive_character_text_splitter]]
+- [[Tokenization]]
+- [[Schema与Function详解]]
+- [[知识库QA测试优化]]
+- [[Knowledge-Agent知识库助手接口文档]]
+

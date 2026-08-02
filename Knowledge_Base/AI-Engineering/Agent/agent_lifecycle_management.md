@@ -98,3 +98,15 @@ graph TD
 -   在 `KnowledgeAgentManager` 的 `__init__` 方法中，将 `self.agents` 初始化为 `cachetools.LRUCache`。
 -   将缓存的 `maxsize` 参数提取到配置文件中 (`config/settings.py`)，例如 `AGENT_CACHE_MAX_SIZE`，方便在线调整，避免硬编码。
 -   在 `pyproject.toml` 中添加 `cachetools` 作为项目依赖。
+
+---
+
+## 相关笔记
+
+**Agent 设计与 Prompt 工程**
+
+- [[Reasoning_And_Acting]]
+- [[Knowledge_Agent_Prompt]]
+- [[Knowledge_Agent_Prompt_Claude]]
+- [[观韬RAG助手提示词]]
+

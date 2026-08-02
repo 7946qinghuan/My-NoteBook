@@ -90,3 +90,17 @@ Search Agent Answer:
 
 
 我现在要知道我这份关于WTO的爬虫代码是如何执行的，我要了解所有的代码并看懂
+
+---
+
+## 相关笔记
+
+**RAG 处理链路：文档解析 → 切分 → 分词 → 向量检索**
+
+- [[docx_parser_internals]]
+- [[recursive_character_text_splitter]]
+- [[Tokenization]]
+- [[ANN与KNN详解]]
+- [[Schema与Function详解]]
+- [[Knowledge-Agent知识库助手接口文档]]
+

@@ -249,3 +249,16 @@ ssh-keygen -p -f 密钥路径
 6. 在 config 中新增独立 Host 段落，分别绑定 IP、用户名、私钥路径
     
 7. 互不冲突，自由切换免密连接
+
+---
+
+## 相关笔记
+
+**代理与远程访问：不同平台上的同一类问题**
+
+- [[Linux服务器挂靠Windows V2Ray代理 完整配置笔记（适配ZSH）]]
+- [[Mac_Terminal_配置_Clash_Verge_代理完整笔记]]
+- [[VSCode_Remote_Multi_Device_Proxy_Switch]]
+- [[macOS_Headscale_Tailscale_接入与避坑指南]]
+- [[服务器指纹失效]]
+

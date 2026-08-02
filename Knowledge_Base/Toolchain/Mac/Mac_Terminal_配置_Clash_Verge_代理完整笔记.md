@@ -321,3 +321,16 @@ source ~/.bash_profile
 ```
 
 12
+
+---
+
+## 相关笔记
+
+**代理与远程访问：不同平台上的同一类问题**
+
+- [[Linux服务器挂靠Windows V2Ray代理 完整配置笔记（适配ZSH）]]
+- [[VSCode_Remote_Multi_Device_Proxy_Switch]]
+- [[macOS_Headscale_Tailscale_接入与避坑指南]]
+- [[Windows _ Mac 双端免密连接 Linux 远程服务器完整指南]]
+- [[服务器指纹失效]]
+

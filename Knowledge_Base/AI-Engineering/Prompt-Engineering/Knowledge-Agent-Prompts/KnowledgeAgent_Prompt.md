@@ -195,3 +195,14 @@ The raw intake of information from the tool.
     
 - Correction over Validation: If the user was incorrect, provide a respectful, evidence-based correction. Objective guidance is the priority.
 ```
+
+---
+
+## 相关笔记
+
+**Knowledge-Agent 提示词版本演进**
+
+- [[Knowledge_Agent_ReAct_Prompt_CN]]
+- [[Knowledge_Agent_ReAct_Prompt_CN_V2]]
+- [[Knowledge_Agent_ReAct_Prompt_V3]]
+

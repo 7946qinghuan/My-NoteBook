@@ -320,3 +320,15 @@ aliases: []
   "final_answer": "抱歉，我在知识库中没有查询到关于“观韬的火星基地位置”的相关信息。"
 }
 ```
+
+---
+
+## 相关笔记
+
+**Agent 设计与 Prompt 工程**
+
+- [[agent_lifecycle_management]]
+- [[Reasoning_And_Acting]]
+- [[Knowledge_Agent_Prompt]]
+- [[Knowledge_Agent_Prompt_Claude]]
+

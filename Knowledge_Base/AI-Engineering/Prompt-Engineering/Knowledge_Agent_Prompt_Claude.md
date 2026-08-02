@@ -329,3 +329,15 @@ EPA（二十碳五烯酸）和 DHA（二十二碳六烯酸）在海洋生态系�
 - 国际出版物与会议论文
 - 专利文献
 - 技术手册与书籍
+
+---
+
+## 相关笔记
+
+**Agent 设计与 Prompt 工程**
+
+- [[agent_lifecycle_management]]
+- [[Reasoning_And_Acting]]
+- [[Knowledge_Agent_Prompt]]
+- [[观韬RAG助手提示词]]
+

@@ -108,3 +108,13 @@ public class LRUCache extends LinkedHashMap<Integer, Integer> {
 }
 ```
 
+---
+
+## 相关笔记
+
+**招聘评分表**
+
+- [[前端工程师简历评分表]]
+- [[后端工程师简历评分表]]
+- [[后端工程师简历评分标准]]
+

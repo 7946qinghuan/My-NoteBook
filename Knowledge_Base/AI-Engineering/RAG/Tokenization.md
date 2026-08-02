@@ -57,3 +57,17 @@ for i in range(1, 101):
 
 字节对编码算法
 Naive算法
+
+---
+
+## 相关笔记
+
+**RAG 处理链路：文档解析 → 切分 → 分词 → 向量检索**
+
+- [[docx_parser_internals]]
+- [[recursive_character_text_splitter]]
+- [[ANN与KNN详解]]
+- [[Schema与Function详解]]
+- [[知识库QA测试优化]]
+- [[Knowledge-Agent知识库助手接口文档]]
+

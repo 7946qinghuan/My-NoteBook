@@ -208,3 +208,14 @@ aliases: []
    - 如果rag_search工具的返回结果有答案：基于rag_search的返回结果回答，并引用。
 
    - 如果rag_search工具的返回结果**无**答案：明确告知“检索结果中未包含具体信息”，你需要基于你的通用知识尝试解答，但必须声明“以下内容基于通用知识，仅供参考”。
+
+---
+
+## 相关笔记
+
+**Knowledge-Agent 提示词版本演进**
+
+- [[KnowledgeAgent_Prompt]]
+- [[Knowledge_Agent_ReAct_Prompt_CN]]
+- [[Knowledge_Agent_ReAct_Prompt_V3]]
+

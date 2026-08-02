@@ -139,3 +139,15 @@ headscale nodes delete -i <节点ID>     # 删除该节点
 - **移除信任证书（可选）**：如果不再连接该 Headscale 服务器，可打开 macOS “钥匙串访问”，在左侧选择 **“系统”**，搜索 `223.4.6.21` 证书并将其右键删除，以保持系统证书库简洁。
 - **检查 DNS 与路由残留**：执行 `tailscale logout` 后，Tailscale 会自动清理创建的虚拟网卡（`utun`）及全局路由规则。若发现局部网络异常，重启一次系统或重启网络网卡即可完全复位。
 
+---
+
+## 相关笔记
+
+**代理与远程访问：不同平台上的同一类问题**
+
+- [[Linux服务器挂靠Windows V2Ray代理 完整配置笔记（适配ZSH）]]
+- [[Mac_Terminal_配置_Clash_Verge_代理完整笔记]]
+- [[VSCode_Remote_Multi_Device_Proxy_Switch]]
+- [[Windows _ Mac 双端免密连接 Linux 远程服务器完整指南]]
+- [[服务器指纹失效]]
+

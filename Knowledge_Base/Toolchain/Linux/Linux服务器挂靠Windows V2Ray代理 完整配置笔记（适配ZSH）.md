@@ -174,3 +174,16 @@ export ALL_PROXY=socks5://127.0.0.1:7890
 ## 十一、最终使用口诀
 
 **同网开机即用，换网改IP重载，异地彻底失效，关机必须 unset**
+
+---
+
+## 相关笔记
+
+**代理与远程访问：不同平台上的同一类问题**
+
+- [[Mac_Terminal_配置_Clash_Verge_代理完整笔记]]
+- [[VSCode_Remote_Multi_Device_Proxy_Switch]]
+- [[macOS_Headscale_Tailscale_接入与避坑指南]]
+- [[Windows _ Mac 双端免密连接 Linux 远程服务器完整指南]]
+- [[服务器指纹失效]]
+

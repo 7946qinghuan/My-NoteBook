@@ -251,3 +251,14 @@ aliases: []
 - **参考文献列表**：在回答的最末尾，使用 --- 分割线后列出“参考文献”。
 - **格式一致性**：引用格式需统一，包含作者、标题、来源/期刊、年份。
 - **严禁虚构**：严禁伪造不存在的论文或链接。若不确定具体来源，应使用“根据相关领域主流研究...”等模糊表述，而非捏造引用。
+
+---
+
+## 相关笔记
+
+**Knowledge-Agent 提示词版本演进**
+
+- [[KnowledgeAgent_Prompt]]
+- [[Knowledge_Agent_ReAct_Prompt_CN]]
+- [[Knowledge_Agent_ReAct_Prompt_CN_V2]]
+

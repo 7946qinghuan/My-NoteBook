@@ -98,3 +98,17 @@ aliases: []
 ## 3. `add_function()`
 
 (内容待补充)
+
+---
+
+## 相关笔记
+
+**RAG 处理链路：文档解析 → 切分 → 分词 → 向量检索**
+
+- [[docx_parser_internals]]
+- [[recursive_character_text_splitter]]
+- [[Tokenization]]
+- [[ANN与KNN详解]]
+- [[知识库QA测试优化]]
+- [[Knowledge-Agent知识库助手接口文档]]
+

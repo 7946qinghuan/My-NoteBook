@@ -415,3 +415,17 @@ with zipfile.ZipFile("your_file.docx") as z:
 ## 核心设计思想（一句话总结）
 
 > XML 的树形结构 = 数学公式的嵌套结构，树的递归遍历天然对应公式的递归转换。`_walk` 保证内容顺序，`oMath2Latex` 的 `tag2meth` 路由表 + `process_children` 递归保证公式结构完整转换。
+
+---
+
+## 相关笔记
+
+**RAG 处理链路：文档解析 → 切分 → 分词 → 向量检索**
+
+- [[recursive_character_text_splitter]]
+- [[Tokenization]]
+- [[ANN与KNN详解]]
+- [[Schema与Function详解]]
+- [[知识库QA测试优化]]
+- [[Knowledge-Agent知识库助手接口文档]]
+
