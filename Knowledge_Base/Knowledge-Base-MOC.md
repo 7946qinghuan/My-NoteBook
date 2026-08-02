@@ -45,3 +45,4 @@ RAG、Agent、Prompt 工程、向量库等 LLM 应用相关的知识。
 - `Daily-Task-List/` — 每日笔记（一天一个文件），旧版月度清单在 `Archive/`
 - `Plans/` — 跨月的个人学习/成长计划
 - `Inbox/` — 未归类草稿，定期用 `note-capture` 清空
+- [[meta-MOC|meta/]] — 模板与笔记编写规则

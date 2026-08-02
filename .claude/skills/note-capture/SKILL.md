@@ -9,15 +9,15 @@ description: 把一段草稿文字或一个新文件归档进这个 Obsidian vau
 
 ## 步骤
 
-1. **判断归类**，按 `CLAUDE.md` 里的规则：
+1. **判断归类**，按 `meta/conventions/目录与归类规则.md` 的规则（那是唯一信息源，必要时先读它）：
    - 可复用的技术/领域参考知识 → `Knowledge_Base/<域>/<主题>/`，域固定为 AI-Engineering / Dev / Toolchain / Embedded-System / Projects / Workplace / Productivity 七选一，不要新开顶层域
-   - 今天要做的事/日志 → `Daily-Task-List/YYYY/Month/YYYY-MM-DD.md`（不存在就用 `_templates/Daily-Note-Template.md` 新建）
+   - 今天要做的事/日志 → `Daily-Task-List/YYYY/Month/YYYY-MM-DD.md`（不存在就用 `meta/templates/Daily-Note-Template.md` 新建）
    - 跨月的个人成长/学习计划 → `Plans/`
    - 还没想清楚归类、先放着的速记 → `Inbox/`
    如果内容横跨多个既有主题，选内容主体最相关的一个；如果没有合适的现有主题目录，直接新建，不要硬塞。
 
 2. **查重**：在目标区域（通常是 `Knowledge_Base/`）用 grep 搜索关键词，看是否已有覆盖相同话题的笔记。
-   - 如果有高度重叠的笔记，优先建议**合并/追加**到已有笔记，而不是新建一份重复的（vault 里已经因为不查重产生过"简历评分表"散落 4 份的问题，`Knowledge_Base/Management/招聘评分表/` 是事后合并的结果，避免重蹈覆辙）。
+   - 如果有高度重叠的笔记，优先建议**合并/追加**到已有笔记，而不是新建一份重复的（vault 里已经因为不查重产生过"简历评分表"散落 4 份的问题，`Knowledge_Base/Workplace/Management/招聘评分表/` 是事后合并的结果，避免重蹈覆辙）。
    - 如果只是相关但不重复，在新笔记里加一条 `[[已有笔记名]]` 双链，并追问是否要在旧笔记里也加反向链接。
 
 3. **写入文件**：
