@@ -1,3 +1,10 @@
+---
+title: docx_parser_internals
+date: 2026-05-16
+tags: [AI, RAG]
+aliases: []
+---
+
 # DOCX 解析底层逻辑笔记
 
 > 适用代码：`comet_rag/engines/parsers/docx_parser/`

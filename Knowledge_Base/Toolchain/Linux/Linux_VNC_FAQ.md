@@ -1,3 +1,9 @@
+---
+title: Linux_VNC_FAQ
+date: 2026-02-05
+tags: [Toolchain, Linux]
+aliases: []
+---
 
 # 🐧 Linux VNC 全方位使用指南与故障排查
 

@@ -1,3 +1,10 @@
+---
+title: AI知识抽取工作流设计_ExtractionPipeline_V1
+date: 2026-07-22
+tags: [Project, WTO-IOTC]
+aliases: []
+---
+
 # AI知识抽取工作流设计（Extraction Pipeline）V1
 
 > Version：V1.0

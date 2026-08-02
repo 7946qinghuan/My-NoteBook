@@ -1,3 +1,10 @@
+---
+title: 企业内部PR描述规范
+date: 2026-02-04
+tags: [Toolchain, Git]
+aliases: []
+---
+
 # 企业内部 Pull Request 描述规范（Markdown 笔记）
 
 > 适用场景：企业内部 GitHub / GitLab / Gitee 等代码仓库  

@@ -1,3 +1,10 @@
+---
+title: fastapi_lifespan_notes
+date: 2026-02-01
+tags: [Dev, Python, FastAPI]
+aliases: []
+---
+
 # `FastAPI Lifespan` 与 `asynccontextmanager`
 
 ## 为什么FastAPI的lifespan函数需要使用`asynccontextmanager`这个装饰器来进行装饰？

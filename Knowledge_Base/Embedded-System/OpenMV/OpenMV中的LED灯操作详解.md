@@ -1,3 +1,10 @@
+---
+title: OpenMV中的LED灯操作详解
+date: 2026-08-01
+tags: [Embedded, OpenMV]
+aliases: []
+---
+
 # OpenMV中的LED灯操作详解
 
 ## 1.导入LED模块与延时模块：

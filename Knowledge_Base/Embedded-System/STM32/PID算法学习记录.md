@@ -1,3 +1,10 @@
+---
+title: PID算法学习记录
+date: 2026-08-01
+tags: [Embedded, STM32]
+aliases: []
+---
+
 # PID算法学习记录
 
 PID:

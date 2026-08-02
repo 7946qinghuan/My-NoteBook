@@ -1,3 +1,10 @@
+---
+title: STM32文件讲解与使用方法
+date: 2026-08-01
+tags: [Embedded, STM32, HAL]
+aliases: []
+---
+
 # ==STM32文件讲解与使用方法==
 
 

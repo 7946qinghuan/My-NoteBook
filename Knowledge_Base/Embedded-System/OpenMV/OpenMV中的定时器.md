@@ -1,3 +1,10 @@
+---
+title: OpenMV中的定时器
+date: 2026-08-01
+tags: [Embedded, OpenMV]
+aliases: []
+---
+
 # OpenMV中的定时器
 
 ## 一.介绍

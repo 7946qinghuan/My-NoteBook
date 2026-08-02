@@ -1,3 +1,10 @@
+---
+title: agent_lifecycle_management
+date: 2026-02-02
+tags: [AI, Agent]
+aliases: []
+---
+
 # Agent 生命周期与会话管理设计笔记
 
 ## 1. 问题背景

@@ -1,3 +1,10 @@
+---
+title: 知识库QA测试优化
+date: 2026-06-18
+tags: [AI, RAG]
+aliases: []
+---
+
 Q27：2023年全国淡水养殖甲壳类中，虾占甲壳类产量的比例是多少？
 
 Search Agent Answer: 

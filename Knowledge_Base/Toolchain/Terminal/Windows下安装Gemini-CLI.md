@@ -1,3 +1,10 @@
+---
+title: Windows下安装Gemini-CLI
+date: 2025-12-12
+tags: [Toolchain, Terminal]
+aliases: []
+---
+
 # 在Windows上通过代理安装 Gemini CLI
 
 本指南介绍了如何在 Windows 的命令提示符（`cmd.exe`）或 PowerShell 环境下，通过设置临时代理来安装 `@google/gemini-cli`。

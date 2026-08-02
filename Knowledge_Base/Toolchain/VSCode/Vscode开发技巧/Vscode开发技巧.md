@@ -1,3 +1,9 @@
+---
+title: Vscode开发技巧
+date: 2026-02-04
+tags: [Toolchain, VSCode]
+aliases: []
+---
 
 ## 常用快捷键总结：
 

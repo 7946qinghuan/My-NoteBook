@@ -1,3 +1,10 @@
+---
+title: 树莓派5的onnx转换
+date: 2025-12-21
+tags: [Embedded, Raspberry-Pie]
+aliases: []
+---
+
 # 在 WSL 上进行 Hailo8 的  onnx 到 hef 的转换
 
 本文参考链接：

@@ -1,3 +1,10 @@
+---
+title: VSCode_Remote_Multi_Device_Proxy_Switch
+date: 2026-07-29
+tags: [Toolchain, VSCode]
+aliases: []
+---
+
 # VS Code Remote-SSH 多设备环境隔离、服务进程重置与排错指南
 
 ## 1. 背景与核心需求

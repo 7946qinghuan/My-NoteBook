@@ -1,3 +1,9 @@
+---
+title: 基于WTO渔业补贴协定的国际谈判智能体设计思路
+date: 2026-07-07
+tags: [Project, WTO-IOTC]
+aliases: []
+---
 
 > **项目目标**
 

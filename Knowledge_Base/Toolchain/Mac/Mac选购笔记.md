@@ -1,3 +1,10 @@
+---
+title: Mac选购笔记
+date: 2026-07-18
+tags: [Toolchain, Mac]
+aliases: []
+---
+
 ## 可选配置表
 
 | 配置                                                                                                                                                       | 原始价格（以RMB计算） | Apple亲友福利价格 |

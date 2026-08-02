@@ -1,3 +1,10 @@
+---
+title: stm32与openmv串口通信
+date: 2026-08-01
+tags: [Embedded, OpenMV]
+aliases: []
+---
+
 # STM32与OpenMV串口通信
 
 

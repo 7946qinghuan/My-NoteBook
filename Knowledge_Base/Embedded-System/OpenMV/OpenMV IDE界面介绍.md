@@ -1,3 +1,10 @@
+---
+title: OpenMV IDE界面介绍
+date: 2026-08-01
+tags: [Embedded, OpenMV]
+aliases: []
+---
+
 # OpenMV IDE界面介绍
 
 ## 1.File

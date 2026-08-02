@@ -1,3 +1,10 @@
+---
+title: conda常用命令
+date: 2026-08-01
+tags: [Toolchain, Anaconda]
+aliases: []
+---
+
 # conda常用命令汇总
 
 

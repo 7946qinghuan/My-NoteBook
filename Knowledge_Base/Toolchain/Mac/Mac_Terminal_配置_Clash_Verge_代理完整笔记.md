@@ -1,3 +1,10 @@
+---
+title: Mac_Terminal_配置_Clash_Verge_代理完整笔记
+date: 2026-07-30
+tags: [Toolchain, Mac]
+aliases: []
+---
+
 Mac Terminal 配置 Clash Verge 代理完整笔记
 
 ## 一、核心结论

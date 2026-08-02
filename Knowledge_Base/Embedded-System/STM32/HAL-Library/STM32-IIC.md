@@ -1,3 +1,10 @@
+---
+title: STM32-IIC
+date: 2026-08-01
+tags: [Embedded, STM32, HAL]
+aliases: []
+---
+
 # ==STM32-IIC==
 
 

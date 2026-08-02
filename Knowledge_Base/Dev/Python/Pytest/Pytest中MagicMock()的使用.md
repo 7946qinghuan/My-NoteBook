@@ -1,3 +1,9 @@
+---
+title: Pytest中MagicMock()的使用
+date: 2026-01-04
+tags: [Dev, Python, Pytest]
+aliases: []
+---
 
 ## `MagicMock()` 的使用
 

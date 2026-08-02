@@ -1,3 +1,10 @@
+---
+title: Arduino速成
+date: 2026-08-01
+tags: [Embedded, Arduino]
+aliases: []
+---
+
 # ==Arduino速成==
 
 

@@ -1,3 +1,10 @@
+---
+title: recursive_character_text_splitter
+date: 2026-04-16
+tags: [AI, RAG]
+aliases: []
+---
+
 # RecursiveCharacterTextSplitter 深度解析
 
 > 源码位置：`comet_rag/engines/chunkers/base_chunker.py`

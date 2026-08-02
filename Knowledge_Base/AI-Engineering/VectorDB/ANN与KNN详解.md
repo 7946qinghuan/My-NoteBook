@@ -1,3 +1,10 @@
+---
+title: ANN与KNN详解
+date: 2025-12-12
+tags: [AI, VectorDB]
+aliases: []
+---
+
 # Milvus中的ANN与KNN详解
 
 ## 什么是 ANN 和 KNN

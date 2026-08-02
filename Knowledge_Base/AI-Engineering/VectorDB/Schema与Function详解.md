@@ -1,3 +1,10 @@
+---
+title: Schema与Function详解
+date: 2025-12-12
+tags: [AI, VectorDB]
+aliases: []
+---
+
 # Milvus Schema与Function详解
 
 ## 1. `add_field()`

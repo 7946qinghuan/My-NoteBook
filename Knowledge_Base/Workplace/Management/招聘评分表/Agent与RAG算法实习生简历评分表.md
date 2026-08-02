@@ -1,3 +1,10 @@
+---
+title: Agent与RAG算法实习生简历评分表
+date: 2026-06-08
+tags: [Workplace, Management, 招聘]
+aliases: []
+---
+
 ## Agent 与 RAG 算法实习生 · 简历评分表
 
 候选人姓名：

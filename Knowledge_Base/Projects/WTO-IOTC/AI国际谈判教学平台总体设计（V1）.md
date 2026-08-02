@@ -1,3 +1,10 @@
+---
+title: AI国际谈判教学平台总体设计（V1）
+date: 2026-07-22
+tags: [Project, WTO-IOTC]
+aliases: []
+---
+
 # AI国际谈判教学平台总体设计（V1）
 
 > Version：V1.0  

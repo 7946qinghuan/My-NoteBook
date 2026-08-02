@@ -1,3 +1,10 @@
+---
+title: KnowledgeAgent_Prompt
+date: 2026-01-04
+tags: [AI, Prompt-Engineering, Knowledge-Agent]
+aliases: []
+---
+
 **Knowledge agent prompts in React mode**
 ```
 # System Prompt

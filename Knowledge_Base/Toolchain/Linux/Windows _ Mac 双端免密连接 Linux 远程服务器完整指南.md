@@ -1,3 +1,10 @@
+---
+title: Windows _ Mac 双端免密连接 Linux 远程服务器完整指南
+date: 2026-07-30
+tags: [Toolchain, Linux]
+aliases: []
+---
+
 Windows / Mac 双端免密连接 Linux 远程服务器完整指南
 
 本文档为**双平台通用 SSH 免密登录手册**，涵盖 Windows、Mac 两套完整操作流程，统一采用更安全的 ED25519 密钥算法，实现终端、VS Code Remote-SSH 永久免密快捷连接，附带完整排错方案。

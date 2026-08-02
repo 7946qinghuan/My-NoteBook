@@ -1,3 +1,10 @@
+---
+title: HTTPException详解
+date: 2025-12-12
+tags: [Dev, Python, FastAPI]
+aliases: []
+---
+
 # FastAPI HTTPException 详解
 
 ## 什么是 `HTTPException`

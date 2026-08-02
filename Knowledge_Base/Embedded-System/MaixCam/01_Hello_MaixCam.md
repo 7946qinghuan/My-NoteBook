@@ -1,3 +1,10 @@
+---
+title: 01_Hello_MaixCam
+date: 2026-08-01
+tags: [Embedded, MaixCam]
+aliases: []
+---
+
 # Hello MaixCam
 
 

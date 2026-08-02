@@ -1,3 +1,10 @@
+---
+title: Tokenization
+date: 2026-02-22
+tags: [AI, RAG]
+aliases: []
+---
+
 Tokenization is at the heart of much weirdness of LLMs. Do not brush it off.
 
 - Why can't LLM spell words? **Tokenization**.

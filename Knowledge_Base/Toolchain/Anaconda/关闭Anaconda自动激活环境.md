@@ -1,3 +1,9 @@
+---
+title: 关闭Anaconda自动激活环境
+date: 2026-03-10
+tags: [Toolchain, Anaconda]
+aliases: []
+---
 
 问题原因：
 Anaconda 在安装时，会自动向 Windows 的 PowerShell/CMD 启动配置文件中添加**conda 初始化脚本**，并默认开启「自动激活 base 环境」的功能。因此每次打开终端，conda 会自动执行激活 base 环境的命令，终端前缀就会显示 `(base)`。

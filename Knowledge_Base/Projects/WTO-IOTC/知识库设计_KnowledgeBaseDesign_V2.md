@@ -1,3 +1,10 @@
+---
+title: 知识库设计_KnowledgeBaseDesign_V2
+date: 2026-07-22
+tags: [Project, WTO-IOTC]
+aliases: []
+---
+
 # 知识库设计（Knowledge Base Design）V2
 
 > Version：V2.0 

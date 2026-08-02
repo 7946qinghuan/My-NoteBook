@@ -1,3 +1,10 @@
+---
+title: STM32最小系统
+date: 2026-08-01
+tags: [Embedded, STM32, HAL]
+aliases: []
+---
+
 # STM32最小系统
 
 

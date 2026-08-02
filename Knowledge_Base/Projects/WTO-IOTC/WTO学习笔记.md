@@ -1,3 +1,10 @@
+---
+title: WTO学习笔记
+date: 2026-07-03
+tags: [Project, WTO-IOTC]
+aliases: []
+---
+
 针对WTO渔业补贴协定（Agreement on Fisheries Subsidies）谈判，我们的目标不是在模拟"WTO会议"，而是在模拟"WTO成员之间的利益博弈"。真正学习的对象不是协定本身，而是：为什么不同国家会提出不同立场？他们为什么坚持？他们为什么妥协？
 
 

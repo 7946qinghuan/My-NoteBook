@@ -1,3 +1,9 @@
+---
+title: return_value和side_effect的区别
+date: 2026-02-13
+tags: [Dev, Python, Pytest]
+aliases: []
+---
 
 ## Python Mock 进阶：return_value vs side_effect 核心笔记
 ### 前置基础

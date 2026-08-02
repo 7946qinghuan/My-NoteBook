@@ -1,3 +1,10 @@
+---
+title: TMUX学习笔记
+date: 2026-01-23
+tags: [Toolchain, Terminal]
+aliases: []
+---
+
 $tmux$ 的核心操作围绕「会话（Session）」「窗口（Window）」「窗格（Pane）」三层结构展开
 
 ## 一、会话管理（最核心，对应你之前问的场景）

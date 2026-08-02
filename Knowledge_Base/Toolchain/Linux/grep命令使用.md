@@ -1,3 +1,10 @@
+---
+title: grep命令使用
+date: 2026-06-01
+tags: [Toolchain, Linux]
+aliases: []
+---
+
 ## grep 读代码技巧
 
 ### 基本格式

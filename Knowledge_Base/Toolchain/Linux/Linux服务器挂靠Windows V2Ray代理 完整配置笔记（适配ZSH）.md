@@ -1,3 +1,10 @@
+---
+title: Linux服务器挂靠Windows V2Ray代理 完整配置笔记（适配ZSH）
+date: 2026-07-02
+tags: [Toolchain, Linux]
+aliases: []
+---
+
 ## 一、核心原理
 
 让远程 Linux 服务器外网流量，转发到本地 Windows V2Ray 代理出站，实现服务器访问 Claude / OpenAI / 所有海外资源。

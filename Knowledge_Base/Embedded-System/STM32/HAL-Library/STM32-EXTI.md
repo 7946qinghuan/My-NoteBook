@@ -1,3 +1,10 @@
+---
+title: STM32-EXTI
+date: 2026-08-01
+tags: [Embedded, STM32, HAL]
+aliases: []
+---
+
 # ==STM32第四次培训—EXTI==
 
 

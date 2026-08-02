@@ -1,3 +1,10 @@
+---
+title: STM32标准库学习记录
+date: 2026-08-01
+tags: [Embedded, STM32, 标准库]
+aliases: []
+---
+
 # STM32标准库学习记录
 
 

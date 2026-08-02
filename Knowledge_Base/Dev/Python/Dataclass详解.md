@@ -1,3 +1,10 @@
+---
+title: Dataclass详解
+date: 2025-12-12
+tags: [Dev, Python]
+aliases: []
+---
+
 # Python @dataclass 详解
 
 `@dataclass` 是 Python 3.7+ 引入的一个装饰器，可以自动为类生成常用的“样板方法”，让开发者能更专注于数据本身，而不是重复编写基础方法。

@@ -1,3 +1,10 @@
+---
+title: STM32-GPIO_2
+date: 2026-08-01
+tags: [Embedded, STM32, HAL]
+aliases: []
+---
+
 # ==STM32第三次培训—GPIO==
 
 上一节课我们学习了STM32的第一个外设GPIO，那么这节课我们继续学习GPIO外设之**按键**。

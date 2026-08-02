@@ -1,3 +1,10 @@
+---
+title: macOS_Headscale_Tailscale_接入与避坑指南
+date: 2026-07-28
+tags: [Toolchain, Network]
+aliases: []
+---
+
 # macOS 接入自建 Headscale (Tailscale) 组网与踩坑指南
 
 本指南记录了在 macOS 系统下，使用官方 Tailscale CLI/GUI 客户端接入自建 Headscale 控制平面（`https://223.4.6.21:26001`）的完整操作流程、踩坑避坑经验及退出组网的操作说明。

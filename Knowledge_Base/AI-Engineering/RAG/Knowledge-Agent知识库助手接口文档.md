@@ -1,3 +1,10 @@
+---
+title: Knowledge-Agent知识库助手接口文档
+date: 2026-01-04
+tags: [AI, RAG]
+aliases: []
+---
+
 本文档详细介绍了 Knowledge-Agent 服务提供的所有 API 接口。
 
 ## 服务信息

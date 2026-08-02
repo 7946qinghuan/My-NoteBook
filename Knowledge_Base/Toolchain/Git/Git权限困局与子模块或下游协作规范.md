@@ -1,3 +1,9 @@
+---
+title: Git权限困局与子模块或下游协作规范
+date: 2026-02-04
+tags: [Toolchain, Git]
+aliases: []
+---
 
 ## 📝 技术笔记：Git 权限困局与子模块/下游协作规范
 

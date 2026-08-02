@@ -1,3 +1,10 @@
+---
+title: Reasoning_And_Acting
+date: 2025-12-12
+tags: [AI, Agent]
+aliases: []
+---
+
 ## 1. 什么是 $ReAct$？
 
 **$ReAct$** 是 **Re**asoning（推理）与 **Act**ing（行动）的缩写。

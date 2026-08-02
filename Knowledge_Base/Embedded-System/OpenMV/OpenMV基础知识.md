@@ -1,3 +1,10 @@
+---
+title: OpenMV基础知识
+date: 2026-08-01
+tags: [Embedded, OpenMV]
+aliases: []
+---
+
 # 1.感光元件-OpenMV初认识
 
 OpenMV中使用==image.lens_corr(1.8)==来矫正2.8mm焦距的镜头。（鱼眼效果也叫桶型畸变）

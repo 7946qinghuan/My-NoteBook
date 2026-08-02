@@ -1,3 +1,10 @@
+---
+title: "Python deque vs list [] 复习笔记"
+date: 2026-04-16
+tags: [Dev, Python]
+aliases: []
+---
+
 # Python deque vs list [] 复习笔记
 
 ## 一、核心结论（必记）

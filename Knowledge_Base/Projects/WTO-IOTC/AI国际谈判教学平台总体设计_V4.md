@@ -1,3 +1,10 @@
+---
+title: AI国际谈判教学平台总体设计_V4
+date: 2026-07-22
+tags: [Project, WTO-IOTC]
+aliases: []
+---
+
 # AI国际谈判教学平台总体设计（V4）
 
 > Version：V4.0 适用范围：WTO《渔业补贴协定》、RFMO（IOTC）及后续国际组织谈判模拟 

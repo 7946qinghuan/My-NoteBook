@@ -1,3 +1,10 @@
+---
+title: PPT母版
+date: 2026-07-10
+tags: [Productivity, Office]
+aliases: []
+---
+
 ## 封面页
 
 ![image-20260710103128408](https://cdn.statically.io/gh/comet-7x/My-NoteBook/main/images/202607101031885.png)
