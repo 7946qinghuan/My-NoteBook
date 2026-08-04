@@ -1,7 +1,9 @@
 ---
 title: Typora与Obsidian原生默认快捷键对比避坑全笔记
 date: 2026-07-30
-tags: [Productivity, Obsidian]
+tags:
+  - Productivity
+  - Obsidian
 aliases: []
 ---
 
@@ -14,12 +16,21 @@ aliases: []
 提前厘清原生底层逻辑，是熟练使用双软件的核心前提，规避高频误操作：
 
 1. **Obsidian块级格式无默认快捷键**：秉持Markdown语法优先原则，1-6级标题、代码块、表格、引用块、公式块均无原生快捷键，需手动输入语法符号实现，并非默认支持Win端 Ctrl+1~6、Ctrl+Shift+K 等操作。
-    
-2. **文件打开快捷键错位**：Typora Win端 Ctrl+P / Mac端 Cmd+P=快速打开文件；Obsidian Mac端 Cmd+P / Win端 Ctrl+P 为核心命令面板，Obsidian 快速打开文件默认快捷键为 Mac端 Cmd+O / Win端 Ctrl+O。
+    > 补充：`Cmd+1`~`Cmd+8` 虽然不是标题键，但**默认被「跳转到第 N 个标签页」占用**（全平台一致）。想把它绑给标题，就要接受失去键盘切标签页的能力。详见 7.2。
+
+2. **`P` 键在两款软件里含义完全不同**（分开看，别混成一句记）：
+
+    | 软件 / 平台 | `Ctrl/Cmd + P` 实际是什么 | 快速打开文件是哪个键 |
+    | --- | --- | --- |
+    | Typora Windows | 快速打开文件 | `Ctrl+P` |
+    | **Typora Mac** | **打印（Print…）** | **`Cmd+Shift+O`**（菜单项 Open Quickly…） |
+    | Obsidian 全平台 | **命令面板** | `Mod+O`（快速切换器） |
+
+    > ⚠️ 早期版本此处写"Typora Mac 端 Cmd+P = 快速打开文件"，**是错的**——已从 Typora 1.14.6 的 `MainMenu.nib` 验证：`Print…` 的 keyEquivalent 是小写 `p`（即 `Cmd+P`），而 `Open Quickly…` 是大写 `O`（AppKit 里大写字母表示含 Shift，即 `Cmd+Shift+O`）。这与第三章表格一致。
     
 3. **表格快捷键逻辑严重冲突**：Typora Win端 Ctrl+T=插入表格、Mac端 Cmd+Option+T=插入表格；Obsidian Win端 Ctrl+T / Mac端 Cmd+T=新建标签页，混用极易触发误操作。
     
-4. **Ctrl+Shift+K功能归属错误**：Win端 Ctrl+Shift+K、Mac端 Cmd+Shift+K 并非Obsidian原生快捷键，仅为VS Code或Obsidian第三方插件（Code Editor Shortcuts等）的删除整行功能，软件原生无此配置。
+4. **删除整行的真实归属**：`Ctrl+Shift+K` / `Cmd+Shift+K` 确实**不是** Obsidian 快捷键（那是 VS Code 的删行键）。但 Obsidian **原生自带删除整行**，命令名叫「删除段落 / Delete paragraph」，默认键是 **`Ctrl+D` / `Cmd+D`**。所以"Obsidian 无原生删行"的说法同样是错的——只是命令名叫"删除段落"，按"删除行"去搜容易搜不到。
     
 5. **任务清单快捷键偏差**：Obsidian原生切换复选框/任务状态快捷键为 Win端 Ctrl+L / Mac端 Cmd+L，而非 Ctrl+Shift+C，彻底纠正按键记忆偏差。
 
@@ -33,7 +44,9 @@ aliases: []
 
 ### 2\.2 双平台完全一致按键（无系统差异）
 
-纯功能单键、基础编辑操作全平台通用：`Tab / Shift+Tab`（缩进）、`Home / End`（行首尾）、`F8/F9`（专注/打字机模式）、`Enter/Backspace/Delete`（基础编辑）。
+纯功能单键、基础编辑操作全平台通用：`Tab / Shift+Tab`（缩进）、`Home / End`（行首尾）、`Enter/Backspace/Delete`（基础编辑）。
+
+**注意 `F8/F9` 不属于本类**：它们是 Typora 的专注/打字机模式键，但**仅 Windows 可直接用**，Mac 上被系统功能键占用，属于平台差异项，见下方说明。
 > 1. Typora F8（专注模式）、F9（打字机模式）仅 Windows 原生直接可用；Mac 系统默认占用 F8/F9 功能键，直接按下无响应，需手动调整。
 
 
@@ -54,8 +67,6 @@ aliases: []
 | 新建文档 / 笔记    | Ctrl\+N                               | Cmd\+N                              |
 | 关闭当前标签/文件    | Ctrl\+W                               | Cmd\+W                              |
 | 插入行内代码       | Ctrl\+\`                              | Cmd\+\`                             |
-|              |                                       |                                     |
-|              |                                       |                                     |
 
 ## 三、高危易混淆\&逻辑冲突清单（Win/Mac 双平台完整版）
 
@@ -65,7 +76,7 @@ aliases: []
 
 |功能场景|Typora（Win）|Typora（Mac）|Obsidian（Win原生）|Obsidian（Mac原生）|避坑核心解析|
 |---|---|---|---|---|---|
-|快速打开文件|Ctrl\+P|Cmd\+Shift\+O|Ctrl\+O|Cmd\+O|Mac Typora 彻底无 Ctrl\+P 开文件，与双软件Win逻辑完全不同，是最高频误操作点|
+|快速打开文件|Ctrl\+P|Cmd\+Shift\+O（菜单 Open Quickly…）|Ctrl\+O|Cmd\+O|Mac Typora 无 Ctrl\+P 开文件；且 Typora Mac 的 Cmd\+P 是**打印**，误按会弹打印面板|
 |命令面板|无|无|Ctrl\+P|Cmd\+P|Obsidian全平台统一：P键专属命令面板，不用于打开文件|
 |插入表格/新建标签页|Ctrl\+T（插表格）|Cmd\+Option\+T（插表格）|Ctrl\+T（新标签）|Cmd\+T（新标签）|全平台逻辑冲突：Obsidian T键永远开新标签；Mac Typora无Ctrl\+T插表格快捷键|
 
@@ -77,9 +88,9 @@ aliases: []
 | 插入代码块    | Ctrl\+Shift\+K | Cmd\+Option\+C | 无               | 无               | Mac/Win Typora代码块快捷键不统一，Obsidian全平台原生无快捷键 |
 | 插入引用块    | Ctrl\+Shift\+Q | Cmd\+Option\+Q | 无               | 无               | Typora双平台按键不同，Obsidian需手动输入语法             |
 | 插入公式块    | Ctrl\+Shift\+M | Cmd\+Option\+B | 无               | 无               | 公式块快捷键为Typora专属，且Mac/Win组合完全不同            |
-| 切换任务复选框  | Ctrl\+Shift\+X | Cmd\+Shift\+X  | Ctrl\+L         | Cmd\+L          | Obsidian全平台统一用L键切换任务，与Typora形成冲突          |
+| 切换任务复选框  | Ctrl\+Shift\+X | Cmd\+Option\+X  | Ctrl\+L         | Cmd\+L          | Typora Mac 菜单项 Task List 实为 Cmd\+Option\+X（nib 验证），非 Cmd\+Shift\+X；Obsidian 全平台用 L 键切换任务 |
 | 选中整行     | Ctrl\+L        | Cmd\+L         | 无               | 无               | 跨平台核心冲突：L键在两款软件功能完全互换                     |
-| 删除整行（原生） | Ctrl\+Shift\+D | Cmd\+Shift\+D  | Ctrl\+Shift\+K  | Cmd\+Shift\+K   | Obsidian全平台原生自带删行快捷键，并非插件专属，修正前期误区        |
+| 删除整行（原生） | Ctrl\+Shift\+D | Cmd\+Shift\+D  | Ctrl\+D  | Cmd\+D   | Obsidian 原生命令名为「删除段落 Delete paragraph」，默认 Mod\+D；Ctrl\+Shift\+K 是 VS Code 的键，Obsidian 无此绑定 |
 | 视图模式切换   | Ctrl\+/        | Cmd\+/         | Ctrl\+E         | Cmd\+E          | 双软件视图快捷键不互通，全平台逻辑一致                       |
 
 ### 3\. 行操作与视图切换（细节易错点）
@@ -87,8 +98,39 @@ aliases: []
 |功能场景|Typora 快捷键|Obsidian（原生默认）快捷键|避坑核心解析|
 |---|---|---|---|
 |选中整行|Ctrl\+L|无默认快捷键|关键逻辑冲突：Typora Ctrl\+L=选整行，Obsidian Ctrl\+L=切换任务状态，绝对不能混用|
-|删除整行|Ctrl\+Shift\+D|无默认快捷键|网传Obsidian Ctrl\+Shift\+K删行均为插件/编辑器逻辑，原生无此功能|
+|删除整行|Ctrl\+Shift\+D|Ctrl\+D（命令名「删除段落」）|网传 Obsidian Ctrl\+Shift\+K 删行确为 VS Code 逻辑；但 Obsidian 自带原生删行，只是命令名叫「删除段落」，按「删除行」搜索容易漏掉|
 |编辑/预览模式切换|Ctrl\+/（源码/即时渲染切换）|Ctrl\+E（编辑/阅读模式切换）|两款软件视图逻辑不同，快捷键不通用，需单独记忆|
+
+### 4\. Typora Mac 源码级验证表（1.14.6）
+
+数据来自 `Typora.app/Contents/Resources/Base.lproj/MainMenu.nib` 的菜单项定义。
+**解码规则**：AppKit 的 keyEquivalent 中，**小写字母 = 不带 Shift，大写字母 = 带 Shift**。
+
+| Typora 菜单项 | Mac 快捷键 | 与 Obsidian 的关系 |
+| --- | --- | --- |
+| Print… | `Cmd+P` | ⚠️ Obsidian 的 `Cmd+P` 是命令面板 |
+| Open… | `Cmd+O` | ⚠️ Obsidian 的 `Cmd+O` 是快速切换器 |
+| Open Quickly… | `Cmd+Shift+O` | 对应 Obsidian 的 `Cmd+O` |
+| Reopen Closed File | `Cmd+Shift+T` | ✅ 与 Obsidian「恢复关闭的标签页」**恰好一致** |
+| **Select Word / Delete Word** | **`Cmd+D`** | 🔥 **高危**：Obsidian 的 `Cmd+D` 是**删除整行**，误按会直接删掉一行 |
+| Select Line / Sentence | `Cmd+L` | 🔥 Obsidian 的 `Cmd+L` 是切换任务复选框 |
+| Source Code Mode | `Cmd+/` | Obsidian 的 `Cmd+/` 是切换注释 |
+| Insert Table | `Cmd+Option+T` | Obsidian 无（`Cmd+T` 是新建标签页） |
+| Code Fences | `Cmd+Option+C` | Obsidian 无 |
+| Math Block | `Cmd+Option+B` | Obsidian 无 |
+| Task List | `Cmd+Option+X` | 对应 Obsidian 的 `Cmd+L` |
+| Increase / Decrease Heading Level | `Cmd+=` / `Cmd+-` | Obsidian 无对应命令 |
+| Clear Format | `Cmd+\` | Obsidian 有「清除格式」命令但无默认键 |
+| Delete Paragraph / Block | `Cmd+Option+P` | 对应 Obsidian 的 `Cmd+D` |
+| Jump to Line Start / End | `Ctrl+A` / `Ctrl+E` | Emacs 风格，macOS 全局通用 |
+| Jump to Selection | `Cmd+J` | Obsidian 无 |
+| Outline / Articles / File Tree | `Cmd+Ctrl+1/2/3` | 对应 Obsidian 的左侧栏切换（无默认键） |
+| Save All… | `Cmd+Option+S` | Obsidian 自动保存，无需此操作 |
+| Footnotes | `Cmd+Option+R` | Obsidian 无 |
+
+> 🔥 **两个最容易误伤的键**（笔记早期版本完全没提）：
+> - **`Cmd+D`**：Typora 里是"选中单词"（无害），Obsidian 里是"**删除整行**"（破坏性）。从 Typora 切到 Obsidian 后误按，会静默删掉光标所在行。
+> - **`Cmd+L`**：Typora 选中整行，Obsidian 切换任务复选框——两边都不报错，但结果完全不同。
 
 ## 四、软件专属特色快捷键（核心特色功能）
 
@@ -115,7 +157,7 @@ aliases: []
     
 - 打开笔记关系图谱：Win **Ctrl+G** / Mac **Cmd+G**
     
-- - 快速开关左侧侧边栏：Win **Ctrl+\\**（原生默认有效）；Mac 无任何原生默认快捷键
+- 快速开关左侧侧边栏：**Win / Mac 均无原生默认快捷键**（源码中 `app:toggle-left-sidebar` 无 hotkeys 字段），两个平台都必须自行绑定
     
 - 双链笔记快速引用：输入\[\[ 自动触发笔记补全（全平台一致）
     
@@ -134,6 +176,8 @@ aliases: []
 
 5. **L键功能互逆**：Typora全平台L键选整行，Obsidian全平台L键切换任务复选框。
 
+6. **`Cmd+D` 是最危险的一个**：Typora 里选中单词（无害），Obsidian 里删除整行（破坏性）。跨软件切换时最该警惕这一个。
+
 ## 六、跨平台终极适配优化方案（Win/Mac 通用对齐）
 
 为彻底统一 Win/Mac 双平台、双软件操作逻辑，杜绝跨设备使用冲突，适配方案区分系统，操作路径统一：**Obsidian设置 → 快捷键 → 搜索功能绑定按键**，具体适配规则：
@@ -142,70 +186,119 @@ aliases: []
 
 2. **代码块快捷键统一**：Win绑定 `Ctrl+Shift+K` 对齐Typora；Mac可自定义绑定，规避原生组合键繁琐问题。
 
-3. **表格按键冲突修复**：将Obsidian原生「新建标签页」快捷键（Win Ctrl\+T / Mac Cmd\+T）改为 `Ctrl+Shift+T / Cmd+Shift+T`，把 `Ctrl+T / Cmd+T` 留给插入表格，统一双软件操作逻辑。
+3. **表格按键冲突修复**：将Obsidian原生「新建标签页」快捷键（Win Ctrl\+T / Mac Cmd\+T）改为 `Ctrl+Alt+T / Cmd+Option+T`，把 `Ctrl+T / Cmd+T` 留给插入表格，统一双软件操作逻辑。
+    > ⚠️ 早期版本此处曾写"改为 `Ctrl+Shift+T / Cmd+Shift+T`"，**那是错的**：`Mod+Shift+T` 是 Obsidian 原生「恢复关闭的标签页」（`workspace:undo-close-pane`），直接撞车。详见第七章。
 
 4. **跨设备通用原则**：优先适配主控键（Win\-Ctrl/Mac\-Cmd），仅保留一套肌肉记忆，切换设备无需重新适应。
 
 
-## 七、Win/Mac 专属 Obsidian 高频自定义快捷键方案
+## 七、Obsidian 快捷键配置方案（2026-08 实测重写）
 
-本章为**原生无快捷键、原生按键冲突、高频刚需操作**的针对性补充配置，区分 Windows / Mac 双平台独立适配，完全对齐 Typora 排版习惯，彻底根除肌肉记忆冲突，所有配置均为实测稳定、无系统层级抢占、适配日常高频笔记操作。统一设置路径：**Obsidian 设置 → 快捷键 → 搜索对应功能 → 绑定指定按键**。
+> **本章数据来源**：直接从 Obsidian **1.12.7** 的 `obsidian.asar → app.js` 中提取命令注册表，不是网络转载。
+> 旧版第七章的多处结论已被证伪（详见 7.5 勘误表），本章为修正后版本。
 
-### 7.1 通用基础排版自定义（双平台统一逻辑）
+### 7.1 源码级验证：Obsidian 原生默认快捷键真值表
 
-解决 Obsidian 原生无块级格式快捷键、排版效率低的核心问题，完全复刻 Typora 操作逻辑：
+Mod = Mac 的 `Cmd` / Windows 的 `Ctrl`。**这张表是判断"会不会冲突"的唯一依据。**
 
-- **切换标题 1~6**：Win 绑定 `Ctrl+1~6` / Mac 绑定 `Ctrl+1~6`（Mac端 `Cmd+1~6` 默认用于跳转到相关子标题，不适合绑定标题格式功能），一键快速设置各级标题，无需手动输入 # 语法
-    
-- **插入代码块**：Win 绑定 `Ctrl+Shift+K` / Mac 绑定 `Cmd+Shift+K`，统一双软件代码块插入快捷键
-    
-- **插入表格**：Win 绑定 `Ctrl+T` / Mac 绑定 `Cmd+T`；为避开原生「恢复关闭标签页」快捷键冲突，将 Obsidian 原生「新建标签页」改为 `Ctrl+Alt+T / Cmd+Option+T`，零冲突、完美统一 Typora 表格快捷键习惯
-    
+| 功能 | 命令 ID | 默认键 |
+| --- | --- | --- |
+| 加粗 | `editor:toggle-bold` | `Mod+B` |
+| 斜体 | `editor:toggle-italics` | `Mod+I` |
+| 插入链接 | `editor:insert-link` | `Mod+K` |
+| **切换任务复选框** | `editor:toggle-checklist-status` | **`Mod+L`** |
+| **删除整行（命令名「删除段落」）** | `editor:delete-paragraph` | **`Mod+D`** |
+| 切换注释 | `editor:toggle-comments` | `Mod+/` |
+| 命令面板 | `command-palette:open` | `Mod+P` |
+| 快速切换器（打开文件） | `switcher:open` | `Mod+O` |
+| 全局搜索 | `global-search:open` | `Mod+Shift+F` |
+| 关系图谱 | `graph:open` | `Mod+G` |
+| 编辑/阅读切换 | `markdown:toggle-preview` | `Mod+E` |
+| 新建标签页 | `workspace:new-tab` | `Mod+T` |
+| **恢复关闭的标签页** | `workspace:undo-close-pane` | **`Mod+Shift+T`** |
+| **跳转到第 1–8 个标签页** | `workspace:goto-tab-1..8` | **`Mod+1` ~ `Mod+8`** |
+| 跳转到最后一个标签页 | `workspace:goto-last-tab` | `Mod+9` |
+| 后退 | `app:go-back` | `Mod+Alt+←` |
 
-### 7.2 Windows 专属必改快捷键（补齐原生短板）
+**确认无任何默认快捷键的命令**（想用必须自己绑）：
+1–6 级标题、插入代码块、引用块、行内代码、行内公式、公式块、高亮、源码模式、
+左侧栏开关（`app:toggle-left-sidebar`）、右侧栏开关、面板分屏。
 
-针对 Windows 版 Obsidian 原生功能缺失、操作繁琐问题，针对性优化：
+> 📌 三个最容易被网络文章带偏的点：
+> 1. **删除整行是有原生键的**（`Mod+D`），只是命令名叫「删除段落」，你搜"删除行"搜不到。`Ctrl+Shift+K` 是 VS Code 的键，Obsidian 从来没有过。
+> 2. **左侧栏开关全平台都没有默认键**，网传的 `Ctrl+\` 不存在。
+> 3. **`Mod+1`~`Mod+8` 默认是切换标签页**，全平台一致（源码里用 `for` 循环批量注册，所以很多人查不到）。
 
-- **删除整行**：保留原生 `Ctrl+Shift+K`（原生自带有效，无需修改），适配 VS Code、Typora 编辑习惯
-    
-- **开关左侧侧边栏**：保留原生 `Ctrl+\`，稳定可用，无需自定义
-    
-- **插入引用块**：自定义绑定 `Ctrl+Shift+Q`，对齐 Typora 快捷键，快速插入引用格式
-    
-- **公式块插入**：自定义绑定`Ctrl+Shift+M`，统一排版操作逻辑
-    
+### 7.2 绑定前必须知道的三个占用陷阱
 
-### 7.3 Mac 专属必改快捷键（解决系统冲突+补齐缺失功能）
+| 你想绑的键 | 默认被谁占了 | 后果 |
+| --- | --- | --- |
+| `Mod+1~6`（标题） | 跳转到第 1–6 个标签页 | 绑了之后就**没法用键盘切标签页**了（`Mod+7/8/9` 还在） |
+| `Mod+Shift+T`（新建标签页备用位） | 恢复关闭的标签页 | 会误触"复活刚关掉的标签" |
+| `Mod+D`（想留给别的功能） | 删除整行 | 覆盖掉原生删行 |
 
-Mac 是重点优化对象，原生大量高频操作无默认快捷键、按键被系统抢占，以下为**唯一稳定、无冲突**的自定义方案：
+Obsidian 的快捷键设置界面**会主动显示冲突警告**（被占用的键旁边有黄色感叹号），所以不用死记——绑的时候看一眼提示即可。
 
-- **开关左侧侧边栏**：Mac 原生无默认按键，在快捷键设置内**精准搜索：切换左侧边栏 / Toggle left sidebar**，推荐自定义绑定 `Cmd+Shift+[`（无系统抢占、实测可搜到、稳定触发）
-    
-- **删除整行**：原生无快捷键，推荐绑定 `Cmd+Shift+K`，对齐 Windows 与 Typora 操作习惯
-    
-- **插入引用块**：原生无快捷键，绑定 `Cmd+Option+Q`，复刻 Mac Typora 原生按键，零学习成本
-    
-- **插入公式块**：原生无快捷键，绑定 `Cmd+Option+B`，统一双软件公式编辑逻辑
-    
-- **避免系统按键冲突兜底规则**：Mac 禁止使用 `Cmd+[ / Cmd+]`、`Cmd+T` 原生冲突按键做自定义功能，优先使用组合修饰键，稳定性拉满
-    
+### 7.3 当前实际配置（Mac，已生效）
 
-### 7.4 高阶高效自定义（全平台通用进阶配置）
+以下是本机 `.obsidian/hotkeys.json` 里的真实绑定，风格是 **`Cmd+Shift+字母` = 插入块级元素**：
 
-- **切换任务复选框**：保持原生 Win `Ctrl+L` / Mac `Cmd+L`，固定记忆逻辑，不建议修改
-    
-- **编辑/预览模式切换**：默认 Win `Ctrl+E` / Mac `Cmd+E`，全平台统一，无需改动
-    
-- **快速打开文件/命令面板**：保持原生 O/P 按键区分，杜绝导航逻辑混乱
-    
+| 功能 | 绑定键 | 说明 |
+| --- | --- | --- |
+| 切换标题 1–6 | `Cmd+1` ~ `Cmd+6` | 对齐 Typora；代价是放弃 `Cmd+1~6` 切标签页 |
+| 插入代码块 | `Cmd+Shift+K` | 对齐 Typora Windows 端习惯 |
+| 公式块 | `Cmd+Shift+M` | 对齐 Typora Win 的 `Ctrl+Shift+M` |
+| 行内公式 | `Cmd+M` | |
+| 无序列表 | `Cmd+Shift+L` | |
+| 有序列表 | `Cmd+Shift+O` | |
+| 行内代码 | ``Cmd+Shift+` `` | |
+| 高亮 | `Alt+G` | |
 
-### 7.5 自定义避坑铁律（关键提醒）
+以上全部**不与任何原生默认键冲突**（已逐条比对 7.1 真值表），唯一的取舍是标题键占用了标签页跳转。
 
-1. 所有自定义按键**禁止与系统全局快捷键冲突**，Mac 优先规避系统占用的 F 键、基础组合键
-    
-2. 双设备混用用户，严格遵循「Win=Ctrl、Mac=Cmd」主控键统一规则，仅修饰键微调，保留一套肌肉记忆
-    
-3. 不随意修改 Obsidian 核心原生导航键（O/P/E/G），避免破坏软件底层操作逻辑
+### 7.4 建议补齐的空缺
+
+原生无键、且日常高频，建议补上：
+
+| 功能 | 建议键 | 理由 |
+| --- | --- | --- |
+| 插入模板（Templates） | `Cmd+Shift+I` | I = Insert；`Cmd+Shift+I` 未被占用 |
+| 打开今天的每日笔记 | `Cmd+Shift+D` | D = Daily；注意别用 `Cmd+D`（那是删除整行） |
+| 开关左侧栏 | `Cmd+Shift+\` | 原生无键，两个平台都得自己绑 |
+| 插入引用块 | `Cmd+Shift+Q` | 对齐 Typora Win 的 `Ctrl+Shift+Q` |
+| 插入表格 | `Cmd+T` | 想对齐 Typora 的话，需先把「新建标签页」改到 `Cmd+Option+T`（**不能用 `Cmd+Shift+T`**，那是恢复关闭标签页） |
+
+**关于插入模板的使用姿势**（核心 Templates 插件是"在光标处插入"，不是"应用到整篇"）：
+
+```
+Cmd+N          新建笔记，光标在标题栏
+先输入笔记标题    ← 不能跳过
+Enter          进入正文
+Cmd+Shift+I    插入模板
+```
+
+标题必须先写，因为 `{{title}}` 取的是文件名；跳过这步会得到 `title: Untitled`。
+
+### 7.5 旧版第七章勘误表
+
+| 旧版说法                               | 实际情况                                                 |
+| ---------------------------------- | ---------------------------------------------------- |
+| 「删除整行：保留原生 `Ctrl+Shift+K`，原生自带有效」  | ❌ Obsidian 无 `Ctrl+Shift+K`；原生删行是 `Mod+D`（命令名「删除段落」） |
+| 「Mac 删除整行原生无快捷键，推荐绑 `Cmd+Shift+K`」 | ❌ Mac 同样有原生 `Cmd+D`，不必自定义                            |
+| 「开关左侧栏：保留原生 `Ctrl+\`，稳定可用」         | ❌ 全平台均无此默认键，必须自绑                                     |
+| 「Mac `Cmd+1~6` 默认用于跳转到相关子标题」       | ❌ 是**跳转标签页**，且全平台一致，非 Mac 专属                         |
+| 「Mac 建议标题绑 `Ctrl+1~6`」             | ⚠️ 没必要。`Cmd+1~6` 可以正常绑定，只需接受失去标签页跳转                  |
+| 第六章「新建标签页改到 `Ctrl+Shift+T`」        | ❌ 与原生「恢复关闭的标签页」冲突，应改到 `Mod+Option+T`                 |
+|                                    |                                                      |
+
+### 7.6 自定义避坑铁律
+
+1. 绑定前先查 7.1 真值表，或直接看设置界面的冲突警告，不要凭网络文章。
+2. 双设备用户遵循「Win=Ctrl、Mac=Cmd」主控键统一，只保留一套肌肉记忆。
+3. 不要动 Obsidian 的核心导航键（`O`/`P`/`E`/`G`），那是全局肌肉记忆的地基。
+4. 改键前先备份 `.obsidian/hotkeys.json`，改坏了可以直接还原。
+
+> **自查方法**：想确认某个键当前归谁，去 设置 → 快捷键，搜索框旁边可以筛选"已自定义"，或直接在搜索框按下那个组合键（Obsidian 支持按键搜索），能直接列出占用它的命令。
 
 > （注：部分内容可能由 AI 生成）
 
