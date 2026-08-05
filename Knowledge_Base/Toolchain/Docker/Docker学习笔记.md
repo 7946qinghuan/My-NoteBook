@@ -483,19 +483,19 @@ docker run -v /home/me/nginx.conf:/etc/nginx/nginx.conf:ro nginx
 2. **构建缓存（Build Cache）** 重新构建时，Docker 从上到下逐条比对：只要这一条指令和它的输入没变，就直接复用上次的层，秒过。**一旦某一层变了，它下面所有层的缓存全部作废，必须重建。** 🎮 说明书第 3 步改了，那第 3 步之后的所有工序都得重新走一遍；但第 1、2 步的半成品可以直接从仓库里拿。
     
 3. **删除文件并不能让镜像变小** ⚠️ 如果你在第 3 层下载了一个 500MB 的文件，在第 5 层 `rm` 掉它——**镜像还是大了 500MB**。因为第 3 层是只读的、永远存在的，第 5 层只是"遮住"了它。 🎮 你在第 5 层母版上贴了张贴纸盖住第 3 层的内容，但第 3 层的物理厚度一点没减。 **正确做法**：下载和删除必须写在**同一条 `RUN` 里**：
-    
-    ```dockerfile
-    # ❌ 错误：镜像里永远留着那个压缩包
-    RUN wget https://example.com/big.tar.gz
-    RUN tar -xzf big.tar.gz
-    RUN rm big.tar.gz
-    
-    # ✅ 正确：三步在同一层完成，最终层里没有压缩包
-    RUN wget https://example.com/big.tar.gz \
-        && tar -xzf big.tar.gz \
-        && rm big.tar.gz
-    ```
-    
+
+```dockerfile
+# ❌ 错误：镜像里永远留着那个压缩包
+RUN wget https://example.com/big.tar.gz
+RUN tar -xzf big.tar.gz
+RUN rm big.tar.gz
+
+# ✅ 正确：三步在同一层完成，最终层里没有压缩包
+RUN wget https://example.com/big.tar.gz \
+	&& tar -xzf big.tar.gz \
+	&& rm big.tar.gz
+```
+ 
 
 ## 3.2 方案一：`docker commit`（手工修改后"翻刻光盘"）
 
