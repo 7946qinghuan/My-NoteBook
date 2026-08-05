@@ -278,7 +278,7 @@ registry.example.com/myteam/webapp:1.4.2
 
 `docker stop` 和 `docker rm` 是**两件完全不同的事**，但因为口语里都叫"关掉它"，几乎所有人第一天都会搞混。
 
-||`docker stop <容器>`|`docker rm <容器>`|
+|-|`docker stop <容器>`|`docker rm <容器>`|
 |---|---|---|
 |**做了什么**|让容器里的主进程停下来|把容器这个"实体"从系统里彻底抹掉|
 |**之后的状态**|`Exited`，仍然存在|不存在了|
