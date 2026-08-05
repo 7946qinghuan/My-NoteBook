@@ -121,11 +121,11 @@ aliases: []
 
 ## 0.5.1 该装哪个？
 
-|你的系统|装什么|说明|
-|---|---|---|
-|**Windows 10/11**|Docker Desktop|需要先启用 WSL 2（Windows Subsystem for Linux）。安装向导通常会引导你完成|
-|**macOS**（Intel / Apple 芯片都可以）|Docker Desktop|注意下载对应芯片的版本|
-|**Linux**（Ubuntu / Debian / CentOS 等）|Docker Engine|服务器上装这个就够了，不需要图形界面|
+| 你的系统                                  | 装什么            | 说明                                                    |
+| ------------------------------------- | -------------- | ----------------------------------------------------- |
+| **Windows 10/11**                     | Docker Desktop | 需要先启用 WSL 2（Windows Subsystem for Linux）。安装向导通常会引导你完成 |
+| **macOS**（Intel / Apple 芯片都可以）        | Docker Desktop | 注意下载对应芯片的版本                                           |
+| **Linux**（Ubuntu / Debian / CentOS 等） | Docker Engine  | 服务器上装这个就够了，不需要图形界面                                    |
 
 > ⚠️ **授权提醒（工程师必须知道）** **Docker Engine 本身是开源免费的**（Apache 2.0）。但 **Docker Desktop** 这个带图形界面的桌面产品有商业授权限制： 个人、教育、非商业开源项目，以及**员工少于 250 人且年营收低于 1000 万美元**的小企业可以免费使用； 超过这个门槛的公司用于商业用途需要付费订阅。 在公司电脑上安装前，请先确认这一点。Linux 服务器上直接装 Docker Engine 不受此限制。
 
