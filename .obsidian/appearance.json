@@ -1,6 +1,8 @@
 {
-  "accentColor": "#5ca6f5",
-  "cssTheme": "Border",
+  "accentColor": "",
+  "cssTheme": "Minimal",
   "theme": "obsidian",
-  "nativeMenus": false
+  "nativeMenus": false,
+  "baseFontSize": 17,
+  "baseFontSizeAction": true
 }
