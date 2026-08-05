@@ -457,8 +457,8 @@ docker run -v /home/me/nginx.conf:/etc/nginx/nginx.conf:ro nginx
 ┌─────────────────────────────┐  ← 容器可写层（薄薄一层，容器删了就没）
 ├─────────────────────────────┤
 │ 第4层：CMD 启动命令（元数据） │  ┐
-│ 第3层：COPY . .  你的代码     │  │
-│ 第2层：RUN pip install 依赖   │  ├─ 镜像（只读，层层叠压）
+│ 第3层：COPY . . 你的代码     │  │
+│ 第2层：RUN pip install 依赖  │  ├─ 镜像（只读，层层叠压）
 │ 第1层：WORKDIR /app          │  │
 │ 第0层：FROM python:3.13-slim │  ┘
 └─────────────────────────────┘
