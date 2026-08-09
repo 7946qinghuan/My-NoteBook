@@ -1,6 +1,7 @@
 ---
 title: Typora与Obsidian原生默认快捷键对比避坑全笔记
-date: 2026-07-30
+create_at: 2026-07-30
+update_at: 2026-08-08
 tags:
   - Productivity
   - Obsidian
