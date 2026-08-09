@@ -1,3 +1,4 @@
 {
-  "folder": "meta/templates"
+  "folder": "meta/templates",
+  "dateFormat": "YYYY-MM-DD"
 }
