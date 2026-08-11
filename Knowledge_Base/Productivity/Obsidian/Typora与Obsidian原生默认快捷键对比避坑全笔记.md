@@ -68,7 +68,9 @@ aliases: []
 | 新建文档 / 笔记       | Ctrl\+N                               | Cmd\+N                              |
 | 关闭当前标签/文件       | Ctrl\+W                               | Cmd\+W                              |
 | 插入行内代码（不是原生需设置） | Ctrl\+\`                              | Crtl\+\`                            |
-| 插入数学公式（不是原生需设置） | Crtl + M                              | Cmd + M                             |
+| 插入代码块（不是原生需设置）  | Ctrl\+Shift\+K                        | Cmd\+Shift\+K                       |
+| 插入数学公式（不是原生需设置） | Crtl \+ M                             | Cmd \+ M                            |
+| 插入数学块（不是原生需设置）  | Crtl \+ Shift \+ M                    | Cmd \+ Shift \+ M                   |
 
 ## 三、高危易混淆\&逻辑冲突清单（Win/Mac 双平台完整版）
 
@@ -84,16 +86,16 @@ aliases: []
 
 ### 2\. 文本排版与块级元素（排版操作核心差异）
 
-| 功能场景     | Typora（Win）    | Typora（Mac）    | Obsidian（Win原生） | Obsidian（Mac原生） | 避坑核心解析                                    |
-| -------- | -------------- | -------------- | --------------- | --------------- | ----------------------------------------- |
-| 1\-6级标题  | Ctrl\+1\~6     | Cmd\+1\~6      | 无               | 无               | Typora全平台支持标题快捷键，Obsidian原生全平台均无          |
-| 插入代码块    | Ctrl\+Shift\+K | Cmd\+Option\+C | 无               | 无               | Mac/Win Typora代码块快捷键不统一，Obsidian全平台原生无快捷键 |
-| 插入引用块    | Ctrl\+Shift\+Q | Cmd\+Option\+Q | 无               | 无               | Typora双平台按键不同，Obsidian需手动输入语法             |
-| 插入公式块    | Ctrl\+Shift\+M | Cmd\+Option\+B | 无               | 无               | 公式块快捷键为Typora专属，且Mac/Win组合完全不同            |
-| 切换任务复选框  | Ctrl\+Shift\+X | Cmd\+Option\+X  | Ctrl\+L         | Cmd\+L          | Typora Mac 菜单项 Task List 实为 Cmd\+Option\+X（nib 验证），非 Cmd\+Shift\+X；Obsidian 全平台用 L 键切换任务 |
-| 选中整行     | Ctrl\+L        | Cmd\+L         | 无               | 无               | 跨平台核心冲突：L键在两款软件功能完全互换                     |
-| 删除整行（原生） | Ctrl\+Shift\+D | Cmd\+Shift\+D  | Ctrl\+D  | Cmd\+D   | Obsidian 原生命令名为「删除段落 Delete paragraph」，默认 Mod\+D；Ctrl\+Shift\+K 是 VS Code 的键，Obsidian 无此绑定 |
-| 视图模式切换   | Ctrl\+/        | Cmd\+/         | Ctrl\+E         | Cmd\+E          | 双软件视图快捷键不互通，全平台逻辑一致                       |
+| 功能场景     | Typora（Win）    | Typora（Mac）    | Obsidian（Win原生） | Obsidian（Mac原生） | 避坑核心解析                                                                                     |
+| -------- | -------------- | -------------- | --------------- | --------------- | ------------------------------------------------------------------------------------------ |
+| 1\-6级标题  | Ctrl\+1\~6     | Cmd\+1\~6      | 无               | 无               | Typora全平台支持标题快捷键，Obsidian原生全平台均无                                                           |
+| 插入代码块    | Ctrl\+Shift\+K | Cmd\+Option\+C | 无               | 无               | Mac/Win Typora代码块快捷键不统一，Obsidian全平台原生无快捷键                                                  |
+| 插入引用块    | Ctrl\+Shift\+Q | Cmd\+Option\+Q | 无               | 无               | Typora双平台按键不同，Obsidian需手动输入语法                                                              |
+| 插入公式块    | Ctrl\+Shift\+M | Cmd\+Option\+B | 无               | 无               | 公式块快捷键为Typora专属，且Mac/Win组合完全不同                                                             |
+| 切换任务复选框  | Ctrl\+Shift\+X | Cmd\+Option\+X | Ctrl\+L         | Cmd\+L          | Typora Mac 菜单项 Task List 实为 Cmd\+Option\+X（nib 验证），非 Cmd\+Shift\+X；Obsidian 全平台用 L 键切换任务   |
+| 选中整行     | Ctrl\+L        | Cmd\+L         | 无               | 无               | 跨平台核心冲突：L键在两款软件功能完全互换                                                                      |
+| 删除整行（原生） | Ctrl\+Shift\+D | Cmd\+Shift\+D  | Ctrl\+D         | Cmd\+D          | Obsidian 原生命令名为「删除段落 Delete paragraph」，默认 Mod\+D；Ctrl\+Shift\+K 是 VS Code 的键，Obsidian 无此绑定 |
+| 视图模式切换   | Ctrl\+/        | Cmd\+/         | Ctrl\+E         | Cmd\+E          | 双软件视图快捷键不互通，全平台逻辑一致                                                                        |
 
 ### 3\. 行操作与视图切换（细节易错点）
 
