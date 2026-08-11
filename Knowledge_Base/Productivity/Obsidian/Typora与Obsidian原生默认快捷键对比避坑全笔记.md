@@ -68,7 +68,7 @@ aliases: []
 | 新建文档 / 笔记       | Ctrl\+N                               | Cmd\+N                              |
 | 关闭当前标签/文件       | Ctrl\+W                               | Cmd\+W                              |
 | 插入行内代码（不是原生需设置） | Ctrl\+\`                              | Crtl\+\`                            |
-| 插入代码块（不是原生需设置）  | Ctrl\+Shift\+K                        | Cmd\+Shift\+K                       |
+| 插入代码块           | Ctrl\+Shift\+K                        | Cmd\+Shift\+K                       |
 | 插入数学公式（不是原生需设置） | Crtl \+ M                             | Cmd \+ M                            |
 | 插入数学块（不是原生需设置）  | Crtl \+ Shift \+ M                    | Cmd \+ Shift \+ M                   |
 
