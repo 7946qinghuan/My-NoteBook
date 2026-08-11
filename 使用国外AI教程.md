@@ -13,4 +13,8 @@
 
 
 ## 手机下载VPN软件
+[VPN软件](https://file.baobeiyun.xyz/d/software/v2手机版.apk)
 
+## 注册谷歌账号
+1. 手机打开代理软件，导入代理地址，打开代理
+2. 登录Chrome浏览器，开始注册谷歌账号
