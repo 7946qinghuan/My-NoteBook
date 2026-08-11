@@ -71,6 +71,7 @@ aliases: []
 | 插入代码块           | Ctrl\+Shift\+K                        | Cmd\+Shift\+K                       |
 | 插入数学公式（不是原生需设置） | Crtl \+ M                             | Cmd \+ M                            |
 | 插入数学块（不是原生需设置）  | Crtl \+ Shift \+ M                    | Cmd \+ Shift \+ M                   |
+| 插入表格（不是原生需设置）   |                                       |                                     |
 
 ## 三、高危易混淆\&逻辑冲突清单（Win/Mac 双平台完整版）
 
