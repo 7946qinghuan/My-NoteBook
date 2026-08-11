@@ -53,21 +53,22 @@ aliases: []
 
 以下为双软件**Windows/Mac 跨平台适配版**通用操作，仅主控键随系统切换，功能逻辑完全统一，可直接复用。
 
-| 功能场景         | Windows（原生）                           | Mac（原生）                             |
-| ------------ | ------------------------------------- | ----------------------------------- |
-| 文本加粗         | Ctrl\+B                               | Cmd\+B                              |
-| 文本斜体         | Ctrl\+I                               | Cmd\+I                              |
-| 插入超链接        | Ctrl\+K                               | Cmd\+K                              |
-| 查找 / 替换      | Ctrl\+F / Ctrl\+H                     | Cmd\+F / Cmd\+H                     |
-| 撤销 / 重做      | Ctrl\+Z / Ctrl\+Y                     | Cmd\+Z / Cmd\+Shift\+Z              |
-| 复制 / 剪切 / 粘贴 | Ctrl\+C / Ctrl\+X / Ctrl\+V           | Cmd\+C / Cmd\+X / Cmd\+V            |
-| 粘贴纯文本        | Ctrl\+Shift\+V                        | Cmd\+Shift\+V                       |
-| 列表缩进/减少缩进    | Tab / Shift\+Tab（Ctrl\+\] / Ctrl\+\[） | Tab / Shift\+Tab（Cmd\+\] / Cmd\+\[） |
-| 文档顶部 / 底部    | Ctrl\+Home / Ctrl\+End                | Cmd\+↑ / Cmd\+↓                     |
-| 系统偏好/设置      | Ctrl\+,                               | Cmd\+,                              |
-| 新建文档 / 笔记    | Ctrl\+N                               | Cmd\+N                              |
-| 关闭当前标签/文件    | Ctrl\+W                               | Cmd\+W                              |
-| 插入行内代码       | Ctrl\+\`                              | Crtl\+\`（不是原生需设置）                   |
+| 功能场景            | Windows（原生）                           | Mac（原生）                             |
+| --------------- | ------------------------------------- | ----------------------------------- |
+| 文本加粗            | Ctrl\+B                               | Cmd\+B                              |
+| 文本斜体            | Ctrl\+I                               | Cmd\+I                              |
+| 插入超链接           | Ctrl\+K                               | Cmd\+K                              |
+| 查找 / 替换         | Ctrl\+F / Ctrl\+H                     | Cmd\+F / Cmd\+H                     |
+| 撤销 / 重做         | Ctrl\+Z / Ctrl\+Y                     | Cmd\+Z / Cmd\+Shift\+Z              |
+| 复制 / 剪切 / 粘贴    | Ctrl\+C / Ctrl\+X / Ctrl\+V           | Cmd\+C / Cmd\+X / Cmd\+V            |
+| 粘贴纯文本           | Ctrl\+Shift\+V                        | Cmd\+Shift\+V                       |
+| 列表缩进/减少缩进       | Tab / Shift\+Tab（Ctrl\+\] / Ctrl\+\[） | Tab / Shift\+Tab（Cmd\+\] / Cmd\+\[） |
+| 文档顶部 / 底部       | Ctrl\+Home / Ctrl\+End                | Cmd\+↑ / Cmd\+↓                     |
+| 系统偏好/设置         | Ctrl\+,                               | Cmd\+,                              |
+| 新建文档 / 笔记       | Ctrl\+N                               | Cmd\+N                              |
+| 关闭当前标签/文件       | Ctrl\+W                               | Cmd\+W                              |
+| 插入行内代码（不是原生需设置） | Ctrl\+\`                              | Crtl\+\`                            |
+| 插入数学公式（不是原生需设置） | Crtl + M                              | Cmd + M                             |
 
 ## 三、高危易混淆\&逻辑冲突清单（Win/Mac 双平台完整版）
 
