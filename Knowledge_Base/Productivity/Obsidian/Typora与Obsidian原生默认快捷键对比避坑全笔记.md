@@ -71,7 +71,6 @@ aliases: []
 | 插入代码块           | Ctrl\+Shift\+K                        | Cmd\+Shift\+K                       |
 | 插入数学公式（不是原生需设置） | Crtl \+ M                             | Cmd \+ M                            |
 | 插入数学块（不是原生需设置）  | Crtl \+ Shift \+ M                    | Cmd \+ Shift \+ M                   |
-| 插入表格            |                                       |                                     |
 
 ## 三、高危易混淆\&逻辑冲突清单（Win/Mac 双平台完整版）
 
@@ -79,11 +78,11 @@ aliases: []
 
 ### 1\. 核心导航与功能调出（最高频出错）
 
-| 功能场景   | Typora（Win）  | Typora（Mac）                     | Obsidian（Win原生） | Obsidian（Mac原生） | 避坑核心解析                                                          |
-| ------ | ------------ | ------------------------------- | --------------- | --------------- | --------------------------------------------------------------- |
-| 快速打开文件 | Ctrl\+P      | Cmd\+Shift\+O（菜单 Open Quickly…） | Ctrl\+O         | Cmd\+O          | Mac Typora 无 Ctrl\+P 开文件；且 Typora Mac 的 Cmd\+P 是**打印**，误按会弹打印面板 |
-| 命令面板   | 无            | 无                               | Ctrl\+P         | Cmd\+P          | Obsidian全平台统一：P键专属命令面板，不用于打开文件                                  |
-| 插入表格   | Ctrl\+T（插表格） | Cmd\+Option\+T（插表格）             | Ctrl\+T（新标签）    | Cmd\+T（新标签）     | 全平台逻辑冲突：Obsidian T键永远开新标签；Mac Typora无Ctrl\+T插表格快捷键              |
+| 功能场景       | Typora（Win）  | Typora（Mac）                     | Obsidian（Win原生） | Obsidian（Mac原生） | 避坑核心解析                                                          |
+| ---------- | ------------ | ------------------------------- | --------------- | --------------- | --------------------------------------------------------------- |
+| 快速打开文件     | Ctrl\+P      | Cmd\+Shift\+O（菜单 Open Quickly…） | Ctrl\+O         | Cmd\+O          | Mac Typora 无 Ctrl\+P 开文件；且 Typora Mac 的 Cmd\+P 是**打印**，误按会弹打印面板 |
+| 命令面板       | 无            | 无                               | Ctrl\+P         | Cmd\+P          | Obsidian全平台统一：P键专属命令面板，不用于打开文件                                  |
+| 插入表格/新建标签页 | Ctrl\+T（插表格） | Cmd\+Option\+T（插表格）             | Ctrl\+T（新标签）    | Cmd\+T（新标签）     | 全平台逻辑冲突：Obsidian T键永远开新标签；Mac Typora无Ctrl\+T插表格快捷键              |
 
 ### 2\. 文本排版与块级元素（排版操作核心差异）
 
