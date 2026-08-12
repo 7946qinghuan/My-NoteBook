@@ -53,21 +53,25 @@ aliases: []
 
 以下为双软件**Windows/Mac 跨平台适配版**通用操作，仅主控键随系统切换，功能逻辑完全统一，可直接复用。
 
-| 功能场景         | Windows（原生）                           | Mac（原生）                             |
-| ------------ | ------------------------------------- | ----------------------------------- |
-| 文本加粗         | Ctrl\+B                               | Cmd\+B                              |
-| 文本斜体         | Ctrl\+I                               | Cmd\+I                              |
-| 插入超链接        | Ctrl\+K                               | Cmd\+K                              |
-| 查找 / 替换      | Ctrl\+F / Ctrl\+H                     | Cmd\+F / Cmd\+H                     |
-| 撤销 / 重做      | Ctrl\+Z / Ctrl\+Y                     | Cmd\+Z / Cmd\+Shift\+Z              |
-| 复制 / 剪切 / 粘贴 | Ctrl\+C / Ctrl\+X / Ctrl\+V           | Cmd\+C / Cmd\+X / Cmd\+V            |
-| 粘贴纯文本        | Ctrl\+Shift\+V                        | Cmd\+Shift\+V                       |
-| 列表缩进/减少缩进    | Tab / Shift\+Tab（Ctrl\+\] / Ctrl\+\[） | Tab / Shift\+Tab（Cmd\+\] / Cmd\+\[） |
-| 文档顶部 / 底部    | Ctrl\+Home / Ctrl\+End                | Cmd\+↑ / Cmd\+↓                     |
-| 系统偏好/设置      | Ctrl\+,                               | Cmd\+,                              |
-| 新建文档 / 笔记    | Ctrl\+N                               | Cmd\+N                              |
-| 关闭当前标签/文件    | Ctrl\+W                               | Cmd\+W                              |
-| 插入行内代码       | Ctrl\+\`                              | Cmd\+\`                             |
+| 功能场景            | Windows（原生）                           | Mac（原生）                             |
+| --------------- | ------------------------------------- | ----------------------------------- |
+| 文本加粗            | Ctrl\+B                               | Cmd\+B                              |
+| 文本斜体            | Ctrl\+I                               | Cmd\+I                              |
+| 插入超链接           | Ctrl\+K                               | Cmd\+K                              |
+| 查找 / 替换         | Ctrl\+F / Ctrl\+H                     | Cmd\+F / Cmd\+H                     |
+| 撤销 / 重做         | Ctrl\+Z / Ctrl\+Y                     | Cmd\+Z / Cmd\+Shift\+Z              |
+| 复制 / 剪切 / 粘贴    | Ctrl\+C / Ctrl\+X / Ctrl\+V           | Cmd\+C / Cmd\+X / Cmd\+V            |
+| 粘贴纯文本           | Ctrl\+Shift\+V                        | Cmd\+Shift\+V                       |
+| 列表缩进/减少缩进       | Tab / Shift\+Tab（Ctrl\+\] / Ctrl\+\[） | Tab / Shift\+Tab（Cmd\+\] / Cmd\+\[） |
+| 文档顶部 / 底部       | Ctrl\+Home / Ctrl\+End                | Cmd\+↑ / Cmd\+↓                     |
+| 系统偏好/设置         | Ctrl\+,                               | Cmd\+,                              |
+| 新建文档 / 笔记       | Ctrl\+N                               | Cmd\+N                              |
+| 关闭当前标签/文件       | Ctrl\+W                               | Cmd\+W                              |
+| 插入行内代码（不是原生需设置） | Ctrl\+\`                              | Crtl\+\`                            |
+| 插入代码块           | Ctrl\+Shift\+K                        | Cmd\+Shift\+K                       |
+| 插入数学公式（不是原生需设置） | Crtl \+ M                             | Cmd \+ M                            |
+| 插入数学块（不是原生需设置）  | Crtl \+ Shift \+ M                    | Cmd \+ Shift \+ M                   |
+| 插入表格（不是原生需设置）   |                                       |                                     |
 
 ## 三、高危易混淆\&逻辑冲突清单（Win/Mac 双平台完整版）
 
@@ -75,24 +79,24 @@ aliases: []
 
 ### 1\. 核心导航与功能调出（最高频出错）
 
-|功能场景|Typora（Win）|Typora（Mac）|Obsidian（Win原生）|Obsidian（Mac原生）|避坑核心解析|
-|---|---|---|---|---|---|
-|快速打开文件|Ctrl\+P|Cmd\+Shift\+O（菜单 Open Quickly…）|Ctrl\+O|Cmd\+O|Mac Typora 无 Ctrl\+P 开文件；且 Typora Mac 的 Cmd\+P 是**打印**，误按会弹打印面板|
-|命令面板|无|无|Ctrl\+P|Cmd\+P|Obsidian全平台统一：P键专属命令面板，不用于打开文件|
-|插入表格/新建标签页|Ctrl\+T（插表格）|Cmd\+Option\+T（插表格）|Ctrl\+T（新标签）|Cmd\+T（新标签）|全平台逻辑冲突：Obsidian T键永远开新标签；Mac Typora无Ctrl\+T插表格快捷键|
+| 功能场景       | Typora（Win）  | Typora（Mac）                     | Obsidian（Win原生） | Obsidian（Mac原生） | 避坑核心解析                                                          |
+| ---------- | ------------ | ------------------------------- | --------------- | --------------- | --------------------------------------------------------------- |
+| 快速打开文件     | Ctrl\+P      | Cmd\+Shift\+O（菜单 Open Quickly…） | Ctrl\+O         | Cmd\+O          | Mac Typora 无 Ctrl\+P 开文件；且 Typora Mac 的 Cmd\+P 是**打印**，误按会弹打印面板 |
+| 命令面板       | 无            | 无                               | Ctrl\+P         | Cmd\+P          | Obsidian全平台统一：P键专属命令面板，不用于打开文件                                  |
+| 插入表格/新建标签页 | Ctrl\+T（插表格） | Cmd\+Option\+T（插表格）             | Ctrl\+T（新标签）    | Cmd\+T（新标签）     | 全平台逻辑冲突：Obsidian T键永远开新标签；Mac Typora无Ctrl\+T插表格快捷键              |
 
 ### 2\. 文本排版与块级元素（排版操作核心差异）
 
-| 功能场景     | Typora（Win）    | Typora（Mac）    | Obsidian（Win原生） | Obsidian（Mac原生） | 避坑核心解析                                    |
-| -------- | -------------- | -------------- | --------------- | --------------- | ----------------------------------------- |
-| 1\-6级标题  | Ctrl\+1\~6     | Cmd\+1\~6      | 无               | 无               | Typora全平台支持标题快捷键，Obsidian原生全平台均无          |
-| 插入代码块    | Ctrl\+Shift\+K | Cmd\+Option\+C | 无               | 无               | Mac/Win Typora代码块快捷键不统一，Obsidian全平台原生无快捷键 |
-| 插入引用块    | Ctrl\+Shift\+Q | Cmd\+Option\+Q | 无               | 无               | Typora双平台按键不同，Obsidian需手动输入语法             |
-| 插入公式块    | Ctrl\+Shift\+M | Cmd\+Option\+B | 无               | 无               | 公式块快捷键为Typora专属，且Mac/Win组合完全不同            |
-| 切换任务复选框  | Ctrl\+Shift\+X | Cmd\+Option\+X  | Ctrl\+L         | Cmd\+L          | Typora Mac 菜单项 Task List 实为 Cmd\+Option\+X（nib 验证），非 Cmd\+Shift\+X；Obsidian 全平台用 L 键切换任务 |
-| 选中整行     | Ctrl\+L        | Cmd\+L         | 无               | 无               | 跨平台核心冲突：L键在两款软件功能完全互换                     |
-| 删除整行（原生） | Ctrl\+Shift\+D | Cmd\+Shift\+D  | Ctrl\+D  | Cmd\+D   | Obsidian 原生命令名为「删除段落 Delete paragraph」，默认 Mod\+D；Ctrl\+Shift\+K 是 VS Code 的键，Obsidian 无此绑定 |
-| 视图模式切换   | Ctrl\+/        | Cmd\+/         | Ctrl\+E         | Cmd\+E          | 双软件视图快捷键不互通，全平台逻辑一致                       |
+| 功能场景     | Typora（Win）    | Typora（Mac）    | Obsidian（Win原生） | Obsidian（Mac原生） | 避坑核心解析                                                                                     |
+| -------- | -------------- | -------------- | --------------- | --------------- | ------------------------------------------------------------------------------------------ |
+| 1\-6级标题  | Ctrl\+1\~6     | Cmd\+1\~6      | 无               | 无               | Typora全平台支持标题快捷键，Obsidian原生全平台均无                                                           |
+| 插入代码块    | Ctrl\+Shift\+K | Cmd\+Option\+C | 无               | 无               | Mac/Win Typora代码块快捷键不统一，Obsidian全平台原生无快捷键                                                  |
+| 插入引用块    | Ctrl\+Shift\+Q | Cmd\+Option\+Q | 无               | 无               | Typora双平台按键不同，Obsidian需手动输入语法                                                              |
+| 插入公式块    | Ctrl\+Shift\+M | Cmd\+Option\+B | 无               | 无               | 公式块快捷键为Typora专属，且Mac/Win组合完全不同                                                             |
+| 切换任务复选框  | Ctrl\+Shift\+X | Cmd\+Option\+X | Ctrl\+L         | Cmd\+L          | Typora Mac 菜单项 Task List 实为 Cmd\+Option\+X（nib 验证），非 Cmd\+Shift\+X；Obsidian 全平台用 L 键切换任务   |
+| 选中整行     | Ctrl\+L        | Cmd\+L         | 无               | 无               | 跨平台核心冲突：L键在两款软件功能完全互换                                                                      |
+| 删除整行（原生） | Ctrl\+Shift\+D | Cmd\+Shift\+D  | Ctrl\+D         | Cmd\+D          | Obsidian 原生命令名为「删除段落 Delete paragraph」，默认 Mod\+D；Ctrl\+Shift\+K 是 VS Code 的键，Obsidian 无此绑定 |
+| 视图模式切换   | Ctrl\+/        | Cmd\+/         | Ctrl\+E         | Cmd\+E          | 双软件视图快捷键不互通，全平台逻辑一致                                                                        |
 
 ### 3\. 行操作与视图切换（细节易错点）
 
