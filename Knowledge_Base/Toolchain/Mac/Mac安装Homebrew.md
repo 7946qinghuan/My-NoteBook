@@ -35,7 +35,18 @@ M‑Series Mac（Apple Silicon）Homebrew 完整安装&卸载教程
 未执行该步骤会出现 `brew: command not found` 报错，直接复制以下命令逐条在终端执行：
 > 💡注意：Homebrew新版本输出推荐写入 `.zprofile`（登录shell加载）；网上旧教程很多写入`.zshrc`，两种都可以，**不要两处同时写，避免PATH重复污染**。
 
+### 方式1：跟随官方输出（推荐，本次安装脚本原生输出）
+```zsh
+echo >> ~/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+```
 
+### 方式2：传统写法写入 ~/.zshrc（旧文档常用）
+```zsh
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
+source ~/.zshrc
+```
 
 
 ## 3. 验证安装结果
