@@ -32,7 +32,7 @@ aliases: []
 
 ## Python
 
-- [[Dataclass详解]]
+- [[Python_dataclass详解]]
 - [[Generator_And_AsyncGenerator]]
 - [[Python的deque与list对比复习笔记]]
 - [[异常处理]]
