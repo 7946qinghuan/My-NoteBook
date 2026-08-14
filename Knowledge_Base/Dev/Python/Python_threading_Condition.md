@@ -206,51 +206,25 @@ if __name__ == "__main__":
 ## 六、 开发避坑清单（ Checklist ）
 
 1. **未持锁直接调用 API**
-    
-      
     - **现象**：直接调用 `self._lifecycle.wait()` 或 `notify()`。
-        
-          
         
     - **结果**：抛出 `RuntimeError: cannot notify/wait on un-acquired lock`。
         
-          
-        
     - **对策**：始终包裹在 `with self._lifecycle:` 块内。
-        
-          
-        
-2. **在持有锁的状态下执行耗时操作（IO/计算）**
     
-      
+2. **在持有锁的状态下执行耗时操作（IO/计算）**
     - **现象**：在 `with self._lifecycle:` 内部放置 `time.sleep()`、网络请求或复杂计算。
-        
-          
         
     - **结果**：死锁或性能大幅下降，其他线程无法改变生命周期状态。
         
-          
-        
     - **对策**：持锁只用于**判断状态、更新状态、唤醒通知**，业务逻辑应在锁外执行。
-        
-          
-        
-3. **状态修改后遗漏 `notify` / `notify_all`**
     
-      
+3. **状态修改后遗漏 `notify` / `notify_all`**
     - **现象**：修改了 `self._running = True` 但忘记调用 `notify_all()`。
         
-          
-        
     - **结果**：等待线程持续阻塞，造成“挂起死锁”。
-        
-          
-        
-4. **滥用 `if` 代替 `while`**
     
-      
+4. **滥用 `if` 代替 `while`**
     - **现象**：使用 `if not self._running: self._lifecycle.wait()`。
-        
-          
         
     - **结果**：遇到虚假唤醒或多线程竞争时，程序越界执行，引发逻辑崩溃。
