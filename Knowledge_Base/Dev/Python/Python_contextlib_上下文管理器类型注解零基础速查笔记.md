@@ -61,7 +61,7 @@ tags:
 
 ```python
 from contextlib import contextmanager
-from typing import Generator
+from collections.abc import Generator
 
 @contextmanager
 def sync_no_value() -> Generator[None, None, None]:
@@ -85,7 +85,7 @@ with sync_no_value():
 
 ```python
 from contextlib import contextmanager
-from typing import Generator
+from collections.abc import Generator
 
 # 产出字符串，参数对应修改第一个泛型
 @contextmanager
@@ -112,7 +112,7 @@ with sync_has_value() as res:
 
 ```python
 from contextlib import asynccontextmanager
-from typing import AsyncGenerator
+from collections.abc import AsyncGenerator
 
 @asynccontextmanager
 async def async_no_value() -> AsyncGenerator[None, None]:
@@ -132,7 +132,7 @@ async def main():
 
 ```python
 from contextlib import asynccontextmanager
-from typing import AsyncGenerator
+from collections.abc import AsyncGenerator
 
 @asynccontextmanager
 async def async_has_value() -> AsyncGenerator[int, None]:
@@ -191,7 +191,7 @@ def func() -> Iterator[None]:
 
 ```python
 from contextlib import contextmanager
-from typing import Generator
+from collections.abc import Generator
 
 @contextmanager
 def your_func() -> Generator[None, None, None]:
@@ -206,7 +206,7 @@ def your_func() -> Generator[None, None, None]:
 
 ```python
 from contextlib import contextmanager
-from typing import Generator
+from collections.abc import Generator
 
 @contextmanager
 def your_func() -> Generator[你要的类型, None, None]:
@@ -221,7 +221,7 @@ def your_func() -> Generator[你要的类型, None, None]:
 
 ```python
 from contextlib import asynccontextmanager
-from typing import AsyncGenerator
+from collections.abc import AsyncGenerator
 
 @asynccontextmanager
 async def your_func() -> AsyncGenerator[None, None]:
@@ -236,7 +236,7 @@ async def your_func() -> AsyncGenerator[None, None]:
 
 ```python
 from contextlib import asynccontextmanager
-from typing import AsyncGenerator
+from collections.abc import AsyncGenerator
 
 @asynccontextmanager
 async def your_func() -> AsyncGenerator[你要的类型, None]:
@@ -254,7 +254,6 @@ async def your_func() -> AsyncGenerator[你要的类型, None]:
 - Python 3.8 及以下：必须从 `typing` 导入
     
 - Python 3.9+：可从 `collections.abc` 导入，兼容性更好
-    
 
 ```python
 # 3.9+ 新版导入方式
