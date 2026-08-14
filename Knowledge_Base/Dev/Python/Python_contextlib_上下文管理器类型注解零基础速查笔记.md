@@ -259,3 +259,182 @@ async def your_func() -> AsyncGenerator[你要的类型, None]:
 # 3.9+ 新版导入方式
 from collections.abc import Generator, AsyncGenerator
 ```
+
+## 七、真实开发业务场景举例（零基础可直接套用）
+
+前面都是模板，本节全部是**项目里 100% 会遇到的真实场景**，严格搭配正确的类型注解，彻底规避弃用警告。
+
+### 场景1：代码执行耗时统计（高频通用工具）
+
+业务需求：批量统计每段代码、接口函数的执行耗时，不用重复写开始/结束计时代码。
+
+```python
+import time
+from contextlib import contextmanager
+from collections.abc import Generator
+
+@contextmanager
+def timer(title: str = "执行耗时") -> Generator[None, None, None]:
+    # 前置：记录开始时间
+    start = time.time()
+    try:
+        yield
+    finally:
+        # 后置：自动计算并打印耗时
+        end = time.time()
+        print(f"【{title}】耗时：{end - start:.4f}s")
+
+# 业务使用
+with timer("数据批量处理"):
+    # 模拟业务代码
+    total = 0
+    for i in range(1000000):
+        total += i
+```
+
+### 场景2：临时修改运行参数，执行后自动还原（配置回滚）
+
+业务需求：临时开启调试模式、修改全局配置，代码执行完**自动恢复原有配置**，避免污染全局环境。
+
+```python
+from contextlib import contextmanager
+from collections.abc import Generator
+
+# 模拟全局配置
+GLOBAL_DEBUG = False
+
+@contextmanager
+def temporary_debug() -> Generator[None, None, None]:
+    global GLOBAL_DEBUG
+    # 前置：保存旧状态，临时开启调试
+    old_status = GLOBAL_DEBUG
+    GLOBAL_DEBUG = True
+    try:
+        yield
+    finally:
+        # 后置：强制还原旧配置（报错也会执行）
+        GLOBAL_DEBUG = old_status
+
+# 业务使用
+print("执行前调试状态：", GLOBAL_DEBUG)
+with temporary_debug():
+    print("临时调试状态：", GLOBAL_DEBUG)
+print("执行后调试状态：", GLOBAL_DEBUG)
+```
+
+### 场景3：数据库/文件资源自动开关（带返回值，最经典场景）
+
+业务需求：自动打开资源，`with`内操作资源，执行完毕/报错自动关闭，避免资源泄露。
+
+```python
+from contextlib import contextmanager
+from collections.abc import Generator
+
+# 模拟数据库连接对象
+class DBConnection:
+    def query(self, sql: str):
+        return f"执行查询：{sql}"
+    def close(self):
+        print("数据库连接已关闭")
+
+@contextmanager
+def get_db_conn() -> Generator[DBConnection, None, None]:
+    # 前置：创建连接
+    conn = DBConnection()
+    try:
+        # 产出连接对象，供业务使用
+        yield conn
+    finally:
+        # 后置：强制关闭连接，杜绝资源泄露
+        conn.close()
+
+# 业务使用
+with get_db_conn() as db:
+    res = db.query("select * from user")
+    print(res)
+```
+
+### 场景4：异步接口请求锁、异步资源管控（异步真实业务）
+
+业务需求：异步接口限流、异步任务临时加锁，任务执行完自动释放锁。
+
+```python
+import asyncio
+from contextlib import asynccontextmanager
+from collections.abc import AsyncGenerator
+
+# 模拟异步锁
+lock = asyncio.Lock()
+
+@asynccontextmanager
+async def api_lock() -> AsyncGenerator[None, None]:
+    # 前置：加锁
+    await lock.acquire()
+    try:
+        yield
+    finally:
+        # 后置：无论成功失败，自动释放锁
+        lock.release()
+
+# 异步业务函数
+async def handle_api():
+    async with api_lock():
+        print("异步接口执行中，已加锁限流")
+        await asyncio.sleep(1)
+        print("异步接口执行完成")
+
+# 运行异步任务
+# asyncio.run(handle_api())
+```
+
+### 场景5：状态标记自动切换（适配你之前的代码）
+
+业务需求：执行核心任务时标记「运行中」，任务结束/报错后自动切回「空闲」，适配项目状态管控。
+
+```python
+from contextlib import contextmanager
+from collections.abc import Generator
+
+class TaskStatus:
+    def __init__(self):
+        self.is_running = False
+
+    def begin(self):
+        self.is_running = True
+
+    def end(self):
+        self.is_running = False
+
+status = TaskStatus()
+
+@contextmanager
+def sync_activity() -> Generator[None, None, None]:
+    # 前置：标记任务开始
+    status.begin()
+    try:
+        yield
+    finally:
+        # 后置：强制标记任务结束
+        status.end()
+
+# 业务使用
+with sync_activity():
+    print("核心任务执行中...")
+    print("当前运行状态：", status.is_running)
+print("任务结束后状态：", status.is_running)
+```
+
+## 八、场景核心总结（什么时候必须用上下文管理器？）
+
+只要满足 **「成对操作」**，全部用 `@contextmanager`，不用手写 try/finally：
+
+- 开启 & 关闭（文件、数据库、链接、进程）
+    
+- 加锁 & 解锁（接口限流、并发任务）
+    
+- 修改 & 还原（全局配置、临时参数）
+    
+- 开始 & 结束（耗时统计、状态标记、埋点日志）
+    
+
+**核心优势**：哪怕中间代码报错、return、异常终止，`finally` 逻辑永远执行，不会出现资源卡死、状态错乱、内存泄露。
