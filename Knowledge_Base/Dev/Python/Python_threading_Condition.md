@@ -214,7 +214,6 @@ if __name__ == "__main__":
 - **多线程做计算的代价**：如果在多线程中做大量的数学运算、图像处理或矩阵计算，不仅无法利用多核 CPU，反而会因**频繁的 GIL 切换开销**与 **`Condition` 锁竞争**，导致运行速度比单线程更慢。
     
 - **CPU 密集型的正确方案**：应选用 `multiprocessing`（多进程）或 `concurrent.futures.ProcessPoolExecutor`。
-    
 
 ### 2. 为什么它是 I/O 密集型任务的绝配？
 
@@ -225,7 +224,6 @@ if __name__ == "__main__":
 - **带缓冲区的 I/O 生产与消费**：日志收集器、数据库批量写入器（攒满 100 条或每隔 5 秒批量写入一次）。
     
 - **连接池 / 资源池管理**：连接池无可用资源时 `cond.wait()` 挂起，归还连接时 `cond.notify()` 唤醒。
-    
 
 ### 3. 高阶架构设计：“控制面”与“数据面”分离
 
@@ -250,35 +248,30 @@ if __name__ == "__main__":
 ## 七、 开发避坑清单（ Checklist ）
 
 1. **未持锁直接调用 API**
-    
     - **现象**：直接调用 `self._lifecycle.wait()` 或 `notify()`。
         
     - **结果**：抛出 `RuntimeError: cannot notify/wait on un-acquired lock`。
         
     - **对策**：始终包裹在 `with self._lifecycle:` 块内。
-        
-2. **在持有锁的状态下执行耗时操作（IO/计算）**
     
+2. **在持有锁的状态下执行耗时操作（IO/计算）**
     - **现象**：在 `with self._lifecycle:` 内部放置 `time.sleep()`、网络请求或复杂计算。
         
     - **结果**：死锁或性能大幅下降，其他线程无法改变生命周期状态。
         
     - **对策**：持锁只用于**判断状态、更新状态、唤醒通知**，业务逻辑应在锁外执行。
-        
-3. **状态修改后遗漏 `notify` / `notify_all`**
     
+3. **状态修改后遗漏 `notify` / `notify_all`**
     - **现象**：修改了 `self._running = True` 但忘记调用 `notify_all()`。
         
     - **结果**：等待线程持续阻塞，造成“挂起死锁”。
-        
-4. **滥用 `if` 代替 `while`**
     
+4. **滥用 `if` 代替 `while`**
     - **现象**：使用 `if not self._running: self._lifecycle.wait()`。
         
     - **结果**：遇到虚假唤醒或多线程竞争时，程序越界执行，引发逻辑崩溃。
-        
-5. **在 CPU 密集型场景误用 `threading.Condition` 管理计算线程**
     
+5. **在 CPU 密集型场景误用 `threading.Condition` 管理计算线程**
     - **现象**：开 10 个 Thread 加 Condition 跑 CPU 密集算法。
         
     - **结果**：由于 GIL 的存在，CPU 利用率无法跑满多核，且锁竞争严重拖慢速度。
