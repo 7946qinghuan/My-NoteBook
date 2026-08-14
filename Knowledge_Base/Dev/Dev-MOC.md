@@ -34,7 +34,7 @@ aliases: []
 
 - [[Python_dataclass详解]]
 - [[Generator_And_AsyncGenerator]]
-- [[Python的deque与list对比复习笔记]]
+- [[Python的_deque与list对比复习笔记]]
 - [[异常处理]]
 
 ## Python/FastAPI
