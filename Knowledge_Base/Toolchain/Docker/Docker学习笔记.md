@@ -162,6 +162,18 @@ Docker Desktop：`Settings` → `Docker Engine`，在 JSON 里加一行 `registr
 }
 ```
 
+例如：
+```json
+{
+  "registry-mirrors": [
+	"https://docker.m.daocloud.io",
+	"https://docker.1panel.live",
+	"https://hub.rat.dev"
+  ]
+}
+```
+
+
 改完重启 Docker：
 
 ```bash
