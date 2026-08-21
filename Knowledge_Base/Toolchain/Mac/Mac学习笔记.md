@@ -55,7 +55,7 @@ aliases: []
     
 - **Command-W**：关闭最前方的窗口。要关闭 App 的所有窗口，请按下 Option-Command-W。
     
-- **Option-Command-Esc**：[强制退出](https://support.apple.com/zh-cn/102586) App。
+- **Option-Command-Esc**：打开Mac系统的任务管理器，[强制退出](https://support.apple.com/zh-cn/102586) App。
     
 - **Command-空格键**：显示或隐藏“[聚焦](https://support.apple.com/guide/mac-help/mchlp1008/mac)”搜索栏。要从“访达”窗口进行“聚焦”搜索，请按 **Option–Command–空格键**。（在某些版本的 macOS 中，如果你[使用多个输入源](https://support.apple.com/guide/mac-help/mchlp1406/mac)以便用不同的语言键入内容，这些快捷键会更改输入源。了解如何[更改冲突的键盘快捷键](https://support.apple.com/guide/mac-help/mchlp2864/mac)。）
     
