@@ -37,6 +37,8 @@ aliases: []
     
 - **Command-G**：再次查找：查找下一处之前找到的项目。要查找上一处之前找到的项目，请按 Shift-Command-G。
     
+- **Command+F3**：快速显示桌面
+    
 - **Command-H**：隐藏最前方 App 的窗口。要查看最前方的 App 但隐藏所有其他 App，请按 Option-Command-H。
     
 - **Command-M**：将最前方的窗口最小化至程序坞。要最小化最前方 App 的所有窗口，请按 Option-Command-M。
