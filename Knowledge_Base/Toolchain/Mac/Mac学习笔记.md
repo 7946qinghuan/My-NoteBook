@@ -5,3 +5,10 @@ tags: [Toolchain, Mac]
 aliases: []
 ---
 
+## 快捷键使用说明：
+
+### 快速显示桌面：
+```plain text
+Command+F3
+```
+
