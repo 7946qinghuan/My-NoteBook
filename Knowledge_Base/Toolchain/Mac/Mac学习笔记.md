@@ -4,6 +4,12 @@ date: 2026-07-08
 tags: [Toolchain, Mac]
 aliases: []
 ---
+| Windows 和 Mac 对应的按键 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ⊞ Win               | ⌘符号表示，叫做 [Command 键](https://zhida.zhihu.com/search?content_id=204157933&content_type=Article&match_order=1&q=Command+%E9%94%AE&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3ODc0OTg5ODksInEiOiJDb21tYW5kIOmUriIsInpoaWRhX3NvdXJjZSI6ImVudGl0eSIsImNvbnRlbnRfaWQiOjIwNDE1NzkzMywiY29udGVudF90eXBlIjoiQXJ0aWNsZSIsIm1hdGNoX29yZGVyIjoxLCJ6ZF90b2tlbiI6bnVsbH0.eFWnSw0XrMD2AbGE8OwXmCmpsW-_vGGo6LK6RWU5pL4&zhida_source=entity) |
+| ALT                 | ⌥符号表示，叫做 [Option 键](https://zhida.zhihu.com/search?content_id=204157933&content_type=Article&match_order=1&q=Option+%E9%94%AE&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3ODc0OTg5ODksInEiOiJPcHRpb24g6ZSuIiwiemhpZGFfc291cmNlIjoiZW50aXR5IiwiY29udGVudF9pZCI6MjA0MTU3OTMzLCJjb250ZW50X3R5cGUiOiJBcnRpY2xlIiwibWF0Y2hfb3JkZXIiOjEsInpkX3Rva2VuIjpudWxsfQ.Co7Df6ZE-KCgMtjAdZodtliEuUAcA9bs-KEeeaQMyQE&zhida_source=entity)    |
+| SHIFT               | ⇧符号表示                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| CTRL                | ⌃符号表示，叫做 Control 或 Ctrl                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 ## 快捷键使用说明：
 
@@ -63,6 +69,127 @@ aliases: []
     
 - **Fn-Q**：创建[快速备忘录](https://support.apple.com/guide/notes/apdf028f7034/mac)。
 
+### 文本编辑快捷键
+这些快捷键的行为可能因你使用的 App 而异。
+- **Command-B**：以粗体显示所选文本，或者打开或关闭粗体显示功能。
+    
+- **Command-I**：以斜体显示所选文本，或者打开或关闭斜体显示功能。
+    
+- **Command-K**：添加网页链接。
+    
+- **Command-U**：对所选文本加下划线，或者打开或关闭加下划线功能。
+    
+- **Command-T**：显示或隐藏“字体”窗口。
+    
+- **Command-D**：从“打开”对话框或“存储”对话框内选择“桌面”文件夹。
+    
+- **Control-Command-D**：显示或隐藏所选字词的定义。
+    
+- **Shift-Command-冒号 (:)**：显示“拼写和语法”窗口。
+    
+- **Command-分号 (;)**：查找文稿中拼写错误的字词。
+    
+- **Option-Delete**：删除插入点左边的字词。
+    
+- **Control-H**：删除插入点左边的字符。也可以使用 Delete 键。
+    
+- **Control-D**：删除插入点右边的字符。也可以使用 Fn-Delete。
+    
+- **Fn-Delete**：在没有向前删除键的键盘上向前删除。也可以使用 Control-D。
+    
+- **Control-K**：剪切所选文本或插入点与段落末尾之间的文本，并将文本拷贝到仅适用于文本剪切来源 App 的剪贴板。然后，你可以使用 **Control-Y** 将这个剪贴板的内容粘贴到同一 App 中。
+    
+- **Fn-上箭头**：Page Up：向上滚动一页。
+    
+- **Fn-下箭头**：Page Down：向下滚动一页。
+    
+- **Fn-左箭头：**Home：滚动到文稿开头。
+    
+- **Fn-右箭头**：End：滚动到文稿末尾。
+    
+- **Command-上箭头**：将插入点移至文稿开头。
+    
+- **Command-下箭头**：将插入点移至文稿末尾。
+    
+- **Command-左箭头**：将插入点移至当前行的行首。
+    
+- **Command-右箭头**：将插入点移至当前行的行尾。
+    
+- **Option-左箭头**：将插入点移至上一字词的词首。
+    
+- **Option-右箭头**：将插入点移至下一字词的词尾。
+    
+- **Shift-Command-上箭头**：选中插入点与文稿开头之间的文本。
+    
+- **Shift-Command-下箭头**：选中插入点与文稿末尾之间的文本。
+    
+- **Shift-Command-左箭头**：选中插入点与当前行行首之间的文本。
+    
+- **Shift-Command-右箭头**：选中插入点与当前行行尾之间的文本。
+    
+- **Shift-上箭头**：将文本选择范围扩展到上一行相同水平位置的最近字符处。
+    
+- **Shift-下箭头**：将文本选择范围扩展到下一行相同水平位置的最近字符处。
+    
+- **Shift-左箭头**：将文本选择范围向左扩展一个字符。
+    
+- **Shift-右箭头**：将文本选择范围向右扩展一个字符。
+    
+- **Option-Shift-上箭头**：将文本选择范围扩展到当前段落的段首，再按一次则扩展到下一段落的段首。
+    
+- **Option-Shift-下箭头**：将文本选择范围扩展到当前段落的段尾，再按一次则扩展到下一段落的段尾。
+    
+- **Option-Shift-左箭头**：将文本选择范围扩展到当前字词的词首，再按一次则扩展到下一字词的词首。
+    
+- **Option-Shift-右箭头**：将文本选择范围扩展到当前字词的词尾，再按一次则扩展到下一字词的词尾。
+    
+- **Control-A**：移至行或段落的开头。
+    
+- **Control-E**：移至行或段落的末尾。
+    
+- **Control-F**：向前移动一个字符。
+    
+- **Control-B**：向后移动一个字符。
+    
+- **Control-L**：将光标或所选内容置于可见区域中央。
+    
+- **Control-P**：上移一行。
+    
+- **Control-N**：下移一行。
+    
+- **Control-O**：在插入点后新插入一行。
+    
+- **Control-T**：将插入点后面的字符与插入点前面的字符交换。
+    
+- **Command-左花括号 ({)**：左对齐。
+    
+- **Command-右花括号 (})**：右对齐。
+    
+- **Shift-Command-竖线 (|)**：居中对齐。
+    
+- **Option-Command-F**：前往搜索栏。
+    
+- **Option-Command-T**：显示或隐藏 App 中的工具栏。
+    
+- **Option-Command-C**：拷贝样式：将所选项目的格式设置拷贝到剪贴板。
+    
+- **Option-Command-V**：粘贴样式：将拷贝的样式应用到所选项目。
+    
+- **Option-Shift-Command-V**：粘贴并匹配样式：对粘贴在某一内容中的项目应用周围内容的样式。
+    
+- **Option-Command-I**：显示或隐藏检查器窗口。
+    
+- **Shift-Command-P**：页面设置：显示用于选择文稿设置的窗口。
+    
+- **Shift-Command-S**：显示“保存为”对话框或复制当前文稿。
+    
+- **Shift-Command-减号 (-)**：缩小所选项目。
+    
+- **Shift-Command-加号 (+)**：放大所选项目。Command-等号 (=) 可实现相同的功能。
+    
+- **Shift-Command-问号 (?)**：打开“帮助”菜单。
+    
+- [使用表情符号和其他符号](https://support.apple.com/guide/mac-help/mchlp1560/mac)
 
 ### 快速显示桌面：
 ```plain text
