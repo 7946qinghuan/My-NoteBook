@@ -111,10 +111,7 @@ Embedding
 > 给定一个 Query Vector，从 N 个向量中寻找距离最近的 K 个。
 
 即：
-
-[  
-TopK(q)=\operatorname{argmin}_{x_i} distance(q,x_i)  
-]
+$$TopK(q)=\operatorname{argmin}_{x_i} distance(q,x_i)  $$
 
 ---
 
