@@ -9,12 +9,13 @@ aliases: []
 
 RAG、Agent、Prompt 工程、向量库等 LLM 应用相关的知识。
 
-> 共 16 篇笔记。本页是该域的 MOC 索引，也是 Graph 里这个域的枢纽节点。
+> 共 17 篇笔记。本页是该域的 MOC 索引，也是 Graph 里这个域的枢纽节点。
 
 ## Agent
 
 - [[Reasoning_And_Acting]]
 - [[agent_lifecycle_management]]
+- [[NanoBot-Learning]]
 
 ## Prompt-Engineering
 
