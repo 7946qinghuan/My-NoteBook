@@ -17,13 +17,8 @@ NanoBot 的长期学习计划、章节、实验和复习记录已经迁移到独
 - [44 周路线](https://github.com/comet-7x/nanobot-learning/blob/main/roadmap.md)
 - [学习进度板](https://github.com/comet-7x/nanobot-learning/blob/main/progress.md)
 
-如果在同一个 Obsidian Vault 中使用本地独立仓库，可以从这里进入：
-
-- [[nanobot-learning/NanoBot-Learning-MOC|NanoBot 学习总索引]]
-
 ## 仓库边界
 
 - NanoBot 上游源码：[HKUDS/nanobot](https://github.com/HKUDS/nanobot)
 - 长期学习资料：[comet-7x/nanobot-learning](https://github.com/comet-7x/nanobot-learning)
 - 本知识库：只保留跨主题知识和学习入口
-
