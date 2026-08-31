@@ -1,375 +1,535 @@
-# 确认 WTO 与 IOTC 关于核心议题下的会议流程
+# WTO 与 IOTC 核心议题会议流程及会议主题确认单
 
-> 文档用途：供虚拟谈判模块配置及向苏老师、李老师确认时使用。<br>
-> 核验口径：优先采用 WTO、IOTC 官方法律文本、议事规则、会议报告和会议文件。<br>
-> 状态标记：**【规则已核】**表示可由官方文件直接确认；**【产品建议】**表示模拟系统的流程设计建议；**【专家待确认】**表示仍需老师对教学取舍或议题范围作判断。
+> 确认对象：WTO 部分请苏老师确认；IOTC 部分请李老师确认。
 
-## 一、先给结论
+## 一、本次需要确认的两个问题
 
-1. **WTO Fish 1 的六大议题可以共用一套谈判主流程。**若模拟的是 2022 年《渔业补贴协定》达成前的谈判，首选会场应统一设为 **Negotiating Group on Rules（NGR，规则谈判组）—Fisheries Subsidies**。总理事会（General Council）和部长级会议（Ministerial Conference）主要承担政治推动、提交和最终通过，不宜被写成六项议题日常逐条谈判的常规会场。WTO 官方资料显示，渔业补贴谈判实际混合使用全体会议、双边磋商、小组会议、逐条案文谈判和主席文本修订，并非每次会议机械完成固定八步。[WTO 渔业补贴专题页](https://www.wto.org/english/tratop_e/rulesneg_e/fish_e/fish_e.htm)；[WTO 2022 年度报告所述谈判过程](https://www.wto.org/english/res_e/booksp_e/anrep_e/ar22_e.pdf)
+1. 每个核心议题采用什么会议流程。
+2. 每个核心议题下设置哪些会议主题；每个会议主题包含什么内容；资料去哪里找。
 
-2. **WTO 不应设置“主席强行出台并通过折中方案”。**主席可以提出主席文本、折中落点、召集双边或小范围磋商，也可以将未决事项延期或上提政治层级；但主席不能替成员制造协商一致。模拟中出现正式反对时，应进入“继续磋商 / 主席修订文本 / 保留括号 / 延期 / 上提高级官员或部长”分支。WTO 的通常做法是协商一致；协商一致的含义是，在作出决定时没有在场成员正式反对。[《马拉喀什协定》第九条](https://www.wto.org/english/docs_e/legal_e/04-wto_e.htm)
+## 二、确认方式
 
-3. **IOTC 不能把全部议题压成同一条八步流程。**建议产品采用“共同骨架 + 流程变体”：科学咨询、配额分配、年度履约审查、履约制度改革、财政行政、委员会决议六类流程共享开幕、议程、讨论、报告等基础节点，但输入材料、决策主体、通过方式和会后效力不同。管理程序议题按“科学咨询链 → Commission 决议链”配置。
-
-4. **原稿中的 IOTC“90 天异议期”应改为 120 天。**具有约束力的养护和管理措施（Resolution）由委员会以出席并投票成员的三分之二多数通过；秘书处通知后，原则上在通知指定日期起 120 天成为有约束力的措施，成员可在该期间提出异议，其他成员还可在首个期间届满后再有 60 天提出异议。超过三分之一成员提出异议时，其他成员也不受该措施约束。非约束性的 Recommendation 由简单多数通过。[《IOTC 协定》第九条](https://iotc.org/sites/default/files/documents/2012/5/25/IOTC%20Agreement.pdf)；[IOTC CMM 说明页](https://iotc.org/node/136)
-
-5. **不是所有 IOTC 议题都进入异议期。**预算、工作计划、履约报告、科学建议、委员会报告等，不等同于 Article IX 下的约束性养护管理决议；只有最终形成 Resolution 的事项才适用上述 120 天生效 / 异议机制。
-
-6. **必须为 WTO 模拟设置历史时间切片。**《渔业补贴协定》已于 2022 年 6 月 17 日通过，并于 2025 年 9 月 15 日生效。若产品继续让学生谈判 Fish 1 六项内容，应在场景中明确“历史快照：MC12 通过前”；若模拟协定生效后的执行监督，则会场应改为 Committee on Fisheries Subsidies，而不是 NGR。[WTO《渔业补贴协定》专题页](https://www.wto.org/english/tratop_e/rulesneg_e/fish_e/fish_e.htm)
+- 已有推荐方案：请老师勾选“同意”，或直接写出修改方案。
+- 不同意推荐方案：请老师在“调整建议”处给出思路。
+- 本文不讨论参与方和国家立场，只确认会议流程、会议主题及资料来源。
 
 ---
 
-## 二、虚拟谈判模块建议结构
+## 第一部分：WTO Fish 1
 
-当前四步可以保留，但第 1、2 步应增加两个字段，避免“议题”和“会场”错配：
+### 三、请苏老师先确认 WTO 通用方案
 
-1. **议题场景**：WTO Fish 1 / RFMO-IOTC。
-2. **核心议题与子议题**：先选六大板块，再选一个可谈判的具体子议题。
-3. **时间切片与法律状态**：例如“WTO—2022 年 MC12 前—草案谈判”或“IOTC—某届 Commission—新决议草案”。
-4. **会议主题 / 会场**：系统根据子议题推荐首选会场，同时允许选择“技术准备会场”或“最终决策会场”。
-5. **参与方**：只列该会场有权参与、发言或投票的角色；观察员不得被赋予投票权。
-6. **生成内容**：至少包括背景事实、适用规则、证据包、待决问题、各方有来源的立场、基础案文、可修改条款、预期会议产出和失败分支。
+#### 确认项 W-1：模拟时间
 
-### 每个“会议主题”必须包含的内容
+**推荐方案：**统一模拟 2022 年 6 月 17 日 MC12 通过《渔业补贴协定》之前的 Fish 1 谈判。
 
-|字段|必须回答的问题|
-|---|---|
-|时间与届次|模拟哪一年、哪次会议、谈判前还是实施后？|
-|决策对象|是在形成科学建议、审查履约、制定分配标准、审预算，还是通过 Resolution？|
-|基础案文|以哪一份主席文本、成员提案、决议草案、报告或预算草案为起点？|
-|证据包|需要哪些渔获、种群、船舶、履约、财政或社会经济资料？|
-|待决问题|本次会议真正需要决定的 3—5 个问题是什么？|
-|可谈判条款|哪些数值、定义、适用范围、例外、期限、报告义务可被修改？|
-|参与角色|谁是成员、提案方、主席、秘书处、科学专家、观察员；谁有投票权？|
-|会议流程|调用下文哪一条标准流程，在哪些节点增加议题特有环节？|
-|会议产出|主席文本、修订提案、会议报告、科学建议、合规报告、预算建议或 CMM？|
-|失败分支|继续磋商、保留分歧、修订、延期、上提、投票未过或形成少数意见？|
-|来源|每个事实、立场和数字对应哪个官方文件及文件编号？|
+- [ ] 同意
+- [ ] 调整建议：
 
----
+#### 确认项 W-2：会议类型
 
-## 三、WTO Fish 1：会议流程、六项议题内容与资料来源
+**推荐方案：**六个核心议题统一选择 **Negotiating Group on Rules（NGR）—Fisheries Subsidies**。
 
-### 3.1 会场和流程判定
+- NGR：核心谈判会场。
+- General Council / Trade Negotiations Committee：政治上提会场。
+- Ministerial Conference：最终成果通过会场。
+- Committee on Fisheries Subsidies：仅用于协定生效后的实施监督场景，不用于 Fish 1 历史谈判。
 
-**【规则已核】首选会场：Negotiating Group on Rules（NGR）—Fisheries Subsidies。**
+- [ ] 同意
+- [ ] 调整建议：
 
-- NGR：开展概念讨论、成员提案说明、逐条案文谈判、主席磋商和文本收敛。
-- Trade Negotiations Committee（TNC）：接收谈判进展、提供总体政治指导。
-- General Council（GC）：必要时处理提交其“讨论”或“决定”的文本，但不是常规技术逐条谈判会场。
-- Ministerial Conference（MC）：处理部长级政治分歧并通过最终成果。
-- Committee on Fisheries Subsidies：协定生效后的实施、通报和监督会场，不应倒用于 2022 年前的 Fish 1 历史谈判。
+#### 确认项 W-3：六个议题是否共用一套流程
 
-### 3.2 WTO 统一模拟流程（适用于六大议题）
+**推荐方案：**六个核心议题共用“WTO-P1 案文谈判流程”，只替换基础案文、待决条款和证据材料。
 
-> **【产品建议】流程名称：NGR 案文谈判流程**
+- [ ] 同意
+- [ ] 调整建议：
 
-1. **会前文件与立场准备**：主席散发问题清单、汇编文本或主席草案；成员提交正式提案、文本建议或集团立场。
-2. **主席开场与议程确认**：说明本轮目标、基础案文、讨论顺序及预期产出。
-3. **进展和基础案文介绍**：主席说明已收敛部分、括号文本和主要分歧；提案方介绍方案及依据。
-4. **成员初步反应与澄清**：成员或集团发言，提出问题，声明支持、保留、反对和红线。
-5. **逐条案文谈判**：围绕具体条款逐句审读，成员提出增、删、改文字和替代方案。此节点应成为学生交互的核心。
-6. **双边 / 小组 / 主席磋商**：对高分歧条款进行双边、小范围或“主席之友”磋商，寻找 landing zone；结果必须回到包容全体成员的流程中。
-7. **主席整合与修订文本**：主席可在自身责任下形成修订文本，保留未解决的括号或备选文字，再由成员审议；该文本不是主席单方面作出的决定。
-8. **NGR 收敛与政治上提**：无正式反对时形成协商一致，将文本提交 TNC、GC 或 MC；仍有反对时，继续修订、延期、保留未决问题或上提高级官员 / 部长处理。
-9. **最终通过与记录**：由有权机构以协商一致通过，形成正式决定 / 协定文本并记录后续工作。
+#### WTO-P1：案文谈判流程
 
-WTO 实际谈判曾采用双边磋商、小组会议、全体会议、逐条修改和主席修订文本，因此上述流程是对实践的可教学化抽象，而不是 WTO 法律文本规定的每场会议固定议程。[2023 Fish Week 流程示例](https://www.wto.org/english/news_e/news23_e/fish_28apr23_e.htm)；[逐条案文谈判示例](https://www.wto.org/english/news_e/news23_e/fish_09oct23_e.htm)
+1. 主席散发基础案文、问题清单或主席文本。
+2. 主席开场，确认议程、目标和讨论顺序。
+3. 主席介绍谈判进展、括号文本和未决问题。
+4. 提案方介绍方案；成员提出支持、保留、反对和澄清问题。
+5. 成员逐条审读案文，提交增、删、改文字。
+6. 对争议条款开展双边、小组或主席磋商。
+7. 主席整合修改，形成修订文本或折中案文。
+8. NGR 全体审议修订文本并测试协商一致。
+9. 达成一致：提交 TNC、GC 或 MC；未达一致：继续磋商、保留括号、延期或上提政治层级。
 
-### 3.3 WTO 破局分支
+#### 确认项 W-4：谈判未达成一致时的处理
 
-|状态|系统应触发的结果|不应出现的结果|
-|---|---|---|
-|有成员保留但未正式反对|主席记录保留意见，继续测试协商一致|直接把“保留”视为否决|
-|有成员正式反对|退回磋商、修订案文、保留括号、延期或上提政治层级|主席宣布强行通过|
-|小组形成折中|将折中案带回全体成员审议|小组替全体成员作最终决定|
-|部长层级仍无共识|未决议题延期，或仅通过已形成共识的部分|把普通多数票当作常规谈判终局|
+**推荐方案：**设置以下分支，不设置“主席强行通过”。
 
-### 3.4 六项核心议题逐项配置
+1. 继续磋商。
+2. 主席修订文本。
+3. 保留括号或备选文字。
+4. 延期至下一轮。
+5. 上提高级官员或部长。
 
-#### 议题 1：IUU 捕捞认定与补贴禁止
-
-**会议主题应包含：**
-
-- 禁止对象：向从事 IUU 捕捞的船舶或经营者提供或维持补贴。
-- 谁有权作出 IUU 认定：沿海成员、船旗成员、相关 RFMO/A；各自须在权限范围内并按相应规则行动。
-- 程序保障：及时通知、信息交换机会、最终认定和制裁通知。
-- 禁止期限：应考虑违法性质、严重程度和重复性，且至少覆盖相关制裁或 RFMO/A 列名期间。
-- 港口国信息、成员国内法 / 行政程序、向委员会通报的义务。
-- 发展中成员在其 EEZ 内与争端解决相关的两年安排。
-
-**需纠正原方案：**“仅 RFMO 认定有效、沿岸国无权判定”不符合最终文本，可作为历史谈判中的极端提案，但不能写成现行规则选项。最终文本明确列出沿海成员、船旗成员和相关 RFMO/A 的认定路径。
-
-**去哪里找：**[协定第 3 条、第 8 条](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)；MC12 前主席草案和成员提案到 [WTO Documents Online](https://docs.wto.org/) 检索 `TN/RL`、`WT/MIN(21)/W/5`、`WT/MIN(22)/W/20`；具体 RFMO IUU 名单再到相应 RFMO 官网核验。
-
-#### 议题 2：枯竭 / 过度捕捞种群的补贴与重建例外
-
-**会议主题应包含：**
-
-- “overfished stock”由谁认定，以及“最佳可得科学证据”的标准。
-- 禁止补贴的适用范围与渔业活动的关联程度。
-- 重建例外：补贴或其他措施是否确实用于把种群重建至生物可持续水平。
-- 可采用的参考点，例如 MSY 或与数据可得性相称的其他参考点。
-- 发展中成员在其 EEZ 内与争端解决相关的两年安排。
-
-**需纠正原方案：**最终文本没有“仅大规模种群修复项目才可豁免”的限制，也没有“小型生计渔业修复补贴全部当然豁免”。模拟选项应围绕“重建措施的充分性、证据、条件和监督”设计。
-
-**去哪里找：**[协定第 4 条及脚注 11](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)；相关种群状态到沿海成员或相关 RFMO 的科学委员会、种群评估报告和管理措施中查找。
-
-#### 议题 3：无监管公海补贴禁止
-
-**会议主题应包含：**
-
-- 地理和机构双重条件：活动既在沿海成员 / 非成员管辖范围之外，又在相关 RFMO/A 权限范围之外。
-- “相关 RFMO/A”“权限范围”“捕鱼及捕鱼相关活动”的定义。
-- 历史捕捞、传统渔业、小型渔船或远洋船队例外是否应存在，以及例外如何防止规避。
-- 船旗、受益人和补贴归属的关系。
-
-**需纠正原方案：**最终第 5.1 条并不是笼统表述为“所有没有 RFMO 的公海”，而是同时使用“沿海管辖之外”和“相关 RFMO/A 权限之外”两个条件。历史海域和小型船豁免可作为历史谈判提案，不是最终文本中的当然例外。
-
-**去哪里找：**[协定第 1、2、5 条和第 11.4 条](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)；相关 RFMO 的法律文书、管辖海域和物种范围可从 WTO 第 8.6 条通报或各 RFMO 基本文本核验。
-
-#### 议题 4：发展中国家特殊和差别待遇（S&DT）
-
-**会议主题应包含：**
-
-- 哪些成员 / 渔业可获得待遇：发展中成员、LDC、低捕捞份额成员、小规模和生计渔业。
-- 待遇的法律形式：实体豁免、过渡期、争端行动豁免、尽量克制、技术援助。
-- 地理范围：领海、EEZ、公海、RFMO 管辖区。
-- 期限、毕业机制、防规避、远洋捕捞排除和透明度条件。
-
-**需纠正原方案：**Fish 1 最终文本中的“两年”主要是第 3.8 和 4.4 条下，发展中成员（含 LDC）在其 EEZ 内的补贴免受基于相关禁止条款和争端解决条款的行动；不能简化为“所有禁令一律延后两年”。第 6 条另规定对涉及 LDC 的事项保持克制并考虑其特殊情况。
-
-**去哪里找：**[协定第 3.8、4.4、6、7 条](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)；历史集团立场到 [WTO Documents Online](https://docs.wto.org/) 按 `TN/RL/GEN`、成员 / 集团名和日期检索，不能仅凭“发达 / 发展中”标签推定。
-
-#### 议题 5：通知与透明度
-
-**会议主题应包含：**
-
-- 与《补贴与反补贴措施协定》第 25 条常规补贴通报的衔接。
-- 补贴对应的捕捞活动、种群状态、管理措施、船队能力、受益船舶和渔获数据。
-- IUU 船舶 / 经营者年度清单、执行措施、国内渔业制度和 RFMO/A 信息。
-- 机密信息保护、补充信息请求、迟报 / 漏报的处理。
-- LDC 和全球海洋捕捞产量占比不超过 0.8% 的发展中成员适用的四年频率安排。
-
-**需纠正原方案：**“低产量小国每四年上报”只适用于第 8.1 条所列的附加信息，不应写成所有渔业补贴通报均改为四年一次。
-
-**去哪里找：**[协定第 8 条及脚注 12—16](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)；补贴通报格式和成员通报到 [WTO Documents Online](https://docs.wto.org/) 检索 `G/SCM` 和成员名称。
-
-#### 议题 6：技术援助和能力建设
-
-**会议主题应包含：**
-
-- 受援资格、需求评估和优先领域。
-- 援助内容：国内法规调整、补贴清单、通知、渔业数据、监测和执行能力。
-- 资金来源和治理：成员自愿捐款，不使用 WTO 经常预算；与 FAO、IFAD、世界银行等伙伴协作。
-- 项目申请、技术评审、批准、监督和成效评估。
-- 援助与履约义务、S&DT 之间的关系。
-
-**需纠正原方案：**不应把现行机制概括为“由 WTO 或捕捞大国强制提供资金”。协定规定的是有针对性的援助和一个自愿出资机制。
-
-**去哪里找：**[协定第 7 条](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)；[WTO Fisheries Funding Mechanism](https://www.wto.org/english/tratop_e/rulesneg_e/fish_e/fish_fund_e.htm)。
-
-### 3.5 WTO 资料检索顺序
-
-1. **定规则**：先查《渔业补贴协定》对应条款。
-2. **定历史版本**：到 MC12 文件页查 `WT/MIN(21)/W/5`、`WT/MIN(22)/W/20`、`WT/MIN(22)/W/22`、`WT/MIN(22)/33`。[MC12 文件页](https://www.wto.org/english/thewto_e/minist_e/mc12_e/documents_e.htm)
-3. **找成员立场**：在 Documents Online 以议题关键词 + 成员 / 集团 + 截止日期检索 `TN/RL/*`、`TN/RL/GEN/*`。每条立场必须记录文件号、日期、提案方和适用文本版本。
-4. **找谈判过程**：查 WTO fisheries subsidies 新闻、NGR 主席报告和年度报告。
-5. **找实施材料**：协定生效后的委员会文件、通报模板和 Fish Fund 文件应与历史谈判材料分开存放。
+- [ ] 同意
+- [ ] 调整建议：
 
 ---
 
-## 四、IOTC：共同骨架、六类流程变体与议题映射
+### 四、WTO 六个核心议题逐项确认
 
-### 4.1 IOTC 共同骨架
+#### W1. IUU 捕捞认定与补贴禁止
 
-所有 IOTC 模拟均可显示以下五段，但中间流程必须根据会议类型替换：
+**推荐会议主题：**IUU 捕捞认定主体、程序及补贴禁止期限谈判。
 
-1. **会前准备**：邀请、代表权文件、临时议程、工作文件 / 信息文件、下设机构报告或提案。
-2. **开幕与议程通过**：主席开幕，秘书处报告代表权文件情况，会议通过议程。
-3. **实质审议**：报告介绍、提案说明、成员 / 专家讨论、澄清和文本修订。
-4. **形成会议产出**：科学建议、技术报告、合规报告、预算建议、修订提案、Resolution 或 Recommendation。
-5. **报告通过与闭幕**：会议通过报告，记录决定、建议、少数意见和后续工作。
+**会议流程：**WTO-P1。
 
-[IOTC 2025 年《议事规则》](https://iotc.org/sites/default/files/IOTC_Rules_of_Procedure_8May2025E.pdf)规定了议程、代表权、主席职权、委员会和工作组职责及报告要求。委员会常会每年召开，临时议程原则上至少提前 60 天发送，含成员提案的注释议程原则上至少提前 30 天发送。
+**会议主题包含：**
 
-### 4.2 六类流程变体
+1. IUU 捕捞的定义和适用对象。
+2. 沿海成员、船旗成员、相关 RFMO/A 的认定权限。
+3. 认定前通知、信息交换和申辩程序。
+4. 最终认定、制裁及补贴禁止的起止时间。
+5. 港口国提供的信息如何处理。
+6. 国内法律、行政程序和通报义务。
+7. 发展中成员在 EEZ 内的两年争端行动安排。
 
-#### 流程 A：科学咨询链（物种、生态、兼捕、数据）
+**资料去哪里找：**
 
-**适用会场：**WPTT / WPNT / WPTmT / WPB / WPEB / WPDCS → Scientific Committee（SC）→ Commission。
+- [WTO《渔业补贴协定》第 3、8 条](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)
+- [WTO Documents Online](https://docs.wto.org/)：检索 `TN/RL`、`IUU fishing`、成员或集团名称。
+- 相关 RFMO 官网：IUU 认定程序和 IUU 船舶名单。
 
-1. 秘书处和 CPC 汇集数据、国家报告和研究论文。
-2. 专项工作组介绍数据与模型，开展同行审议和不确定性讨论。
-3. 工作组形成种群状态、风险、管理选项、数据缺口和研究建议，并通过会议报告。
-4. SC 审查各工作组结果，形成面向 Commission 的综合科学建议，可记录共识、多数和少数意见。
-5. 成员据此向 Commission 提交 CMM 提案；科学机构本身通常提供建议，不替 Commission 通过约束性管理措施。
-6. Commission 审议提案；若通过 Resolution，再进入流程 F 的通知、生效和履约阶段。
+- [ ] 同意上述会议主题、流程和资料入口
+- [ ] 调整建议：
 
-科学工作组主要由科学家以专业身份参与，其核心作用是为 SC 提供种群状况和管理行动评估，不宜模拟成成员进行主权配额表决的会场。[科学工作组职能](https://iotc.org/science/working-parties-science)；[科学委员会职能](https://iotc.org/science/scientific-committee)
+#### W2. 过度捕捞种群补贴与重建例外
 
-#### 流程 B：配额分配标准链
+**推荐会议主题：**过度捕捞种群认定、补贴禁止及种群重建例外谈判。
 
-**适用会场：**TCAC → Commission；如涉及资源总量，前接物种工作组 / SC。
+**会议流程：**WTO-P1。
 
-1. 确认分配对象、适用物种、空间范围和基础数据。
-2. 审议历史渔获、沿海国身份、发展需求、小规模 / 生计渔业和数据质量。
-3. 对分配标准、权重、基准年、上限、调整、转让、超捕扣减、新进入者等提出方案。
-4. 使用数据集或模拟工具测试各方案的分配结果和敏感性。
-5. 成员进行标准与利益分配谈判，主席整合可收敛文本并记录分歧。
-6. TCAC 通过会议报告 / 分配框架建议并提交 Commission。
-7. Commission 决定是否采纳；若将其写入约束性 Resolution，则转入流程 F。
+**会议主题包含：**
 
-TCAC 是分配标准的政策技术谈判场，不负责替代 SC 确定种群可持续捕捞水平。TCAC 会议页面通常提供议程、主席说明、分配数据、模拟结果和会议报告。[TCAC 会议资料示例](https://iotc.org/meetings/16th-meeting-technical-committee-allocation-criteria-tcac)
+1. “过度捕捞种群”的认定主体和认定标准。
+2. 最佳可得科学证据的使用。
+3. 补贴禁止的适用范围。
+4. 种群重建例外的适用条件。
+5. 生物可持续水平、MSY 或其他参考点。
+6. 重建措施的期限、监督和证明材料。
+7. 发展中成员在 EEZ 内的两年争端行动安排。
 
-#### 流程 C：年度履约审查链
+**资料去哪里找：**
 
-**适用会场：**Secretariat → Compliance Committee（CoC）→ Commission。
+- [WTO《渔业补贴协定》第 4 条及脚注 11](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)
+- [WTO Documents Online](https://docs.wto.org/)：检索 `overfished stocks`、`rebuilding`、`special and differential treatment`。
+- 沿海成员或相关 RFMO：种群评估、科学委员会报告和重建计划。
 
-1. 秘书处在 CoC 年会前约 4 个月向 CPC 提供标准履约问卷；CPC 原则上最迟在 Commission 会议前 80 天回复。
-2. 秘书处编制各 CPC 的 draft Compliance Report，并在 Commission 会议前 50 天提供；CPC 可最迟在会前 30 天补充、纠正或说明能力建设需要。
-3. 秘书处形成 Summary Compliance Report；CPC 可最迟在 Commission 会前 10 天提交补救行动，摘要报告原则上最迟在会前 25 天公开给 CPC。
-4. CoC 按 CPC、措施和义务逐项审查，听取说明、核验证据并建议合规状态和后续行动。
-5. CoC 形成 Provisional Compliance Report，记录问题、状态、整改措施和期限。
-6. Commission 审议并按需修订，采用为 Final Compliance Report。
-7. CPC 执行整改；严重或重复的不合规进入下一周期跟踪，必要时触发能力建设、强化监控、国内制度调整或新的 CMM 提案。
+- [ ] 同意上述会议主题、流程和资料入口
+- [ ] 调整建议：
 
-这是独立于一般 CMM 谈判的正式审查流程，不能用“提案—修订—三分之二表决—异议期”替代。[IOTC 履约机制说明](https://iotc.org/compliance)；[2025 年《议事规则》Appendix V](https://iotc.org/sites/default/files/IOTC_Rules_of_Procedure_8May2025E.pdf)
+#### W3. 无监管公海补贴禁止
 
-#### 流程 D：履约制度 / 监测规则改革链
+**推荐会议主题：**沿海管辖范围和 RFMO/A 权限范围之外的捕捞补贴禁止谈判。
 
-**适用会场：**WPICMM → CoC → Commission；数据标准可前接 WPDCS。
+**会议流程：**WTO-P1。
 
-1. 汇总现行 CMM 的执行问题、CPC 报告、技术方案和数据缺口。
-2. WPICMM 讨论 VMS、观察员、电子监测、港口国措施、转运、IUU 名单、船舶记录等制度细节。
-3. 形成技术建议或修订文本，提交 CoC。
-4. CoC 从可执行性、合规审查和执法角度审议，向 Commission 提出建议。
-5. 成员正式提交 / 修订 CMM 提案，Commission 谈判并决定。
-6. 若为 Resolution，进入流程 F；实施情况随后进入流程 C 的年度履约审查。
+**会议主题包含：**
 
-#### 流程 E：行政、预算和制度链
+1. 沿海成员管辖范围之外的海域界定。
+2. 相关 RFMO/A 权限范围的界定。
+3. “捕鱼”和“捕鱼相关活动”的范围。
+4. 历史捕捞、传统渔业和小规模渔业是否设置例外。
+5. 远洋船队、船旗和补贴归属。
+6. 例外条件、透明度和防规避条款。
 
-**适用会场：**Secretariat → SCAF → Commission。
+**资料去哪里找：**
 
-1. 秘书处提交本年度预算执行、下一年度 / 两年度预算草案、会费、拖欠、项目和行政事项。
-2. SCAF 逐项审查收入、支出、工作计划、人力和成员缴费影响。
-3. 必要时由 SCAF 小型非正式组与执行秘书先行研究争议事项。
-4. SCAF 形成会议报告和预算 / 行政建议，提交 Commission。
-5. Commission 审批工作计划和预算并通过相关决定。
-6. 若修改《议事规则》或《财务条例》，适用相应的特别门槛；这类决定不适用 CMM 的 120 天异议期。
+- [WTO《渔业补贴协定》第 1、2、5、11.4 条](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)
+- [WTO Documents Online](https://docs.wto.org/)：检索 `unregulated high seas`、`outside jurisdiction`、`RFMO/A competence`。
+- 相关 RFMO 基本文本：管辖海域和物种范围。
 
-SCAF 的法定职责是审查行政、财务和预算事项，不应被当作一般沿海国发展、贸易或船员权益谈判会场。[2025 年《议事规则》Appendix VI](https://iotc.org/sites/default/files/IOTC_Rules_of_Procedure_8May2025E.pdf)；[IOTC 基本文本与财务条例](https://iotc.org/about-iotc/basic-texts)
+- [ ] 同意上述会议主题、流程和资料入口
+- [ ] 调整建议：
 
-#### 流程 F：Commission 通过 CMM 及会后效力链
+#### W4. 发展中国家特殊和差别待遇（S&DT）
 
-**适用会场：**Commission。
+**推荐会议主题：**发展中成员和最不发达成员的过渡安排、适用范围及条件谈判。
+
+**会议流程：**WTO-P1。
+
+**会议主题包含：**
+
+1. 受益成员的范围。
+2. 实体豁免、过渡期、争端行动豁免和技术援助的区别。
+3. 领海、EEZ、公海和 RFMO 管辖区的适用范围。
+4. 两年、五年或其他期限方案。
+5. 小规模、生计和手工渔业的待遇。
+6. 远洋捕捞是否排除适用。
+7. 毕业机制、透明度和防规避条件。
+
+**资料去哪里找：**
+
+- [WTO《渔业补贴协定》第 3.8、4.4、6、7 条](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)
+- [WTO Documents Online](https://docs.wto.org/)：检索 `TN/RL/GEN`、`S&DT`、`LDC`、成员集团名称。
+- MC12 前主席文本和成员 / 集团提案。
+
+- [ ] 同意上述会议主题、流程和资料入口
+- [ ] 调整建议：
+
+#### W5. 通知与透明度
+
+**推荐会议主题：**渔业补贴通报内容、频率、审查和差别化义务谈判。
+
+**会议流程：**WTO-P1。
+
+**会议主题包含：**
+
+1. 与 SCM Agreement 第 25 条常规补贴通报的衔接。
+2. 补贴对应的捕捞活动、种群状态和管理措施。
+3. 船队能力、受益船舶和渔获数据。
+4. IUU 船舶和经营者年度名单。
+5. 国内执行措施和渔业制度通报。
+6. RFMO/A 信息通报。
+7. 小型渔业发展中成员和 LDC 的通报频率。
+8. 机密信息、补充信息请求和迟报处理。
+
+**资料去哪里找：**
+
+- [WTO《渔业补贴协定》第 8 条及脚注 12—16](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)
+- [WTO Documents Online](https://docs.wto.org/)：检索 `G/SCM`、`notification`、成员名称。
+- SCM 补贴通报格式和成员实际通报文件。
+
+- [ ] 同意上述会议主题、流程和资料入口
+- [ ] 调整建议：
+
+#### W6. 技术援助和能力建设
+
+**推荐会议主题：**技术援助对象、援助范围、资金来源和项目管理机制谈判。
+
+**会议流程：**WTO-P1。
+
+**会议主题包含：**
+
+1. 受援成员资格和需求评估。
+2. 国内法规调整和执行能力建设。
+3. 补贴清单、通知和渔业数据能力。
+4. 监测、控制和执法能力。
+5. 自愿出资机制和资金来源。
+6. WTO、FAO、IFAD、世界银行等机构分工。
+7. 项目申请、技术评审、批准、监督和成效评估。
+
+**资料去哪里找：**
+
+- [WTO《渔业补贴协定》第 7 条](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)
+- [WTO Fisheries Funding Mechanism](https://www.wto.org/english/tratop_e/rulesneg_e/fish_e/fish_fund_e.htm)
+- [WTO Documents Online](https://docs.wto.org/)：检索 `technical assistance`、`capacity building`、`Fish Fund`。
+
+- [ ] 同意上述会议主题、流程和资料入口
+- [ ] 调整建议：
+
+#### WTO 资料基准确认
+
+**推荐方案：**
+
+1. 六个议题统一以 MC12 前主席文本为基础案文。
+2. 最终法律边界以《渔业补贴协定》正式文本校验。
+3. 国家和集团立场必须标注文件号、日期和提案方。
+4. 不混用 Fish 1、Fish 2 和协定生效后的实施文件。
+
+- [ ] 同意
+- [ ] 请苏老师指定其他基础文本或资料口径：
+
+---
+
+## 第二部分：RFMO-IOTC
+
+### 五、请李老师先确认 IOTC 通用方案
+
+#### 确认项 I-1：是否使用一套通用流程
+
+**推荐方案：**不把六个核心议题统一成一套固定流程；采用“流程库 + 逐议题匹配”。
+
+- [ ] 同意
+- [ ] 调整建议：
+
+#### 确认项 I-2：会议主题的选择原则
+
+**推荐方案：**
+
+1. 形成科学或技术建议：选择工作组、SC、TCAC、WPSE、WPICMM 或 CoC。
+2. 审查预算和行政事项：选择 SCAF。
+3. 通过具有约束力的 CMM：选择 Commission。
+4. 一个核心议题包含不同决策对象时，拆成多个会议主题。
+
+- [ ] 同意
+- [ ] 调整建议：
+
+#### 确认项 I-3：Commission 的通过和会后流程
+
+**推荐方案：**
+
+1. Resolution：出席并投票成员三分之二多数通过。
+2. Recommendation：出席并投票成员简单多数通过。
+3. Resolution 原则上在秘书处通知所指定日期起 120 天后生效；成员可在该期间提出异议，其他成员另有 60 天异议窗口。
+4. 预算、科学建议、履约报告和一般会议报告不进入 CMM 异议流程。
+
+- [ ] 同意
+- [ ] 调整建议：
+
+---
+
+### 六、IOTC 流程库
+
+#### IOTC-P1：科学咨询流程
+
+1. CPC、秘书处和研究人员提交数据、国家报告和工作文件。
+2. 专项工作组审查数据、模型、风险和管理选项。
+3. 工作组形成建议并通过会议报告。
+4. SC 审议工作组结果，形成综合科学建议。
+5. SC 向 Commission 提交报告和建议。
+6. 如需形成约束性措施，成员提交 CMM 提案并转入 IOTC-P6。
+
+#### IOTC-P2：配额分配标准流程
+
+1. 确认分配物种、空间范围、基础数据和适用成员。
+2. 审议历史渔获、沿海国权益、发展需求和小规模渔业。
+3. 提出分配标准、权重、基准年、上限和调整方案。
+4. 使用数据集或模拟工具测试方案。
+5. TCAC 谈判并形成分配框架或会议报告。
+6. 向 Commission 提交建议。
+7. 如需写入 Resolution，转入 IOTC-P6。
+
+#### IOTC-P3：年度履约审查流程
+
+1. 秘书处向 CPC 提供履约问卷。
+2. CPC 提交问卷、实施报告和证明材料。
+3. 秘书处编制 Draft Compliance Report 和 Summary Compliance Report。
+4. CPC 补充、纠正并提交整改说明。
+5. CoC 按 CPC、措施和义务逐项审查。
+6. CoC 形成 Provisional Compliance Report 和整改建议。
+7. Commission 审议并采用 Final Compliance Report。
+8. CPC 整改并进入下一年度跟踪。
+
+#### IOTC-P4：履约制度和监测规则改革流程
+
+1. 汇总现行 CMM 的实施问题和技术资料。
+2. WPICMM 审议监测、控制和执法规则。
+3. WPICMM 形成技术建议或修订文本。
+4. CoC 审议可执行性和履约影响。
+5. CoC 向 Commission 提交建议。
+6. 成员提交 CMM 提案并转入 IOTC-P6。
+
+#### IOTC-P5：预算、行政和制度流程
+
+1. 秘书处提交预算执行、预算草案、会费和行政文件。
+2. SCAF 逐项审查。
+3. 必要时由 SCAF 小型非正式组处理争议事项。
+4. SCAF 形成会议报告和建议。
+5. Commission 审议并通过预算、工作计划或行政决定。
+6. 修改《议事规则》或《财务条例》时，适用相应特别程序和表决门槛。
+
+#### IOTC-P6：Commission 通过 CMM 流程
 
 1. 开幕、代表权报告和议程通过。
-2. 审议 SC、CoC、SCAF、TCAC、TCMP、WPSE 等报告和建议。
-3. 提案成员介绍 Resolution / Recommendation 草案及依据。
-4. 全体讨论并进行逐条案文修订；需要时成立会中小型起草组或开展主席磋商。
-5. 主席测试是否存在共识；无法收敛时可按规则表决。
-6. **Resolution：**出席并投票成员三分之二多数通过；**Recommendation：**出席并投票成员简单多数通过。委员会法定人数为成员总数的多数。
-7. 会议通过报告并闭幕；秘书处无不当拖延地通知已通过措施。
-8. Resolution 原则上自秘书处通知所指定日期起 120 天后对未提出异议的成员产生约束力；成员可在该期间提出异议，其他成员还可在其后 60 天内提出异议。超过三分之一成员异议时，其他成员也不受约束。
-9. CPC 国内实施、提交数据和履约报告；CoC 在后续周期审查执行情况。
+2. 审议下设机构报告和科学、履约或政策建议。
+3. 提案成员介绍 Resolution 或 Recommendation 草案。
+4. 全体逐条讨论并修改案文。
+5. 必要时成立会中起草组或开展主席磋商。
+6. 主席测试共识；不能收敛时进入表决。
+7. 通过 Resolution 或 Recommendation，并通过会议报告。
+8. 秘书处通知已通过的 CMM。
+9. Resolution 进入 120 天生效 / 异议流程。
+10. CPC 国内实施，后续由 CoC 审查履约情况。
 
-**对原八步流程的三处修订：**
+#### IOTC-P7：IUU 船舶名单流程
 
-- “Intersessional/Working Group Drafting”不应写成 Commission 每项提案都必须经过的固定步骤；可改为“会中起草组 / 主席磋商，必要时会间继续工作”。
-- “优先协商一致”可作为模拟谈判的实践目标，但正式法律门槛必须写清：Resolution 为三分之二多数，而不是 WTO 式“一名成员正式反对即不能通过”。
-- “90 天异议期”改为“原则上 120 天异议 / 生效期，随后其他成员另有 60 天异议窗口”。
+1. CPC 提交涉嫌 IUU 活动的船舶和证据。
+2. 秘书处编制并通知临时 / 暂定名单。
+3. 船旗国提交说明、反证或整改材料。
+4. CoC 审查证据和船旗国答复。
+5. CoC 向 Commission 建议列入、保留或移出名单。
+6. Commission 审议并通过 IUU 船舶名单。
+7. 秘书处公布名单并通知相关组织。
 
-### 4.3 IOTC 六大核心议题逐项映射
+#### IOTC-P8：社会经济影响评估流程
 
-|核心议题|必须拆分的会议主题|首选会场与流程|会议产出|主要资料入口|
-|---|---|---|---|---|
-|1. 捕捞配额与资源总量管控|①种群状态与科学捕捞建议；②TAC / catch limit；③成员间分配标准；④超捕扣减、转让和新进入者|①物种 WP→SC（流程 A）；②Commission（流程 F）；③TCAC→Commission（流程 B→F）|科学建议、分配框架、catch limit / rebuilding Resolution|物种 WP 报告、SC 报告、Stock Status、TCAC 数据和报告、Commission Prop、有效 CMM|
-|2. 生态保护与兼捕管控|保护物种、兼捕减排、FAD 生态与作业规则、渔具改造、数据报告、气候风险|WPEB；FAD 的目标种群影响还应接 WPTT；之后 SC→Commission（流程 A→F）|风险评估、技术标准建议、生态 / FAD Resolution|WPEB / WPTT 文件、SC 报告、物种状态摘要、CMM 搜索、Commission 提案|
-|3. 渔船产能与作业管控|授权 / 活跃船舶记录、产能 / 努力量、船旗和租船、VMS、作业时空 / 渔具限制、转运、IUU 名单|WPDCS / 科学 WP 提供数据；WPICMM→CoC→Commission（流程 D→F）；年度执行走流程 C|技术建议、船舶 / 监测类 Resolution、IUU / 合规决定|Vessel records、e-RAV、IUU List、WPICMM / CoC 报告、CMM|
-|4. 履约监管与措施实施|CPC 年度履约审查；VMS / 观察员 / EM / 港口 / 转运规则改革；数据迟报漏报；整改与能力建设|年度审查：CoC（流程 C）；制度改革：WPICMM→CoC→Commission（流程 D→F）|Provisional / Final Compliance Report；修订 CMM；整改计划|Compliance 页面、问卷、CPC Compliance Report、CoC 报告、WPICMM 报告、Final Compliance Report|
-|5. 沿海国权益与渔业经济|小规模 / 生计渔业、粮食安全、就业与价值链、CMM 和配额分配的社会经济影响、发展中沿海国能力约束|WPSE→Commission；涉及配额时接 TCAC，涉及科学建议时接 SC（WPSE 专项链 + 流程 B / F）|社会经济指标、影响评估、政策建议、必要时 CMM 条款|WPSE 文件和报告、国家社会经济数据、TCAC / SC 建议、Commission 文件|
-|6. 机构制度与财政运行|①预算 / 会费 / 行政；②议事规则 / 财务条例修订；③绩效审查；④管理程序 / 捕捞策略|①SCAF→Commission（流程 E）；②Commission 特别规则；③Performance Review / TCPR→Commission；④科学 WP / MSE→SC→TCMP→Commission（流程 A→F）|预算和工作计划、规则修正、绩效改进计划、管理程序 Resolution|SCAF 文件、Financial Regulations、Rules of Procedure、Performance Review、TCMP / SC 报告、Commission 报告|
-
-### 4.4 议题范围和会场的必要纠正
-
-1. **WPFC 不在 2025 年《IOTC 议事规则》列出的现行常设科学工作组清单中。**如要复刻历史会议可以使用；当前场景应以 WPDCS、相关物种工作组、WPICMM、CoC 和 Commission 为主，并在场景中注明历史年份。
-2. **WGFAD 不宜作为当前默认常设会场。**FAD 议题可按具体问题放入 WPTT（目标金枪鱼种群和作业影响）、WPEB（生态和兼捕）及 Commission；若复刻某届 ad hoc WGFAD，须标注历史届次。
-3. **TCMP 只适配 management procedure / harvest strategy / MSE 的科学—政策接口，**不宜承载一般渔船登记、方便旗、IUU 黑名单或所有“管理制度”议题。
-4. **SCAF 只负责行政和财务。**沿海国发展权益一般由 WPSE、TCAC 或 Commission 处理；只有会议参与基金、预算或能力建设经费等财政事项才进入 SCAF。
-5. **“金枪鱼贸易规则”和“船员劳动权益”需要缩窄。**IOTC 可讨论与 CMM 执行相关的市场措施及渔业社会经济影响，但一般贸易规则主要属于 WTO / 国内贸易制度，船员劳动标准主要属于 ILO、IMO、FAO 和国内劳动法。建议在 IOTC 模块中改写为“CMM 的价值链 / 市场影响”和“渔业从业者社会经济影响”，或标注为跨机构背景议题。
-6. **“TAC 核定”和“配额分配”必须拆成两个会议主题。**前者先有科学建议并由 Commission 决定总量 / catch limit；后者由 TCAC 讨论成员间分配标准，不能让 TCAC 替代科学种群评估。
-
-### 4.5 IOTC 资料去哪里找、怎么找
-
-|要找的内容|官方入口|检索方法|
-|---|---|---|
-|组织权限、表决、生效、异议|[Basic texts](https://iotc.org/about-iotc/basic-texts)|先看 Agreement Article VI、IX、XII，再看最新 Rules of Procedure|
-|某次会议完整材料|[Meetings](https://iotc.org/meetings)|按 Meeting type + year + session 筛选；进入会议页后依次看 agenda、list of documents、working papers、proposals、report|
-|跨会议查文件|[Documents](https://iotc.org/documents/)|按文件编号、标题、年份、meeting 搜索；优先记录 Reference，如 `IOTC-2026-S30-PropG`|
-|现行与历史 CMM|[CMM 页面](https://iotc.org/node/136) / [Basic Search](https://iotc.org/cmms/basic)|按年份、状态、物种、主题查 Resolution / Recommendation；确认 active、superseded 或 obsolete|
-|科学依据和管理建议|[Scientific Committee](https://iotc.org/science/scientific-committee) / [Science Working Parties](https://iotc.org/science/working-parties-science)|先查专项 WP 报告，再查同年度 SC 是否采纳、修改或保留意见|
-|种群状态|[Stock Status](https://iotc.org/node/3379)|下载目标物种 Executive Summary 和 supporting information；记录评估年份和不确定性|
-|原始 / 汇总数据|[Datasets](https://iotc.org/data/datasets/latest/NC/SCIn%2Cdataavailability)|按 meeting、reference、year 查数据；分配议题需同步查 TCAC dataset / simulation assumptions|
-|履约情况|[Compliance](https://iotc.org/compliance)|查 CPC questionnaire、draft / summary / provisional / final compliance reports 和 CoC report|
-|授权船、活跃船、转运船|[Vessels](https://iotc.org/vessels)|用 e-RAV / 页面下载记录，核对船旗、授权状态、船长和活动年份|
-|IUU 名单|[IOTC IUU List](https://iotc.org/iotc-iuu-list)|同时查适用 Resolution、提名证据、CoC 审议和 Commission 最终名单|
-|通知、生效和异议|[IOTC Circulars](https://iotc.org/documents/circulars)|按年度和关键词 `CMMs adopted`、`objection` 查秘书处通知及日期|
-|预算与会费|[SCAF 会议文件](https://iotc.org/meetings) / [Financial Regulations](https://iotc.org/about-iotc/basic-texts)|按 SCAF 届次查预算草案、会费、拖欠和会议报告，再核对 Commission 是否批准|
-
-### 4.6 IOTC 文件编号速读
-
-- `IOTC-年份-S届次-PropX`：Commission 的 CMM 提案，通常是主权谈判的基础案文。
-- `...-R`：该会议最终报告；判断“会议真正决定了什么”时优先看报告，而不是只看议程或提案。
-- `...-INF`：信息文件，提供背景但通常不直接要求会议作决定。
-- `...-DATA`：数据集或计算文件。
-- `CIRCULAR 年份-编号`：秘书处通知，常用于确认邀请、截止日期、已通过 CMM 的通知、异议和生效时间。
+1. CPC、专家和利益相关方提交社会经济数据和工作文件。
+2. WPSE 确定指标、数据口径和评估对象。
+3. WPSE 评估 CMM、配额或捕捞限制的社会经济影响。
+4. WPSE 讨论小规模、生计和沿海渔业的政策选项。
+5. WPSE 形成会议报告和建议。
+6. 向 Commission 提交；如需形成 CMM，转入 IOTC-P6。
 
 ---
 
-## 五、向专家确认时只保留这些问题
+### 七、IOTC 六个核心议题逐项确认
 
-### 5.1 请苏老师确认（WTO）
+#### I1. 捕捞配额与资源总量管控
 
-1. **【专家待确认】**教学场景是否固定为“2022 年 MC12 通过前的 Fish 1 历史谈判”？若是，六项议题统一使用 NGR 流程；若否，是否需要另建“协定生效后的 Committee on Fisheries Subsidies 实施监督”场景？
-2. **【专家待确认】**是否同意用本文 9 步 NGR 案文谈判流程替代原 8 步，并把 GC / MC 仅设为政治上提和最终通过层级？
-3. **【专家待确认】**破局时是否采用“继续磋商—主席修订—保留括号—延期—上提部长”分支，并删除“主席强行通过”设计？
-4. **【专家待确认】**各国立场是否锁定到某一具体日期和文本版本？建议以 MC12 前最后一份指定主席草案为共同基准，禁止混用 2017、2021、2022 和第二阶段谈判立场。
-5. **【专家待确认】**是否接受本文对六项方案的法律校正：两年安排不是全面延期、四年通报不是全部通报、重建例外不以“大规模项目”为唯一条件、技术援助基金是自愿出资？
-
-### 5.2 请李老师确认（IOTC）
-
-1. **【专家待确认】**是否同意采用“共同骨架 + A—F 六类流程”，而不是所有议题共用一份固定 8 步流程？
-2. **【专家待确认】**产品每次只允许选择一个会议类型时，是否按下列原则：技术推演选 WP / SC / TCAC / CoC / SCAF，主权决议谈判选 Commission；不把一条跨年度机构链塞进单场会议？
-3. **【专家待确认】**是否同意将“资源总量”和“成员分配”拆成两个子议题，并分别使用科学链与 TCAC 分配链？
-4. **【专家待确认】**是否同意对 WPFC、WGFAD、MPD 等非现行常设或特定历史会议设置年份标签，避免与 2025 年《议事规则》的现行机构清单混用？
-5. **【专家待确认】**是否同意把 SCAF 从一般“沿海国权益与渔业经济”中移除，把 TCMP 限定为管理程序 / MSE，把“贸易规则、船员劳动权益”改为跨机构背景或社会经济影响？
-6. **【专家待确认】**是否确认 Resolution 采用三分之二多数、原则上 120 天生效 / 首轮异议期，以及 Recommendation 为简单多数；并确认该机制不适用于预算、科学建议和履约报告等所有产出？
-
----
-
-## 六、可直接用于产品配置的最简映射
-
-|场景|核心议题|系统默认首选会场|调用流程|
+|推荐会议主题|首选会场|会议流程|会议主题包含|
 |---|---|---|---|
-|WTO Fish 1|六项全部|NGR—Fisheries Subsidies|WTO 9 步案文谈判流程|
-|IOTC|捕捞总量 / TAC 科学依据|物种 WP 或 SC|A|
-|IOTC|配额分配标准|TCAC|B|
-|IOTC|生态 / 兼捕 / FAD 技术标准|WPEB（FAD 视问题接 WPTT）|A|
-|IOTC|渔船监管制度改革|WPICMM 或 CoC|D|
-|IOTC|年度成员履约审查|CoC|C|
-|IOTC|沿海国社会经济影响|WPSE|WPSE 专项链，必要时接 B / F|
-|IOTC|预算、会费、行政|SCAF|E|
-|IOTC|管理程序 / 捕捞策略|TCMP（前接 SC / MSE）|A→F|
-|IOTC|任何具有约束力的最终 CMM|Commission|F|
+|I1-1 种群状态与捕捞建议|对应物种工作组 → SC|IOTC-P1|种群评估、参考点、捕捞死亡率、资源趋势、不确定性、管理选项|
+|I1-2 TAC / Catch Limit|Commission|IOTC-P6|总量、适用物种和海域、期限、超捕扣减、数据和报告义务|
+|I1-3 配额分配标准|TCAC → Commission|IOTC-P2；必要时接 P6|历史渔获、沿海国权益、发展需求、小规模渔业、新进入者、权重、转让和调整|
 
-## 七、资料使用底线
+**推荐方案：**把“资源总量”和“成员间分配”拆成三个会议主题，不合并为一场会议。
 
-1. 不用“某类国家通常支持某方案”替代具体年份的正式文件证据。
-2. 不把提案文本写成已经通过的规则；必须核对 Commission / MC 最终报告或正式决定。
-3. 不把 superseded / obsolete 的 IOTC Resolution 当作现行规则。
-4. 所有数字必须记录数据年份、评估模型和文件编号。
-5. 所有会议主题必须同时保存“基础案文”和“最终产出”，便于学生看见谈判前后变化。
-6. WTO 与 IOTC 资料应分别使用各自术语：WTO 是 Member、consensus、NGR text；IOTC 是 CPC、Commission、Resolution / Recommendation、CMM、objection。两套机制不得互相套用。
+**资料入口：**
+
+- [Scientific Committee](https://iotc.org/science/scientific-committee)
+- [Science Working Parties](https://iotc.org/science/working-parties-science)
+- [Stock Status](https://iotc.org/node/3379)
+- [IOTC Meetings](https://iotc.org/meetings)：筛选 TCAC、SC、物种工作组、Commission。
+- [IOTC Documents](https://iotc.org/documents/)：检索 `TCAC`、`Prop`、物种名称和年份。
+
+- [ ] 同意上述拆分、流程和资料入口
+- [ ] 调整建议：
+
+#### I2. 生态保护与兼捕管控
+
+|推荐会议主题|首选会场|会议流程|会议主题包含|
+|---|---|---|---|
+|I2-1 保护物种与兼捕减排|WPEB → SC|IOTC-P1；必要时接 P6|鲨鱼、海龟、海鸟、鲸豚、蝠鲼，兼捕风险、留存 / 放生、减排措施、报告义务|
+|I2-2 FAD 管理|WPTT / WPEB → SC → Commission|IOTC-P1 → P6|FAD 数量、材料、设计、关闭期、回收、兼捕、数据和 e-DFAD 报告|
+|I2-3 气候和生态系统风险|WPEB → SC|IOTC-P1|海温、分布变化、生态系统指标、风险情景、适应性管理建议|
+
+**推荐方案：**不把 WGFAD 设为当前默认会场；FAD 议题按内容进入 WPTT、WPEB、SC 和 Commission。
+
+**资料入口：**
+
+- [Science Working Parties](https://iotc.org/science/working-parties-science)
+- [Stock Status](https://iotc.org/node/3379)
+- [CMM Search](https://iotc.org/cmms/basic)：检索 species、bycatch、FAD。
+- [IOTC Meetings](https://iotc.org/meetings)：筛选 WPEB、WPTT、SC、Commission。
+
+- [ ] 同意上述会议主题、会场和流程
+- [ ] 调整建议：
+
+#### I3. 渔船产能与作业管控
+
+|推荐会议主题|首选会场|会议流程|会议主题包含|
+|---|---|---|---|
+|I3-1 授权船舶和捕捞能力|WPICMM → CoC → Commission|IOTC-P4 → P6|授权船、活跃船、船长标准、产能 / 努力量、登记、船旗、租船|
+|I3-2 作业、监测和转运规则|WPICMM → CoC → Commission|IOTC-P4 → P6|VMS、观察员、电子监测、作业海域 / 季节 / 渔具、港口、海上转运|
+|I3-3 IUU 船舶名单|CoC → Commission|IOTC-P7|提名证据、船旗国答复、列入 / 移出标准、名单通过和公布|
+
+**推荐方案：**不把 WPFC 设为当前默认会场；历史场景需要使用 WPFC 时，单独标明会议年份和届次。
+
+**资料入口：**
+
+- [Vessels / e-RAV](https://iotc.org/vessels)
+- [IOTC IUU List](https://iotc.org/iotc-iuu-list)
+- [Compliance](https://iotc.org/compliance)
+- [CMM Search](https://iotc.org/cmms/basic)
+- [IOTC Meetings](https://iotc.org/meetings)：筛选 WPICMM、CoC、Commission。
+
+- [ ] 同意上述会议主题、会场和流程
+- [ ] 调整建议：
+
+#### I4. 履约监管与养护措施实施
+
+|推荐会议主题|首选会场|会议流程|会议主题包含|
+|---|---|---|---|
+|I4-1 CPC 年度履约审查|CoC → Commission|IOTC-P3|逐成员、逐措施、逐义务审查；合规状态；整改；能力建设；后续期限|
+|I4-2 监测与执法制度改革|WPICMM → CoC → Commission|IOTC-P4 → P6|VMS、观察员、电子监测、港口检查、转运、侵权跟进、市场相关措施|
+|I4-3 数据报告履约|WPDCS 提供技术标准；CoC 审查|IOTC-P1 + P3|名义渔获、捕捞努力量、尺寸频率、迟报漏报、格式、数据质量和整改|
+
+**推荐方案：**年度履约审查和新规则谈判分成两个流程；不使用同一套“提案—表决—异议”流程。
+
+**资料入口：**
+
+- [Compliance](https://iotc.org/compliance)
+- [IOTC Documents](https://iotc.org/documents/)：检索 `CoC`、`WPICMM`、`Compliance Report`。
+- [IOTC Datasets](https://iotc.org/data/datasets/latest/NC/SCIn%2Cdataavailability)
+- [CMM Search](https://iotc.org/cmms/basic)
+
+- [ ] 同意上述会议主题、会场和流程
+- [ ] 调整建议：
+
+#### I5. 沿海国权益与渔业经济
+
+|推荐会议主题|首选会场|会议流程|会议主题包含|
+|---|---|---|---|
+|I5-1 小规模和生计渔业|WPSE → Commission|IOTC-P8|生计、粮食安全、就业、收入、近海渔业、性别和社区影响|
+|I5-2 CMM 社会经济影响|WPSE → Commission|IOTC-P8；必要时接 P6|捕捞限制、关闭期、渔具要求、FAD 措施对成本、收入和就业的影响|
+|I5-3 配额分配的发展权益|WPSE / TCAC → Commission|IOTC-P8 + P2；必要时接 P6|沿海国权益、SIDS / LDC、发展需求、历史捕捞、小规模渔业和新进入者|
+
+**推荐方案：**
+
+1. SCAF 不作为该议题的默认会场。
+2. “金枪鱼贸易规则”改为“CMM 的价值链和市场影响”。
+3. “船员劳动权益”改为“渔业从业者社会经济影响”，一般劳动标准只作为跨机构背景材料。
+
+**资料入口：**
+
+- [IOTC Meetings](https://iotc.org/meetings)：筛选 WPSE、TCAC、Commission。
+- [IOTC Documents](https://iotc.org/documents/)：检索 `WPSE`、`socio-economic`、`allocation`。
+- [WPSE Terms of Reference](https://iotc.org/documents/WPSE/01/REF01)
+
+- [ ] 同意上述会议主题、范围和流程
+- [ ] 调整建议：
+
+#### I6. 机构制度与财政运行
+
+|推荐会议主题|首选会场|会议流程|会议主题包含|
+|---|---|---|---|
+|I6-1 年度预算和成员会费|SCAF → Commission|IOTC-P5|预算执行、下一期预算、成员会费、拖欠、项目经费、人力和工作计划|
+|I6-2 议事规则和财务条例修订|SCAF / Commission|IOTC-P5 的制度修订分支|修订提案、适用门槛、成员权利义务、FAO 程序|
+|I6-3 绩效审查和改革|Performance Review / TCPR → Commission|专项审查流程|评审标准、问题清单、改进建议、责任主体、期限和进度跟踪|
+|I6-4 管理程序和捕捞策略|科学 WP / MSE → SC → TCMP → Commission|IOTC-P1 → P6|管理目标、参考点、HCR、MSE、触发条件、审查周期|
+
+**推荐方案：**把该板块拆成四个会议主题；TCMP 只用于管理程序、捕捞策略和 MSE，不用于一般渔船管理。
+
+**资料入口：**
+
+- [IOTC Basic Texts](https://iotc.org/about-iotc/basic-texts)
+- [IOTC Meetings](https://iotc.org/meetings)：筛选 SCAF、TCPR、TCMP、SC、Commission。
+- [IOTC Documents](https://iotc.org/documents/)：检索 `budget`、`performance review`、`management procedure`。
+- [CMM Search](https://iotc.org/cmms/basic)
+
+- [ ] 同意上述拆分、会场和流程
+- [ ] 调整建议：
+
+---
+
+### 八、IOTC 快速映射确认表
+
+|核心议题|推荐会议主题数量|主要流程|
+|---|---:|---|
+|I1 捕捞配额与资源总量管控|3|P1、P2、P6|
+|I2 生态保护与兼捕管控|3|P1、P6|
+|I3 渔船产能与作业管控|3|P4、P6、P7|
+|I4 履约监管与措施实施|3|P1、P3、P4、P6|
+|I5 沿海国权益与渔业经济|3|P2、P8、P6|
+|I6 机构制度与财政运行|4|P1、P5、P6、专项审查|
+
+- [ ] 同意以上总映射
+- [ ] 请李老师给出其他划分思路：
+
+---
+
+### 九、资料检索统一规则
+
+#### WTO
+
+1. 法律规则：[WTO《渔业补贴协定》](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)。
+2. 历史草案和成员提案：[WTO Documents Online](https://docs.wto.org/)。
+3. MC12 文件：[MC12 Documents](https://www.wto.org/english/thewto_e/minist_e/mc12_e/documents_e.htm)。
+4. 每条成员立场记录：文件号、日期、提案方、适用草案版本。
+
+#### IOTC
+
+1. 组织权限和程序：[Basic Texts](https://iotc.org/about-iotc/basic-texts)。
+2. 某次会议完整材料：[Meetings](https://iotc.org/meetings)。
+3. 跨会议查文件：[Documents](https://iotc.org/documents/)。
+4. 现行和历史措施：[CMM Search](https://iotc.org/cmms/basic)。
+5. 科学资料：[Scientific Committee](https://iotc.org/science/scientific-committee)、[Science Working Parties](https://iotc.org/science/working-parties-science)、[Stock Status](https://iotc.org/node/3379)。
+6. 履约资料：[Compliance](https://iotc.org/compliance)。
+7. 船舶和 IUU：[Vessels](https://iotc.org/vessels)、[IUU List](https://iotc.org/iotc-iuu-list)。
+8. 生效和异议通知：[IOTC Circulars](https://iotc.org/documents/circulars)。
+
+### 十、老师需要补充的内容
+
+如不同意本文任一推荐方案，请直接补充：
+
+1. 建议使用的会议类型：
+2. 建议增加或删除的会议主题：
+3. 建议调整的会议流程：
+4. 建议采用的基础案文、会议届次或资料来源：
