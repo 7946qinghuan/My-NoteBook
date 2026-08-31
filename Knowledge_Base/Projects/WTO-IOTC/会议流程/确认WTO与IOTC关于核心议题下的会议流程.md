@@ -185,13 +185,10 @@
 - [WTO《渔业补贴协定》](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)
 - [WTO Documents Online](https://docs.wto.org/)：检索 `unregulated high seas`、`outside jurisdiction`、`RFMO/A competence`。
 - 相关 RFMO 基本文本：管辖海域和物种范围。
-    
-- 同意该会议主题、内容、流程和资料来源
-    
-- 调整建议：
-    
 
-  
+- 同意该会议主题、内容、流程和资料来源
+- 调整建议：
+
 
 #### W4. 发展中国家特殊和差别待遇（S&DT）
 
@@ -204,34 +201,23 @@
 **本场会议包含：**
 
 1. 受益成员范围。
-    
 2. 过渡期和争端行动豁免。
-    
 3. 领海、EEZ、公海和 RFMO 管辖区的适用范围。
-    
 4. 两年、五年或其他期限方案。
-    
 5. 小规模、生计和手工渔业的待遇。
-    
 6. 远洋捕捞是否排除适用。
-    
 7. 毕业机制、透明度和防规避条件。
-    
 
 **输入资料：**《渔业补贴协定》第 3.8、4.4、6、7 条、主席案文、发展中成员及 LDC 集团提案。
 
 **资料去哪里找：**
 
 - [WTO《渔业补贴协定》](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)
-    
 - [WTO Documents Online](https://docs.wto.org/)：检索 `S&DT`、`LDC`、`TN/RL/GEN`、成员集团名称。
-    
 - [MC12 文件页](https://www.wto.org/english/thewto_e/minist_e/mc12_e/documents_e.htm)：主席案文和最终成果。
-    
+
 - 同意该会议主题、内容、流程和资料来源
-    
 - 调整建议：
-    
 
   
 
@@ -246,38 +232,26 @@
 **本场会议包含：**
 
 1. 与 SCM Agreement 第 25 条通报的衔接。
-    
 2. 补贴对应的捕捞活动、种群状态和管理措施。
-    
 3. 船队能力、受益船舶和渔获数据。
-    
 4. IUU 船舶和经营者年度名单。
-    
 5. 国内执行措施和渔业制度通报。
-    
 6. RFMO/A 信息通报。
-    
 7. LDC 和低捕捞份额发展中成员的通报频率。
-    
 8. 机密信息、补充信息请求和迟报处理。
-    
+
 
 **输入资料：**《渔业补贴协定》第 8 条、SCM 通报要求、主席案文、成员提案和实际通报文件。
 
 **资料去哪里找：**
 
 - [WTO《渔业补贴协定》](https://www.wto.org/english/docs_e/legal_e/fish_e.htm)
-    
 - [WTO Documents Online](https://docs.wto.org/)：检索 `G/SCM`、`notification`、成员名称。
-    
 - SCM 补贴通报格式和成员通报文件。
-    
-- 同意该会议主题、内容、流程和资料来源
-    
-- 调整建议：
-    
 
-  
+- 同意该会议主题、内容、流程和资料来源
+- 调整建议：
+
 
 #### W6. 技术援助机制
 
