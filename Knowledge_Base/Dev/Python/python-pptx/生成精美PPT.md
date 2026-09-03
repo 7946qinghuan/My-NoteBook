@@ -65,3 +65,26 @@ Presentation()
     ↓
 运行布局检查
 ```
+
+```mermaid
+flowchart TD
+    A["PowerPointEngine<br/>统一入口"] --> B["PresentationFactory<br/>创建 Blank / 加载模板"]
+    B --> C["TemplateInspector<br/>扫描 Master / Layout / Placeholder"]
+    C --> D["LayoutCatalog + LayoutSelector<br/>查找和选择版式"]
+
+    D --> E["SlideComposer<br/>占位符填充路径"]
+    D --> F["SlideBuilder<br/>组件树渲染路径"]
+
+    E --> G["Text / Picture / Table / Chart / Frame"]
+    F --> H["Text / Image / Shape / Table / Chart"]
+    F --> I["Row / Column / Grid"]
+
+    H --> J["RenderedComponent<br/>形状与逻辑父子关系"]
+    I --> J
+    J --> K["SlideLayoutInspector<br/>越界 / 容器 / 重叠检查"]
+    E --> K
+
+    K --> L["SlideLayoutReport"]
+    L --> M["assert_layouts"]
+    M --> N["保存 PPTX"]
+```
